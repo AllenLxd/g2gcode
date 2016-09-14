@@ -1,0 +1,220 @@
+<div class="container-fluid warrantyBg">
+	<div class="container text-center">
+		<div class="warrantyTitle">
+			<h2>My Purchase Information</h2>
+			<h4 class="pull-right"><a ng-href="#/" ng-click="logout()">Loguot</a></h4>
+		</div>
+
+
+	</div>
+</div>
+<div id="services" class="services">
+	<div class="container-fluid">
+				<div class="container-fluid warrantyNav">
+					<div class="container">
+						<ul class="navInfo  text-center">
+							<li ng-repeat="tab in tabs">
+								<a ng-class="{currantActive:isActiveTab(tab.url)}"
+								   ng-click="onClickTab(tab)" href="">
+									{{tab.title}}
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				        <div id="mainView">
+				            <div ng-include="currentTab"></div>
+				        </div>
+				      </div>
+				    <script type="text/ng-template" id="myInfo">
+
+						<div class="container-fluid contentBg">
+							<h3 class="text-center">My Purchase Information</h3>
+							<div class="personalInfo">
+								<div class="form-horizontal">
+									<div class="form-group formSpace">
+										<label class="col-sm-2 control-label">Name:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">Larry Chen</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Company:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">G2G Lighting</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Adress:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">155A 10th Street Passaic,NJ 07055</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Phone:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">893-02090324</p>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Email:</label>
+										<div class="col-sm-10">
+											<p class="form-control-static">LarryChen@qq.com</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+				    </script>
+
+				    <script type="text/ng-template" id="myWarranty">
+						<div class="container-fluid contentBg">
+							<h3 class="text-center">Warranty Information</h3>
+							<div class="warrantyInfoList">
+				              <table class="table" ng-show="cart.length">
+					             <thead>
+					                   <tr>
+					                       <th>Products</th>
+					                       <th>Distributor</th>
+					                       <th>Quantity</th>
+					                       <th>Wanrranty</th>
+					                       <th>Labor</th>
+					                       <th>Completion Date</th>
+					                       <th>Address</th>
+					                   </tr>
+					             </thead>
+					             <tbody>
+					                    <tr ng-repeat="item in cart">
+					                        <td>{{item.productName}}</td>
+					                        <td>{{item.distributor}}</td>
+					                        <td>{{item.quantity}}</td>
+					                        <td>{{item.warranty}}</td>
+					                        <td>{{item.labor}}</td>
+					                        <td>{{item.date}}</td>
+					                        <td>{{item.project_location}}</td>
+					                    </tr>
+
+					             </tbody>
+					         </table>
+					         <p ng-show="!cart.length">You did not record any warranty information for your products</p>
+				        </div>
+						</div>
+
+				    </script>
+
+				     <script type="text/ng-template" id="newLabor">
+						 <div class="container-fluid contentBg">
+							 <h3 class="text-center">Warranty Information</h3>
+							 <div class="warrantyInfoList">
+
+								<form class="form-horizontal" style="margin-top:20px;" ng-submit="addLabor()">
+								  <div class="form-group form-bottom">
+									<label for="inputEmail3" class="col-sm-2 control-label">Products</label>
+									<div class="col-sm-3">
+									   <select required="" class="form-control" ng-model="address.province" ng-options="key as key for (key,value) in category"
+														ng-change="address.city='';address.district='';">
+													<option value=""></option>
+									   </select>
+									</div>
+									<div class="col-sm-3">
+									   <select class="form-control" ng-model="address.city" ng-options="key as key for (key,value) in division[address.province]"
+														ng-change="address.district='';" ng-show="address.province">
+													<option value=""></option>
+										</select>
+									</div>
+									<div class="col-sm-3">
+									   <select class="form-control"  ng-model="warrantyInfo.productName" ng-options="value as value for value in category[address.province][address.city]" ng-show="address.city">
+													<option value=""></option>
+									   </select>
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Distributor</label>
+									<div class="col-sm-3">
+									  <select required="" class="form-control" ng-model="warrantyInfo.distributor">
+													<option>Poineer</option>
+													<option>Wensco</option>
+													<option>Denco</option>
+										</select>
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Warranty</label>
+									<div class="col-sm-3">
+									  <select required="" class="form-control" ng-model="warrantyInfo.warranty">
+													<option value="3">3 years</option>
+													<option value="5">5 years</option>
+										</select>
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Labor</label>
+									<div class="col-sm-3">
+										<select required="" class="form-control" ng-model="warrantyInfo.labor">
+													<option value="3">3 years</option>
+										</select>
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Quantity</label>
+									<div class="col-sm-3">
+									  <input type="text" class="form-control" ng-model="warrantyInfo.quantity">
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Company</label>
+									<div class="col-sm-8">
+									  <input type="text" class="form-control" ng-model="warrantyInfo.company">
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Project Location</label>
+									<div class="col-sm-8">
+									  <input type="text" class="form-control"  ng-model="warrantyInfo.project_location">
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-md-2 control-label">Completion Date</label>
+									<div class="col-sm-3">
+									  <p class="input-group">
+										  <input type="text" class="form-control" uib-datepicker-popup ng-model="warrantyInfo.date" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close"  ng-click="open2()" />
+										  <span class="input-group-btn">
+											<button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+										  </span>
+									  </p>
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+									<div class="col-sm-8">
+									  <input type="email" class="form-control" id="inputEmail3" placeholder="Email" ng-model="warrantyInfo.email">
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-sm-2 control-label">Phone</label>
+									<div class="col-sm-8">
+									  <input type="text" class="form-control" ng-model="warrantyInfo.phone">
+									</div>
+								  </div>
+								  <div class="form-group form-bottom">
+									<label class="col-sm-2 control-label">Project Photo</label>
+									<div class="col-sm-8">
+									  <input type="file">
+									</div>
+								  </div>
+
+								  <div class="form-group form-bottom">
+									<div class="col-sm-offset-2 col-sm-10">
+									  <button type="submit" class="btn btn-default" >Submit</button>
+									</div>
+								  </div>
+								</form>
+							 </div>
+				        </div>
+				    </script>
+			    </div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+<?php
+
+namespace api\modules\v1\models;
+
+use \Yii;
+
+/**
+ * This is the model class for table "lampbead".
+ *
+ * @property integer $id
+ * @property string $order_no
+ * @property string $lampbead_model
+ * @property string $factory_zh_name
+ * @property string $factory_en_name
+ * @property integer $number
+ * @property integer $created_at
+ */
+class Ic extends \yii\db\ActiveRecord
+{
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return '{{%ic}}';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['number','remaining','username'], 'required'],
+        	[['created_at','number','remaining'],'number'],
+        	['ic_name','string'],
+        	['created_at', 'default','value'=>time()],
+        	
+        ];
+    }
+
+
+}

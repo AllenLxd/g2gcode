@@ -1,0 +1,265 @@
+2016-08-09 11:55:43 [::1][9][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Users/carl/www/g2g-website/backend/messages/zh-CN/app.php Fallback file does not exist as well: /Users/carl/www/g2g-website/backend/messages/zh/app.php
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/content.php:15
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php:78
+    in /Users/carl/www/g2g-website/backend/controllers/SiteController.php:63
+2016-08-09 11:55:43 [::1][9][-][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=837061625-1459297976-&ntime=1459297976'
+    '_ga' => 'GA1.1.2016604081.1467705166'
+    'PHPSESSID' => '77hgkhkjhr7trd1viu3vtu1h17'
+    '_csrf' => '0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hESrJEpNjg5tp0OkzBghvVexnpj1LtiG\";}'
+    'advanced-backend' => 'futa3iqamv2p11sg3rea1qi2g5'
+    '_csrf-backend' => 'd8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9dVfTL9zIosI0I26qUasIKDupVUCxIav\";}'
+    '_identity-backend' => 'f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 9
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D837061625-1459297976-%26ntime%3D1459297976; _ga=GA1.1.2016604081.1467705166; PHPSESSID=77hgkhkjhr7trd1viu3vtu1h17; _csrf=0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hESrJEpNjg5tp0OkzBghvVexnpj1LtiG%22%3B%7D; advanced-backend=futa3iqamv2p11sg3rea1qi2g5; _csrf-backend=d8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229dVfTL9zIosI0I26qUasIKDupVUCxIav%22%3B%7D; _identity-backend=f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2g-website/backend/web/index.php'
+    'REMOTE_PORT' => '58305'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/g2g-website/backend/web/index.php'
+    'SCRIPT_NAME' => '/g2g-website/backend/web/index.php'
+    'PHP_SELF' => '/g2g-website/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470714943.591
+    'REQUEST_TIME' => 1470714943
+]
+2016-08-10 08:39:28 [::1][9][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Users/carl/www/g2g-website/backend/messages/zh-CN/app.php Fallback file does not exist as well: /Users/carl/www/g2g-website/backend/messages/zh/app.php
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/content.php:15
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php:78
+    in /Users/carl/www/g2g-website/backend/controllers/SiteController.php:63
+2016-08-10 08:39:27 [::1][9][-][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=837061625-1459297976-&ntime=1459297976'
+    '_ga' => 'GA1.1.2016604081.1467705166'
+    'PHPSESSID' => '77hgkhkjhr7trd1viu3vtu1h17'
+    '_csrf' => '0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hESrJEpNjg5tp0OkzBghvVexnpj1LtiG\";}'
+    'advanced-backend' => 'futa3iqamv2p11sg3rea1qi2g5'
+    '_csrf-backend' => 'd8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9dVfTL9zIosI0I26qUasIKDupVUCxIav\";}'
+    '_identity-backend' => 'f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 9
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2g-website/backend/'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D837061625-1459297976-%26ntime%3D1459297976; _ga=GA1.1.2016604081.1467705166; PHPSESSID=77hgkhkjhr7trd1viu3vtu1h17; _csrf=0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hESrJEpNjg5tp0OkzBghvVexnpj1LtiG%22%3B%7D; advanced-backend=futa3iqamv2p11sg3rea1qi2g5; _csrf-backend=d8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229dVfTL9zIosI0I26qUasIKDupVUCxIav%22%3B%7D; _identity-backend=f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2g-website/backend/web/index.php'
+    'REMOTE_PORT' => '65029'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/g2g-website/backend/web/'
+    'SCRIPT_NAME' => '/g2g-website/backend/web/index.php'
+    'PHP_SELF' => '/g2g-website/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470789567.854
+    'REQUEST_TIME' => 1470789567
+]
+2016-08-10 08:40:05 [::1][9][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Users/carl/www/g2g-website/backend/messages/zh-CN/app.php Fallback file does not exist as well: /Users/carl/www/g2g-website/backend/messages/zh/app.php
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/content.php:15
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php:78
+    in /Users/carl/www/g2g-website/backend/modules/product/controllers/ProductCategoryController.php:49
+2016-08-10 08:40:05 [::1][9][-][info][application] $_GET = [
+    'r' => 'product/product-category/index'
+]
+
+$_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=837061625-1459297976-&ntime=1459297976'
+    '_ga' => 'GA1.1.2016604081.1467705166'
+    'PHPSESSID' => '77hgkhkjhr7trd1viu3vtu1h17'
+    '_csrf' => '0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hESrJEpNjg5tp0OkzBghvVexnpj1LtiG\";}'
+    'advanced-backend' => 'futa3iqamv2p11sg3rea1qi2g5'
+    '_csrf-backend' => 'd8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9dVfTL9zIosI0I26qUasIKDupVUCxIav\";}'
+    '_identity-backend' => 'f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 9
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2g-website/backend/web/'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D837061625-1459297976-%26ntime%3D1459297976; _ga=GA1.1.2016604081.1467705166; PHPSESSID=77hgkhkjhr7trd1viu3vtu1h17; _csrf=0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hESrJEpNjg5tp0OkzBghvVexnpj1LtiG%22%3B%7D; advanced-backend=futa3iqamv2p11sg3rea1qi2g5; _csrf-backend=d8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229dVfTL9zIosI0I26qUasIKDupVUCxIav%22%3B%7D; _identity-backend=f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2g-website/backend/web/index.php'
+    'REMOTE_PORT' => '65039'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2Findex'
+    'REQUEST_URI' => '/g2g-website/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'SCRIPT_NAME' => '/g2g-website/backend/web/index.php'
+    'PHP_SELF' => '/g2g-website/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470789605.284
+    'REQUEST_TIME' => 1470789605
+]
+2016-08-10 09:10:16 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Users/carl/www/g2g-website/backend/messages/zh-CN/app.php Fallback file does not exist as well: /Users/carl/www/g2g-website/backend/messages/zh/app.php
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/content.php:15
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php:78
+    in /Users/carl/www/g2g-website/backend/controllers/SiteController.php:63
+2016-08-10 09:10:16 [::1][1][-][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=837061625-1459297976-&ntime=1459297976'
+    '_ga' => 'GA1.1.2016604081.1467705166'
+    'PHPSESSID' => 'l8vptbnag931o0kri88ghk1hl2'
+    '_csrf' => '0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hESrJEpNjg5tp0OkzBghvVexnpj1LtiG\";}'
+    'advanced-backend' => 'futa3iqamv2p11sg3rea1qi2g5'
+    '_csrf-backend' => 'd8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9dVfTL9zIosI0I26qUasIKDupVUCxIav\";}'
+    '_identity-backend' => 'f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2g-website/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2g-website/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D837061625-1459297976-%26ntime%3D1459297976; _ga=GA1.1.2016604081.1467705166; PHPSESSID=l8vptbnag931o0kri88ghk1hl2; _csrf=0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hESrJEpNjg5tp0OkzBghvVexnpj1LtiG%22%3B%7D; advanced-backend=futa3iqamv2p11sg3rea1qi2g5; _csrf-backend=d8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229dVfTL9zIosI0I26qUasIKDupVUCxIav%22%3B%7D; _identity-backend=f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2g-website/backend/web/index.php'
+    'REMOTE_PORT' => '65260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/g2g-website/backend/web/index.php'
+    'SCRIPT_NAME' => '/g2g-website/backend/web/index.php'
+    'PHP_SELF' => '/g2g-website/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470791416.586
+    'REQUEST_TIME' => 1470791416
+]
+2016-08-10 09:11:36 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: /Users/carl/www/g2g-website/backend/messages/zh-CN/app.php Fallback file does not exist as well: /Users/carl/www/g2g-website/backend/messages/zh/app.php
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/content.php:15
+    in /Users/carl/www/g2g-website/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php:78
+    in /Users/carl/www/g2g-website/backend/controllers/SiteController.php:63
+2016-08-10 09:11:36 [::1][1][-][info][application] $_COOKIE = [
+    'CNZZDATA155540' => 'cnzz_eid=837061625-1459297976-&ntime=1459297976'
+    '_ga' => 'GA1.1.2016604081.1467705166'
+    'PHPSESSID' => 'um602g1oreqk6g88eqotrbgtn7'
+    '_csrf' => '0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hESrJEpNjg5tp0OkzBghvVexnpj1LtiG\";}'
+    'advanced-backend' => 'futa3iqamv2p11sg3rea1qi2g5'
+    '_csrf-backend' => 'd8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9dVfTL9zIosI0I26qUasIKDupVUCxIav\";}'
+    '_identity-backend' => 'f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2g-website/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2g-website/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'CNZZDATA155540=cnzz_eid%3D837061625-1459297976-%26ntime%3D1459297976; _ga=GA1.1.2016604081.1467705166; PHPSESSID=um602g1oreqk6g88eqotrbgtn7; _csrf=0304ebc96629cc3c2ab2685ebf2c42dd7687919acc3e67361c916784d4898b2ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hESrJEpNjg5tp0OkzBghvVexnpj1LtiG%22%3B%7D; advanced-backend=futa3iqamv2p11sg3rea1qi2g5; _csrf-backend=d8a3e78038050b6e72542834b77d3f61530b8c2ab2e02893a2f0ceaf877ffa02a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229dVfTL9zIosI0I26qUasIKDupVUCxIav%22%3B%7D; _identity-backend=f2103e57392c9cbc05d0232680ff7b30d793e431308fa0833a121bcb6d0364dba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22rgWR2CX7yN_QC0uesyVLPbrFEqhad7jw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Unix) PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2g-website/backend/web/index.php'
+    'REMOTE_PORT' => '65270'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/g2g-website/backend/web/index.php'
+    'SCRIPT_NAME' => '/g2g-website/backend/web/index.php'
+    'PHP_SELF' => '/g2g-website/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470791496.683
+    'REQUEST_TIME' => 1470791496
+]

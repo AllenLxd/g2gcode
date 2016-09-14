@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+body {font-size:12px;}
+.sidebar-menu > li > a > .fa-angle-left {
+	position: relative;
+	top: -15px;
+}

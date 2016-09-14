@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="g2gApp">
+<head>
+<meta charset="utf-8" />
+<title>G2G Lighting</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Keywords" content="Channel Letter,Sign Box" />
+<meta name="Description" content="G2G LED Modules produces a variety of high-quality, innovatively crafted light fixtures, designed to transform the degree of adornment into one that is more personalized and effective. "/>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/ui-bootstrap-tpls-2.0.0.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+
+
+</head>
+<body ng-controller="mainController">
+	
+	<header id="header">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header log">
+					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ng-href="#home" >
+						<img class="img-responsive media-edit" alt="Cinque Terre" src="images/logo.png">
+					</a>
+				</div>
+	
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right ul-height">
+						<li>
+							<a ng-href="#about">About Us</a>
+						</li>
+						<li class="productList">
+							<a ng-href="#products/letter/all">Products</a>
+						</li>
+						<li>
+							<a ng-href="#services">Services</a>
+						</li>						
+						<li>
+							<a ng-href="#support/download">download</a>
+						</li>
+						<li>
+							<a ng-href="#support/contact">Contact</a>
+						</li>
+						<li>
+							<a ng-href="#support/video">Video</a>
+						</li>
+						<li class="logIn">
+							<a href="#login" ng-if="!user.username" data-target="" data-toggle="modal">Warranty</a>
+							<a href="#usercenter/{{user.id}}" ng-if="user" >{{user.username}}</a>
+						</li>
+						
+					</ul>
+	
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<div id="main">
+		<div ng-view></div>
+	</div>
+	<div id="goTop">
+		<span class="hint">Up to top</span>
+	</div>
+	
+	
+	<div class="footer_wrapper">
+	        
+			     <div class="footer">
+			     	<div class="container">
+			     		<div class="col-xs-12 col-sm-2"><a href="#">About US</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Products</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Service</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Download</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Video</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Contact Us</a></div>
+				    </div>
+			     </div>
+			     <div class="container">
+			     	   
+			     	   <div class="col-xs-12 col-sm-2 col-md-2">
+			     	   	   <img class="signLog" src="images/signLogo4.jpg" >
+			     	   	   	
+			     	   </div>
+			     	   <div class="sign col-xs-12 col-sm-3 col-md-3">
+			     	   	   <img src="images/signLogo2.png" >
+			     	   </div>
+			     	   <div class="col-xs-12 col-sm-2 col-md-2">
+			     	   	   <img src="images/signLogo3.png" >
+			     	   </div>
+			     	   <div class="col-xs-12 col-sm-3 col-md-3">
+			     	   	   <img class="signLogo" src="images/signLogo1.png" >
+			     	   </div>
+			     </div>
+			     <div class="container">
+			     	   <div class="footLogo">
+			     	   	   <img src="images/footLogo.png" >
+			     	   </div>
+			     	   
+			     </div>
+
+	   </div> 
+	   
+	   <span id="video-btn"></span>
+	   
+ 
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal fade" ng-model="test"
+             id="signupModal" style="display: none;">
+            <div class="modal-dialog" style="width: 860px;">
+                <div id="login-logup" class="login-logup">
+	<a aria-hidden="true" data-dismiss="modal" class="icon-cancel-circled HF-overlayClose glyphicon glyphicon-remove-sign" title="Close window"></a>
+	<div tabindex="-1" class="HFoverlayWrap" style="height: 100%; outline: 0 none; width: 100%; overflow: visible;">
+		<div class="js-overlay-container HFoverlayData" id="myHomeFinderCreateAccountOverlay" style="display: block;">
+			<div class="consistentOverlay last-child">
+				<header>
+					<h3>Create Your FREE Account</h3>
+					<h4 class="last-child">Save your favorite properties, Users get the certification, you will get more service</h4> </header>
+				<div class="floatClear last-child">
+					<div class="box-connect">
+						<div class="loginButtonRow">
+							<div data-click-event="request-facebook-login" class="facebookIcon connect facebookLoginLink last-child"></div>
+						</div>
+						
+						<div class="row">
+							<div class="facebookInfo last-child">
+								<h4 class="title">1. Warranty</h4>
+								<p class="description last-child">Product warranty period. <a href="">Warranty</a></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="facebookInfo last-child">
+								<h4 class="title">2. Labor</h4>
+								<p class="description last-child">A certain period of time free installation and solve the problem. <a href="">Labor</a></p>
+							</div>
+						</div>
+						<p class="row">Lastly, we promise to <span class="bold last-child">never post anything to your wall or timeline</span> unless you share it yourself.</p> <img width="27px" height="31px" src="images/orDivider.png" class="orCircle last-child"> </div>
+					<div class="consistentForm createAccountContainer last-child">
+						<h4>Or fill out this form</h4>
+						<form ng-submit="register()" class="last-child">
+							<div class="js-validator-messages"></div>
+							<fieldset class="row floatClear"> 
+								<label> 
+									<span>User Name:</span> 
+									<input type="text" class="last-child" maxlength="90" ng-model="reg.username"> 
+								</label> 
+								<label class="last-child"> 
+									<span>Email Address:</span> 
+									<input type="email" class="last-child" maxlength="120" ng-model="reg.email"> 
+								</label>								
+							</fieldset>
+							<fieldset class="row floatClear"> 
+								<label> <span>Password:</span> <input type="password" class="last-child" ng-model="reg.password" maxlength="16"> </label> 
+								<label> <input type="checkbox" ng-model="reg.rememberMe"> <font> Remember Me:</font></label>								
+							</fieldset>
+							
+						<div class="buttonSet"> 
+								<button class="btn" type="submit"  ng-disabled="form.$invalid">Create Account</button> 
+								<button class="btn secondary last-child" data-target="#loginModal" data-toggle="modal"  aria-hidden="true" data-dismiss="modal" type="button">Already have an account?</button> 
+							</div>
+							<p class="privacy last-child"> Worried about spam? We respect your privacy and won’t send you any emails you don’t want to receive. See our <a href="/company/privacy" class="last-child">privacy policy</a> for more information. </p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal fade" ng-model="test"
+             id="loginModal" style="display: none;">
+            <div class="modal-dialog" style="width: 860px;">
+
+ <div id="login-logup" class="login-logup">
+	<a aria-hidden="true" data-dismiss="modal" class="icon-cancel-circled HF-overlayClose glyphicon glyphicon-remove-sign" title="Close window"></a>
+	<div tabindex="-1" class="HFoverlayWrap" style="height: 100%; outline: 0 none; width: 100%; overflow: visible;">
+		<div class="js-overlay-container HFoverlayData" id="myHomeFinderCreateAccountOverlay" style="display: block;">
+			<div class="consistentOverlay last-child">
+				<header>
+					<h3>Log ln to Your Account</h3>
+					<h4 class="last-child">Save your favorite properties, Users get the certification, you will get more service</h4> </header>
+				<div class="floatClear last-child">
+					<div class="box-connect">
+						<div class="loginButtonRow">
+							<div data-click-event="request-facebook-login" class="facebookIcon connect facebookLoginLink last-child"></div>
+						</div>
+						<div class="row">
+							<div class="facebookInfo last-child">
+								<h4 class="title">1. Warranty</h4>
+								<p class="description last-child">Product warranty period. <a href="">Warranty</a></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="facebookInfo last-child">
+								<h4 class="title">2. Labor</h4>
+								<p class="description last-child">A certain period of time free installation and solve the problem. <a href="">Labor</a></p>
+							</div>
+						</div>
+						<p class="row">Lastly, we promise to <span class="bold last-child">never post anything to your wall or timeline</span> unless you share it yourself.</p> <img width="27px" height="31px" src="images/orDivider.png" class="orCircle last-child"> </div>
+					<div class="consistentForm createAccountContainer last-child">
+						<h4>Log in</h4>
+						<form method="post"  ng-submit="login()">
+
+						<div class="js-validator-messages error">
+							
+						</div>
+
+							
+							<fieldset class="row floatClear">
+								<label> <span>Email address:</span> <input type="email" class="required password last-child" ng-model="log.username"> </label>
+								<label class="last-child"> <span>password:</span> <input type="password" class="required password last-child" ng-model="log.password"> </label>								
+							</fieldset>
+							<label class="checkbox"> 
+							<input type="checkbox" style="margin-left:0;" ng-model="log.rememberMe" name="receiveMonthlyENewsletter"> <span>Remember me</span> <div class="enhancedTooltipIcon top last-child" ></div> </label>
+							<div class="buttonSet"> <button class="btn" type="submit">Log in</button> <button  data-target="#signupModal" data-toggle="modal"  aria-hidden="true" data-dismiss="modal" class="btn secondary last-child" type="button">Don’t have an account?</button> </div>
+							<p class="privacy last-child"><a href="">Forgot password?</a></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+
+
+</body>
+</html>

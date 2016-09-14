@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="g2gApp">
+<head>
+<meta charset="utf-8" />
+<title>G2G Lighting</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Keywords" content="Channel Letter,Sign Box" />
+<meta name="Description" content="G2G LED Modules produces a variety of high-quality, innovatively crafted light fixtures, designed to transform the degree of adornment into one that is more personalized and effective. "/>
+<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/ui-bootstrap-tpls-2.0.0.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+
+
+</head>
+<body ng-controller="mainController">
+	
+	<header id="header">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header log">
+					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ng-href="#home" >
+						<img class="img-responsive media-edit" alt="Cinque Terre" src="images/logo.png">
+					</a>
+				</div>
+	
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right ul-height">
+						<li>
+							<a ng-href="#mywarranty">mywarranty</a>
+						</li>
+						<li>
+							<a ng-href="#about">About Us</a>
+						</li>
+						<li class="productList">
+							<a ng-href="#products/letter/all">Products</a>
+						</li>
+						<li>
+							<a ng-href="#services">Services</a>
+						</li>						
+						<li>
+							<a ng-href="#support/download">download</a>
+						</li>
+						<li>
+							<a ng-href="#support/contact">Contact</a>
+						</li>
+						<li>
+							<a ng-href="#support/video">Video</a>
+						</li>
+						<li class="logIn">
+							<a href="#register" ng-if="!user.username" data-target="" data-toggle="modal">Warranty</a>
+							<a href="#usercenter/{{user.id}}" ng-if="user" >{{user.username}}</a>
+						</li>
+						
+					</ul>
+	
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid warrantyBg">
+				  <div class="container text-center">
+				  	    <div class="warrantyTitle">
+				  	    	<h2>My Purchase Information</h2>
+				  	    </div>
+				  	     
+				  </div>
+			</div>
+			<div class="container-fluid warrantyNav">
+				  <div class="container">
+						     		<ul class="navInfo  text-center">
+						     			  <li class="navList">My Information</li>
+						     			  <li class="currantActive navList">Warranty Information</li>
+						     			  <li class="navList">Add New Labor</li>
+						     		</ul> 	
+					</div>
+			</div>
+			<div class="container-fluid contentBg">
+			      <h3 class="text-center">Warranty Information</h3>
+			      <div class="warrantyInfoList">
+			      	    <table class="table">
+					             <thead>
+					                   <tr>
+					                       <th>Products</th>
+					                       <th>Distributor</th>
+					                       <th>Quantity</th>
+					                       <th>Wanrranty</th>
+					                       <th>Labor</th>
+					                       <th>Completion Date</th>
+					                       <th>Project Location</th>
+					                   </tr>
+					             </thead>
+					             <tbody>
+					                    <tr >
+					                        <td>TriCo RGB</td>
+					                        <td>Denco</td>
+					                        <td>230</td>
+					                        <td>3years</td>
+					                        <td>3years</td>
+					                        <td>2016-5-8</td>
+					                        <td>155A 10th Street Passaic,NJ 07055</td>
+					                    </tr>
+					                    <tr >
+					                        <td>WOW Red</td>
+					                        <td>Denco</td>
+					                        <td>230</td>
+					                        <td>5years</td>
+					                        <td>3years</td>
+					                        <td>2016-1-8</td>
+					                        <td>155A 10th Street Passaic,NJ 07055</td>
+					                        
+					                    </tr>
+					                    <tr >
+					                        <td>WOW Red</td>
+					                        <td>Denco</td>
+					                        <td>230</td>
+					                        <td>5years</td>
+					                        <td>3years</td>
+					                        <td>2016-1-8</td>
+					                        <td>155A 10th Street Passaic,NJ 07055</td>
+					                        
+					                    </tr>
+
+					             </tbody>
+					         </table>
+			      	  
+			      </div>
+			</div>
+				
+	<div id="goTop">
+		<span class="hint">Up to top</span>
+	</div>
+	
+	
+	<div class="footer_wrapper">
+	        
+			     <div class="footer">
+			     	<div class="container">
+			     		<div class="col-xs-12 col-sm-2"><a href="#">About US</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Products</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Service</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Download</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Video</a></div>
+				     	<div class="col-xs-12 col-sm-2"><a href="#">Contact Us</a></div>
+				    </div>
+			     </div>
+			     <div class="container">
+			     	   
+			     	   <div class="col-xs-12 col-sm-2 col-md-2">
+			     	   	   <img class="signLog" src="images/signLogo4.jpg" >
+			     	   	   	
+			     	   </div>
+			     	   <div class="sign col-xs-12 col-sm-3 col-md-3">
+			     	   	   <img src="images/signLogo2.png" >
+			     	   </div>
+			     	   <div class="col-xs-12 col-sm-2 col-md-2">
+			     	   	   <img src="images/signLogo3.png" >
+			     	   </div>
+			     	   <div class="col-xs-12 col-sm-3 col-md-3">
+			     	   	   <img class="signLogo" src="images/signLogo1.png" >
+			     	   </div>
+			     </div>
+			     <div class="container">
+			     	   <div class="footLogo">
+			     	   	   <img src="images/footLogo.png" >
+			     	   </div>
+			     	   
+			     </div>
+
+	   </div> 
+	   
+	   
+
+
+</body>
+</html>
