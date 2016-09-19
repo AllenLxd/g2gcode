@@ -113,7 +113,7 @@
 								  <div class="form-group form-bottom">
 									<label for="inputEmail3" class="col-sm-2 control-label">Products</label>
 									<div class="col-sm-3">
-									   <select required="" class="form-control" ng-model="address.province" ng-options="key as key for (key,value) in category"
+									   <select required="" class="form-control" ng-model="address.province" ng-options="key as key for (key,value) in division"
 														ng-change="address.city='';address.district='';">
 													<option value=""></option>
 									   </select>
@@ -125,7 +125,7 @@
 										</select>
 									</div>
 									<div class="col-sm-3">
-									   <select class="form-control"  ng-model="warrantyInfo.productName" ng-options="value as value for value in category[address.province][address.city]" ng-show="address.city">
+									   <select class="form-control"  ng-model="warrantyInfo.productName" ng-options="value as value for value in division[address.province][address.city]" ng-show="address.city">
 													<option value=""></option>
 									   </select>
 									</div>

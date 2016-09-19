@@ -299,7 +299,7 @@
 		            $scope.category = data.data;
 
 	        });
-		     /*$scope.division = {
+		     $scope.division = {
 		     	"Channel letter": {
 		     	                   "Aurora Series":[
 		     	                                    "Aurora I Gen IV",
@@ -377,7 +377,7 @@
 		     	                                    "LWW-8C-216P"
 		     	                   ]
                 }
-		     }*/
+		     }
 		     $scope.optionDistributor = [
 		                            {"distributor" : "poineer"},
 		                            {"distributor" : "wensco"},
