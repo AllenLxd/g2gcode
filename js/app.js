@@ -90,8 +90,7 @@
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
-                		$('#loginModal').hide();
-                		angular.element(".modal-backdrop").removeClass('modal-backdrop', 'fade', 'in');
+
                 	}
                 	else
                 	{

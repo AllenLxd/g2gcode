@@ -1,3 +1,9 @@
+.pageTitle{
+	font-size:40px;
+}
+.secondTitle{
+	font-size:17px;
+}
 /*warranty页面开始*/
  .warrantyBg{
     background: url('../images/warrantyBg.jpg') no-repeat;
@@ -30,6 +36,10 @@
 	height:190px;
 	width:100%;
 	padding:50px;
+}
+.warrantyTitle a{
+	color:#ffffff;
+	text-decoration: underline;
 }
 
 
@@ -91,7 +101,7 @@ ul.navInfo li a.currantActive{
     margin-bottom:15px;
 }
 .registerContent > p{
-    font-size:17px;
+    font-size:13px;
     color:#ffffff;
     margin-bottom:38px;
 }
@@ -105,7 +115,6 @@ ul.navInfo li a.currantActive{
 }
 .form-info h3{
 	color:#ffffff;
-	margin-top:0px;
 }
 .form-info div.form-left{
 	width:280px;
@@ -117,8 +126,34 @@ ul.navInfo li a.currantActive{
 	color:#ffffff;
 }
 .form-left input{
-	text-indent:5px;
-	color:#91d10c;
+	padding:0px;
+	color:#a1e919;
+	border-bottom:1px solid #c6d3dc; /* 下划线效果 */
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	background-color:transparent;
+	border-radius: 0px;
+	box-shadow:none;
+}
+.form-left input:focus{
+	border-color:#a1e919;
+	box-shadow:none;
+}
+.form-left input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #fff;
+}
+
+.form-left input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #fff;
+}
+
+.form-left input:-ms-input-placeholder{
+	color: #fff;
+}
+
+.form-left input::-webkit-input-placeholder{
+	color: #fff;
 }
 .btn-log{
 	width:165px;
@@ -136,10 +171,12 @@ ul.navInfo li a.currantActive{
 	background:#91d10c;
 }
 .form-info div.form-right{
-	width:280px;
-	height:240px;
+	width:320px;
+	height:158px;
 	float:right;
 	text-align:left;
+	padding-left:40px;
+	border-left:1px solid #c5c6cb;
 }
 .registerContent{
 	margin-top:180px;
@@ -147,6 +184,26 @@ ul.navInfo li a.currantActive{
 }
 .login{
 	color:#ffffff;
+	text-decoration: underline;
+	font-size:16px;
+}
+.marginBottom{
+	margin-top:18px;
+}
+h3{
+	margin-top:0px;
+	font-size:20px;
+}
+.registerRight{
+	width:320px;
+	height:180px;
+	float:right;
+	text-align:left;
+	padding-left:40px;
+	border-left:1px solid #c5c6cb;
+}
+.registerH3{
+	margin-top:40px;
 }
 /*register结束*/
 
@@ -302,6 +359,16 @@ ul.navInfo li a.currantActive{
 	line-height:30px;
 	text-decoration:underline;
 }
+.SupportBg{
+	background:url('../images/download.jpg') no-repeat;
+	min-height:558px;
+	position:relative;
+	margin-top:60px;
+	padding-top:180px;
+	text-align:center;
+	color:#ffffff;
+	background-size:1339px;
+}
 .downloadBg{
 	padding-left:0px;
 	padding-right:0px;
@@ -323,6 +390,7 @@ ul.navInfo li a.currantActive{
 /*about us开始*/
 .aboutUsTp{
 	padding-top:70px;
+	margin-bottom:40px;
 }
 .about-us{
 	margin-bottom:20px;
@@ -364,12 +432,11 @@ ul.navInfo li a.currantActive{
 	color:#ffffff;
 	background-size:100%;
 }
+
 .serviceBg h2{
-	font-size:60px;
+	font-size:40px;
 }
-.serviceBg p{
-	font-size:20px;
-}
+
 .layout{
 	text-align:center;
 	padding:40px 0px;
@@ -666,20 +733,15 @@ ul.navInfo li a.currantActive{
   font-family: Flexo-light; 
   src: url('../fonts/Flexo-light.OTF'); 
 }
-/**.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-	background: rgba(0, 0, 0, 0) none repeat scroll 0 0; 
-	color: #fff;
-	text-decoration: none;
-}
-**/
+
 ul ,li{
 	list-style:none;
 }
 body{
 	font-family:"Flexo-light";
-	font-size:14px;	
+	font-size:13px;
 }
+
 
 .navbar-default .support-list ul li a:hover {
 	text-decoration: underline;
@@ -967,6 +1029,7 @@ body{
 	display:block;
 	padding: 0 15px;
 	line-height:60px;
+	font-size:17px;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
@@ -1144,11 +1207,11 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	border-bottom:1px solid #fff;
 	margin-bottom:40px;
 	padding-bottom:30px;
-	padding-top:60px;
+	padding-top:100px;
 	text-align:center;
 }
 .top-center h2{
-	font-size:30px;
+	font-size:40px;
 	margin-bottom:20px;
 	margin-top:0px;
 }
@@ -1494,13 +1557,13 @@ h3.title-font{
 /**video 开始**/
 .installation-video{
 	background:#eee7e4;
-	padding:40px 0 10px 0;
+	padding:80px 0 10px 0;
 }
 .installation-video h2{
 	text-align:center;
 	margin-bottom:40px;
 	color:#c86b2e;
-	font-size:35px;
+	font-size:40px;
 }
 .installation-video div video{
 	display:block;
