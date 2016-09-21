@@ -33,34 +33,34 @@
 							<h3 class="text-center">My Purchase Information</h3>
 							<div class="personalInfo">
 								<div class="form-horizontal">
-									<div class="form-group formSpace">
+									<div >
 										<label class="col-sm-2 control-label">Name:</label>
 										<div class="col-sm-10">
-											<p class="form-control-static">Larry Chen</p>
+											<p class="form-control-static">{{userInfo.username}}</p>
 										</div>
 									</div>
-									<div class="form-group">
+									<div >
 										<label class="col-sm-2 control-label">Company:</label>
 										<div class="col-sm-10">
 											<p class="form-control-static">G2G Lighting</p>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="col-sm-2 control-label">Adress:</label>
+									<div >
+										<label class="col-sm-2 control-label">Address:</label>
 										<div class="col-sm-10">
-											<p class="form-control-static">155A 10th Street Passaic,NJ 07055</p>
+											<p class="form-control-static">{{userInfo.address}}</p>
 										</div>
 									</div>
-									<div class="form-group">
+									<div >
 										<label class="col-sm-2 control-label">Phone:</label>
 										<div class="col-sm-10">
-											<p class="form-control-static">893-02090324</p>
+											<p class="form-control-static">{{userInfo.telephone}}</p>
 										</div>
 									</div>
-									<div class="form-group">
+									<div>
 										<label class="col-sm-2 control-label">Email:</label>
 										<div class="col-sm-10">
-											<p class="form-control-static">LarryChen@qq.com</p>
+											<p class="form-control-static">{{userInfo.email}}</p>
 										</div>
 									</div>
 								</div>
@@ -87,12 +87,12 @@
 					             </thead>
 					             <tbody>
 					                    <tr ng-repeat="item in cart">
-					                        <td>{{item.productName}}</td>
+					                        <td>{{item.product_name}}</td>
 					                        <td>{{item.distributor}}</td>
 					                        <td>{{item.quantity}}</td>
 					                        <td>{{item.warranty}}</td>
 					                        <td>{{item.labor}}</td>
-					                        <td>{{item.date}}</td>
+					                        <td>{{item.completion_date}}</td>
 					                        <td>{{item.project_location}}</td>
 					                    </tr>
 
@@ -125,7 +125,7 @@
 										</select>
 									</div>
 									<div class="col-sm-3">
-									   <select class="form-control"  ng-model="warrantyInfo.productName" ng-options="value as value for value in division[address.province][address.city]" ng-show="address.city">
+									   <select class="form-control"  ng-model="warrantyInfo.product_name" ng-options="value as value for value in division[address.province][address.city]" ng-show="address.city">
 													<option value=""></option>
 									   </select>
 									</div>
@@ -201,7 +201,7 @@
 								  <div class="form-group form-bottom">
 									<label class="col-sm-2 control-label">Project Photo</label>
 									<div class="col-sm-8">
-									  <input type="file">
+									  <input type="file" ng-model="warrantyInfo.project_photo" >
 									</div>
 								  </div>
 

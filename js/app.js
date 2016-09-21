@@ -49,10 +49,7 @@
 			templateUrl: 'mycenter.html',
 			controller: 'mycenterController'
 		})
-		.when('/mycenter', {
-				templateUrl: 'mycenter.html',
-				controller: 'mycenterController'
-		})
+
 		.otherwise({redirectTo: '/'});
 	});
 
@@ -68,9 +65,7 @@
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
-						console.log(1);
-                		$('#signupModal').hide();
-                		angular.element(".modal-backdrop").removeClass('modal-backdrop', 'fade', 'in');
+
                 	}
                 	else
                 	{
@@ -89,6 +84,7 @@
                 	{
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
+						console.log($rootScope.user);
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
 
                 	}
@@ -211,33 +207,7 @@
 		}
 	});
 
-	/*g2gApp.controller('usercenterController', function($scope,$rootScope, $http, $routeParams,$location,$window){
-		$http.get(webRoot+'user/'+$routeParams.id).success(
-        function (data) {
-            $scope.userInfo = data.data;
-        });
-        $scope.guarantee = function()
-        {
-        	$http.get(webRoot+'guarantee').success(
-	        function (data) {
-	            $scope.guarantee = data.data;
-	            console.log($scope.guarantee);
-	        });
-        }
-        $scope.loguot = function()
-		{
-			$rootScope.user = '';
-			delete $window.localStorage['user'];
-			$location.path('/').replace();
-			$http.get(webRoot+'user/loguot').success(
-	        function (data) {
-	        });
-		}
-		$scope.guaranteeAdd = function(){
-			angular.element("#not-guarantee").css('display', 'none');
-			$scope.viewadd = 'views/guarantee/add.html';
-		}
-	});*/
+
 	g2gApp.run(function($http,$window,$rootScope){
 		var user = JSON.parse($window.localStorage['user'] || '{}');
 		$rootScope.user = user;
@@ -264,6 +234,7 @@
 
 			        });
 				}
+		    $scope.cart = new Array();
 		    //选项卡切换
 		    $scope.tabs = [{
 		            title: 'My information',
@@ -277,12 +248,17 @@
 		    }];
 
 		    $scope.currentTab = 'myInfo';
-
+		    $scope.mydate = {};
 		    $scope.onClickTab = function (tab) {
 		        $scope.currentTab = tab.url;
 		        $http.get(webRoot+'guarantee').success(
 		        function (data) {
-		            console.log(data);
+					$scope.cart = data.data;
+
+					$scope.cart.forEach(function(value,index){
+						var dateStr = new Date(value.completion_date * 1000);
+						value.completion_date = dateStr.getMonth()+1 +'-' + dateStr.getDate()+ '-' +dateStr.getFullYear();
+					});
 	        });
 
 		    }
@@ -291,13 +267,16 @@
 		        return tabUrl == $scope.currentTab;
 		    }
 		    //质保信息列表
-		    $scope.cart = new Array();
+
 		    //获取产品分类
-		    $http.get(webRoot+'category-product').success(
+		   /* $http.get(webRoot+'category-product').success(
 		        function (data) {
-		            $scope.category = data.data;
+		            $scope.category =JSON.stringify(data.data);
+
+
 
 	        });
+	        */
 		     $scope.division = {
 		     	"Channel letter": {
 		     	                   "Aurora Series":[
@@ -401,7 +380,7 @@
 			  $scope.dateOptions = {
 			    //dateDisabled: disabled,
 			    formatYear: 'yy',
-			    maxDate: new Date(2020, 5, 22),
+			    maxDate: new Date(),
 			    minDate: new Date(),
 			    startingDay: 1
 			  };
@@ -478,12 +457,13 @@
 			  }
 			  $scope.warrantyInfo = {};
 			  $scope.addLabor = function(){
+				     console.log($scope.warrantyInfo.date);
                      $http.post(webRoot+'guarantee', $scope.warrantyInfo).success(
 		                function (data) {
 
 		                	if(data.success == true)
 		                	{
-		                		 $scope.cart.push($scope.warrantyInfo);
+
 		                	}
 		                	else
 		                	{

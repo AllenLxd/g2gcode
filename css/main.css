@@ -367,7 +367,7 @@ h3{
 	padding-top:180px;
 	text-align:center;
 	color:#ffffff;
-	background-size:1339px;
+	background-size:1350px;
 }
 .downloadBg{
 	padding-left:0px;
@@ -553,11 +553,10 @@ h3{
     left:130px;
 }
 .ourproductBg{
-	padding-top:10px;
 	background: url('../images/ourproduct.jpg') no-repeat;
 	min-height:664px;
 	text-align:center;
-	padding:30px 0px;
+	padding:60px 0px;
 }
 .ourproductBg h3{
 	color:#ffffff;
@@ -1029,7 +1028,7 @@ body{
 	display:block;
 	padding: 0 15px;
 	line-height:60px;
-	font-size:17px;
+	font-size:16px;
 }
 
 .navbar-default .navbar-nav > li > a:hover{

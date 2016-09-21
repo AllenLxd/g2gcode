@@ -12,7 +12,7 @@ use Yii;
  * @property integer $id
  * @property integer $user_id
  * @property string $user_name
- * @property integer $category_id
+ * @property integer $product_name
  * @property string $distributor
  * @property integer $warranty
  * @property integer $labor
@@ -41,8 +41,8 @@ class Guarantee extends \yii\db\ActiveRecord
    public function rules()
    {
        return [
-           [['user_id', 'category_id', 'warranty', 'labor', 'quantity', 'completion_date', 'created_at'], 'integer'],
-           [['checkd'], 'string'],
+           [['user_id', 'warranty', 'labor', 'quantity', 'completion_date', 'created_at'], 'integer'],
+           [['checkd', 'product_name'], 'string'],
            [['user_name'], 'string', 'max' => 180],
            [['distributor'], 'string', 'max' => 30],
            [['company', 'email'], 'string', 'max' => 100],
