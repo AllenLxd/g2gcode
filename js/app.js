@@ -85,7 +85,10 @@
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
 						console.log($rootScope.user);
+						$rootScope.templateUrl = 'index.html';
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
+
+
 
                 	}
                 	else
