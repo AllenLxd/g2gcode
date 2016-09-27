@@ -37,6 +37,8 @@ class GuaranteeController extends BaseController
             foreach ($files as $k=>$v)
             {
                 $files[$k]->saveAs($path . $v->name);
+                
+                if(!in_array($files[$k]->getExtension(),['jpg','png','pdf'])) continue;
                 $model->project_photo .= date('Ym').'/'.$v->name . '|';
             }
             $model->project_photo = rtrim($model->project_photo, '|');
