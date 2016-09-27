@@ -5,6 +5,8 @@ namespace api\controllers;
 use \Yii;
 use \api\controllers\BaseController;
 use yii\data\ActiveDataProvider;
+use yii\helpers\BaseFileHelper;
+use yii\web\UploadedFile;
 
 class GuaranteeController extends BaseController
 {
@@ -21,6 +23,24 @@ class GuaranteeController extends BaseController
 	{
 		$model = new $this->modelClass();
 		$data = Yii::$app->getRequest()->getBodyParams();
+
+
+        $files = UploadedFile::getInstancesByName('files');
+        if ($files)
+        {
+            $path = \Yii::getAlias('@upPath') . '/' . date('Ym') . "/";//每月一个文件夹
+            if(! file_exists($path))
+            {
+                BaseFileHelper::createDirectory($path);
+            }
+
+            foreach ($files as $k=>$v)
+            {
+                $files[$k]->saveAs($path . $v->name);
+                $model->project_photo .= date('Ym').'/'.$v->name . '|';
+            }
+            $model->project_photo = rtrim($model->project_photo, '|');
+        }
 		$model->load($data, '');
 		$model->completion_date = strtotime($data['date']);
 

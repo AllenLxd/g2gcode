@@ -84,12 +84,10 @@
                 	{
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
-						console.log($rootScope.user);
-						$rootScope.templateUrl = 'index.html';
+						//console.log($rootScope.user);
+						//$rootScope.templateUrl = 'index.html';
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
-
-
-
+                		$window.location.href = '/'
                 	}
                 	else
                 	{
@@ -459,9 +457,22 @@
 			    return '';
 			  }
 			  $scope.warrantyInfo = {};
+			  
 			  $scope.addLabor = function(){
-				     console.log($scope.warrantyInfo.date);
-                     $http.post(webRoot+'guarantee', $scope.warrantyInfo).success(
+				  var fd = new FormData();
+			        var file = document.querySelector('input[type=file]').files[0];
+			        fd.append('files', file); 
+			        angular.forEach($scope.warrantyInfo, function (v,k) {
+			        	fd.append(k, v); 
+                	});
+				  $http({
+		              method:'POST',
+		              url:webRoot+'guarantee',
+		              data: fd,
+		              headers: {'Content-Type':undefined},
+		          }); 
+				  
+                     /*$http.post(webRoot+'guarantee', $scope.warrantyInfo).success(
 		                function (data) {
 
 		                	if(data.success == true)
@@ -474,10 +485,19 @@
 		                            $scope.error = error.message;
 		                    	});
 		                	}
-		            });
+		            });*/
 
 			 }
 		});
 
-
+	/*g2gApp.directive('customOnChange', function() {
+		  return {
+		    restrict: 'A',
+		    link: function (scope, element, attrs) {
+		      var onChangeHandler = scope.$eval(attrs.customOnChange);
+		      element.bind('change', onChangeHandler);
+		    }
+		  };
+		});*/
+	
 })(window.angular);

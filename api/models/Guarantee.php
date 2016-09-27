@@ -49,6 +49,7 @@ class Guarantee extends \yii\db\ActiveRecord
            [['project_location'], 'string', 'max' => 250],
            [['phone'], 'string', 'max' => 20],
            [['project_photo'], 'string', 'max' => 150],
+       	   ['created_at','default','value'=>time()]
        ];
    }
 
