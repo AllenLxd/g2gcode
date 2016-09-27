@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>测试</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+		.base {
+			width: 100%;
+			min-width: 1024px;
+			max-width: 1600px;
+		}
+		.left {
+			position: relative;
+			top: -540px;
+			left: 200px;
+			width: 150px;
+			display: none;
+			float: left;
+		}
+		.right{
+			position: relative;
+			top: -516px;
+			left: 80px;
+			width: 150px;
+			display: none;
+			float: left;
+		}
+		.faguang{
+			display: none;
+		    left: 760px;
+		    position: relative;
+		    top: -650px;
+		    width: 486px;
+		    float: left;
+		}
+		.boxes {
+			opacity: 1;
+		}
+		.mak {
+			background: #000 none repeat scroll 0 0;
+		    height: 141px;
+		    left: 392px;
+		    opacity: 0.6;
+		    position: relative;
+		    top: -310px;
+		    width: 315px;
+		}
+
+		.button1 {
+			left: 380px;
+    		position: absolute;
+    		top: 330px;
+		}
+		.button2 {
+			left: 950px;
+    		position: absolute;
+    		top: 380px;
+		}
+		.button3 {
+			left: 500px;
+    		position: absolute;
+    		top: 710px;
+		}
+	</style>
+</head>
+<body>
+	<div class="boxes">
+		<img class="base" src="images/base_1.jpg">
+		<img class="left" src="images/left.png">
+		<img class="right" src="images/right.png">
+		<img class="button1" src="images\111.jpg" width="50px">
+
+		<img class="faguang" src="images/faguang.png">
+		<img class="button2" src="images\111.jpg" width="50px">
+		<div class="mak"></div>
+		<img class="button3" src="images\111.jpg" width="50px">
+	</div>
+	<script type="text/javascript">
+		$('.button1').click(function(){
+			$('.left,.right').toggle();
+		});
+
+		$('.button2').click(function(){
+			$('.faguang').toggle();
+		});
+
+		$('.button3').click(function(){
+			if($('.mak').css('opacity') == 0.6)
+				$('.mak').css({opacity:'0'});
+			else
+				$('.mak').css({opacity:'0.6'});
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>测试2</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<style type="text/css">
+		.all_right {
+			width: 860px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.left_right {
+			position: absolute;
+			left: 120px;
+			top: 155px;
+			width: 180px;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+<body>
+	<div class="boxes">
+		<img class="all_right" src="images/all_right.jpg">
+		<img class="left_right" src="images/left_right.png">
+	</div>
+	<script type="text/javascript">
+		$('.button1').click(function(){
+			$('.left,.right').toggle();
+		});
+
+		$('.button2').click(function(){
+			$('.faguang').toggle();
+		});
+
+		$('.button3').click(function(){
+			if($('.mak').css('opacity') == 0.6)
+				$('.mak').css({opacity:'0'});
+			else
+				$('.mak').css({opacity:'0.6'});
+		});
+
+	</script>
+</body>
+</html>
