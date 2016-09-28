@@ -20,7 +20,7 @@ class CategoryProductController extends BaseController
 	public function actionIndex()
 	{
 		$modelClass = $this->modelClass;
-		return $modelClass::find()->select(['id','name'])->all();
+		return $modelClass::find()->select(['id','root','name'])->indexBy('id')->all();
 	}
 
 	public function actionView($id)
@@ -28,8 +28,6 @@ class CategoryProductController extends BaseController
 		$modelClass = $this->modelClass;
 		return $modelClass::find()->select(['username','email','telephone','created_at'])->where(['id'=>$id])->one();
 	}
-
-
 
 	protected function findModel($id)
 	{
