@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec804063-61b4-47a3-b4f8-32222cbac9cf" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllerdiywifi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllerwifi300.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="DELETED" beforePath="C:\wamp\www\g2gcode\Flood-Light-I-Series.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\g2gcode\Flood-Light-II-Series.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\g2gcode\Flood-Light-III-Series.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\g2gcode\Flood-Light-V-Series.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\g2gcode\Trident-Lighting-System.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/aboutUs.jpg" afterPath="$PROJECT_DIR$/images/aboutUs.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aurora-I-GenIV.html" afterPath="$PROJECT_DIR$/Aurora-I-GenIV.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aurora-III-GenI.html" afterPath="$PROJECT_DIR$/Aurora-III-GenI.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aurora-mini.html" afterPath="$PROJECT_DIR$/Aurora-mini.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aurora-red.html" afterPath="$PROJECT_DIR$/Aurora-red.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Aurora-sv.html" afterPath="$PROJECT_DIR$/Aurora-sv.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-list.html" afterPath="$PROJECT_DIR$/product-list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g2g-website.iws" />
@@ -82,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controllerdiywifi.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controllerdiywifi.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllerdiywifi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.107143" vertical-offset="351" max-vertical-offset="874">
+            <state vertical-scroll-proportion="0.29063097" vertical-offset="0" max-vertical-offset="874">
               <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding />
             </state>
@@ -112,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product-list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9254302" vertical-offset="57" max-vertical-offset="1615">
+            <state vertical-scroll-proportion="-35.964287" vertical-offset="57" max-vertical-offset="1615">
               <caret line="56" column="121" selection-start-line="56" selection-start-column="121" selection-end-line="56" selection-end-column="121" />
               <folding />
             </state>
@@ -377,7 +361,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="1364" height="725" extended-state="1" />
+    <frame x="-5" y="0" width="1364" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -769,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllerdiywifi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.107143" vertical-offset="351" max-vertical-offset="874">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/power300W.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="779">
@@ -819,8 +795,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9254302" vertical-offset="57" max-vertical-offset="1615">
+        <state vertical-scroll-proportion="-35.964287" vertical-offset="57" max-vertical-offset="1615">
           <caret line="56" column="121" selection-start-line="56" selection-start-column="121" selection-end-line="56" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllerdiywifi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29063097" vertical-offset="0" max-vertical-offset="874">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>
