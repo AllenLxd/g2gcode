@@ -137,8 +137,8 @@
 			{pid:'sign', cid:'side', img: 'sign_box/SiDe.jpg', href: 'Side-Lighting-System.html'},
 			{pid:'sign', cid:'array', img: 'sign_box/Array.jpg', href: 'ArRay-Lighting-System.html'},
 			{pid:'sign', cid:'sparx', img: 'sign_box/Spart_X.jpg', href: 'SparX-Lighting-System.html'},
-			{pid:'sign', cid:'trident', img: 'sign_box/Trident_DF.jpg', href: 'Trident-Lighting-System.html'},
-			{pid:'sign', cid:'trident', img: 'sign_box/Trident_SF.jpg', href: 'Trident-Lighting-System.html'},
+			{pid:'sign', cid:'trident', img: 'sign_box/Trident_DF.jpg', href: 'Trident-DF.html'},
+			{pid:'sign', cid:'trident', img: 'sign_box/Trident_SF.jpg', href: 'Trident-SF.html'},
 			{pid:'sign', cid:'trident-stick', img: 'sign_box/Trident-stick.jpg', href: 'Trident-Stick-Lighting-System.html'},
 
 			{pid:'wall', cid:'i_series', img: 'wall_washer/lww-1c-36p.jpg', href: 'Wall-Washer-I-Series.html'},
@@ -154,6 +154,16 @@
 			{pid:'flood', cid:'ii_series', img: 'Flood_light/20W.jpg', href: 'Flood-Light-II-Series.html'},
 			{pid:'flood', cid:'iii_series', img: 'Flood_light/30W.jpg', href: 'Flood-Light-III-Series.html'},
 			{pid:'flood', cid:'v_series', img: 'Flood_light/50W.jpg', href: 'Flood-Light-V-Series.html'},
+
+			{pid:'controller', cid:'wifi300', img: 'controller/wifi300.jpg', href: 'Controllerwifi300.html'},
+			{pid:'controller', cid:'diywifi', img: 'controller/diyWifi.jpg', href: 'Controllerdiywifi.html'},
+			{pid:'controller', cid:'rf3keys', img: 'controller/RF3Keys.jpg', href: 'ControllerRF3keys.html'},
+			{pid:'controller', cid:'knod', img: 'controller/knob.jpg', href: 'ControllerKnod.html'},
+
+			{pid:'power', cid:'100W', img: 'power/100W.jpg', href: 'power100W.html'},
+			{pid:'power', cid:'200W', img: 'power/200W.jpg', href: 'power200W.html'},
+			{pid:'power', cid:'300W', img: 'power/300W.jpg', href: 'power300W.html'},
+
 
 
 
