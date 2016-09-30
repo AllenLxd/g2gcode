@@ -524,6 +524,10 @@ h3{
 	font-size:18px;
 	cursor:pointer;
 }
+.arrow:hover{
+	color:#5c5c5c;
+	text-decoration:underline;
+}
 .introduceUs{
 	position:relative;
 	width:750px;
@@ -559,10 +563,10 @@ h3{
 	padding:60px 0px;
 }
 .ourproductBg h3{
-	color:#ffffff;
+	color:#444444;
 }
 .ourproductBg p{
-	color:#ffffff;
+	color:#444444;
 }
 .blockBg{	
 	height:50px;
@@ -883,7 +887,7 @@ body{
 	
 }
 .products-bottom{
-	margin-bottom:40px;
+	margin-bottom:20px;
 	text-align:center;
 }
 .products-category{
@@ -1155,52 +1159,14 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	background:url('../images/cate.jpg');
 	padding:40px 0;
 }
-/**passion开始**/
-.icon1{
-	float:left;
-	text-align:center;
-	width:17%;
-}
-.icon1-passion{
-	background:url("../images/passion.png") no-repeat; 
-	display:inline-block;
-	height:40px;
-	width:50px;
-}
-.passion{
-	float:left;
-	width:75%;
-}
-.passion h4{
-	color:#506a85;
-	font-size:30px;
-	margin:0px;
-	padding:6px 0;
-}
-.passion p{
-	color:#555555;
-	font-size:14px;
-	font-weight:500;
-	line-height:25px;
-}
-
-.icon1-creativity{
-	background:url("../images/creativity.png") no-repeat;
-	display:inline-block;
-	height:40px;
-	width:48px;
-}
-.icon1-quality{
-	background:url("../images/quality.png") no-repeat;
-	display:inline-block;
-	height:40px;
-	width:50px;
-}
 
 /**about us 结束**/
 
 /**product page开始**/
-
+.produtcbg{
+	position:absolute;
+	left:0px;
+}
 .classify{
 	height:60px;
 	width:600px;
@@ -1221,23 +1187,30 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	 color:#444444;
 	 width:190px;
 	 opacity:0.8;
+	cursor:pointer;
 
  }
 .classifyactivebtn:hover{
 	text-decoration:none;
-	background:#9fc359;
+	background:#9bc641;
 	color:#ffffff;
 }
 .classifyactive{
-	background:#9fc359;
+	background:#9bc641;
 	color:#ffffff;
+
+}
+.classifyactive:visited{
+	text-decoration:none;
+
 }
 .secondclassify{
 	height:60px;
 	width:100%;
 	background:#ededed;
-	padding:5px 0 0 0;
+	padding:10px 0 0 0;
 }
+
 .lead{
 	font-size:15px;
 	font-weight:400;
@@ -1286,29 +1259,60 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 .portfolio-filter > li {
 	display:inline-block;
+	margin:0 0 0 0;
 }
 
-.portfolio-filter  li a.btn-default {
-	background: none repeat scroll 0 0 #FFFFFF;
-	font-size: 13px;
+.secondclassify  li a.btn-default {
+	background: none repeat scroll 0 0 #ededed;
+	font-size: 16px;
 	font-weight: 400;
-	margin-right: 10px;
+	width:200px;
+	height:50px;
+	line-height:40px;
 	transition: all 0.9s ease 0s;
 	-moz-transition: all 0.9s ease 0s;
 	-webkit-transition: all 0.9s ease 0s;
 	-o-transition: all 0.9s ease 0s;
-	border: 1px solid #F2F2F2;
 	outline: none;
-	border-radius: 3px;
-	color:#68ba34;
-}
+	border:none;
+	color:#464646;
 
+}
+.btn:active, .btn.active {
+	background-image: none;
+	box-shadow:none;
+	outline: 0 none;
+}
+.btn{
+	border-radius:0px;
+}
 .portfolio-filter .btn-default.active.focus, .portfolio-filter .btn-default.active:focus, .portfolio-filter .btn-default.active:hover, .portfolio-filter .btn-default:active.focus, .portfolio-filter .btn-default:active:focus, .portfolio-filter .btn-default:active:hover,.portfolio-filter .btn-default:hover,.portfolio-filter .btn-default.active {
-	color: #fff;
-	background-color: #f39c12;
-	border-color: #f39c12;
+	color: #9bc641;
+	background-color: #ffffff;
 	outline: none;
-	
+
+}
+.thirdclassify .btn-default.active.focus, .thirdclassify .btn-default.active:focus, .thirdclassify .btn-default.active:hover, .thirdclassify .btn-default:active.focus, .thirdclassify .btn-default:active:focus, .thirdclassify .btn-default:active:hover,.thirdclassify .btn-default:hover,.thirdclassify .btn-default.active {
+	color: #9bc641;
+	background-color: #ffffff;
+	outline: none;
+
+}
+.thirdclassify  li a.btn-default {
+	background: none repeat scroll 0 0 #ffffff;
+	font-size: 13px;
+	font-weight: 400;
+	width:130px;
+	height:50px;
+	line-height:40px;
+	transition: all 0.9s ease 0s;
+	-moz-transition: all 0.9s ease 0s;
+	-webkit-transition: all 0.9s ease 0s;
+	-o-transition: all 0.9s ease 0s;
+	outline: none;
+	border:none;
+	color:#464646;
+
 }
 .portfolio-items{
 	margin:0 0 40px 0;
@@ -1316,7 +1320,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 }
 .portfolio-item {
     margin: 0;
-    padding: 13px;
+    padding: 5px 5px 5px 5px;
 }
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/

@@ -128,7 +128,7 @@
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/AURORA-I-Gen-IV.jpg', href: 'Aurora-I-GenIV.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-mini-red.jpg', href: 'Aurora-mini-red.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/Aurora-Mini-White.jpg', href: 'Aurora-mini-white.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-iii-gen-i.jpg', href: 'Aurora-III-GenI.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/AURORA-III-GenI.jpg', href: 'Aurora-III-GenI.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-sv-white.jpg', href: 'Aurora-sv-white.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-sv-red.jpg', href: 'Aurora-sv-red.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/Aurora-Red.jpg', href: 'Aurora-red.html'},
@@ -151,6 +151,7 @@
 			{pid:'outdoorlighting', cid:'vi_series', img: 'wall_washer/6-SERIES.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
 			{pid:'outdoorlighting', cid:'vii_series', img: 'wall_washer/7-SERIES.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
 			{pid:'outdoorlighting', cid:'viii_series', img: 'wall_washer/8-SERIES.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+			{pid:'outdoorlighting', cid:'oona-slim', img: 'wall_washer/oona-slim.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
 
 
 			{pid:'outdoorlighting', cid:'i_series', img: 'Flood_light/Flood-Light-10w.jpg', href: 'Flood-Light-10W.html'},
@@ -189,7 +190,7 @@
 			{pid:'letter', cid:'aurora', img: 'channel_letter/AURORA-I-Gen-IV.jpg', href: 'Aurora-I-GenIV.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-mini-red.jpg', href: 'Aurora-mini-red.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/Aurora-Mini-White.jpg', href: 'Aurora-mini-white.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-iii-gen-i.jpg', href: 'Aurora-III-GenI.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/AURORA-III-GenI.jpg', href: 'Aurora-III-GenI.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-white.jpg', href: 'Aurora-sv-white.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-red.jpg', href: 'Aurora-sv-red.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/Aurora-Red.jpg', href: 'Aurora-red.html'},
@@ -212,6 +213,7 @@
 			{pid:'wall', cid:'vi_series', img: 'wall_washer/6-SERIES.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
 			{pid:'wall', cid:'vii_series', img: 'wall_washer/7-SERIES.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
 			{pid:'wall', cid:'viii_series', img: 'wall_washer/8-SERIES.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+			{pid:'wall', cid:'oona-slim', img: 'wall_washer/oona-slim.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
 
 
 			{pid:'flood', cid:'i_series', img: 'Flood_light/Flood-Light-10w.jpg', href: 'Flood-Light-10W.html'},
@@ -250,12 +252,25 @@
 
 		$scope.pid = $routeParams.pid;
 		$scope.cid = $routeParams.cid;
+		$scope.flag = 1;
 
 	    $scope.filtered = $scope.products.filter(function(item) {
 			return item['pid'] == $scope.pid;
 		});
 
 		$scope.filterProducts = function(pid, cid) {
+			    //赋值
+				if(pid == 'signlighting') {
+					$scope.flag=1;
+				}
+				else if(pid == 'outdoorlighting')
+				{
+					$scope.flag=2;
+				}else if(pid == 'commerciallighting')
+				{
+					$scope.flag=3;
+				}
+
 	    		if(pid && !cid) {
 	    			$scope.filtered = $scope.products.filter(function(item) {
 		            return item['pid'] == pid;
@@ -269,7 +284,7 @@
 	    		}
 
 	    		$scope.pid = pid;
-			$scope.cid = cid;
+			    $scope.cid = cid;
 
 	    };
 	});
