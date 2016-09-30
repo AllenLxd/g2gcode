@@ -1,19 +1,45 @@
 <div>
-	<div class="top-center">
-		<h2>Our Products</h2>
-		<p class="secondTitle">
-			We provide the best products for you.
-		</p>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img class="img-responsive" src="images/signproduct.jpg" >
+		</div>
+		<div class="item">
+			<img class="img-responsive" src="images/outdoorproduct.jpg" >
+		</div>
+		<div class="item">
+			<img class="img-responsive" src="images/commercialproduct.jpg" >
+		</div>
+		<div class="classify text-center">
+              <a class="classifyactivebtn " ng-class="{classifyactive :pid == 'signlighting'}" href="" ng-click="filterProducts('signlighting','')">Sign Lighting</a>
+			  <a class="classifyactivebtn" ng-class="{classifyactive :pid == 'outdoorlighting'}" href="" ng-click="filterProducts('outdoorlighting','')">Outdoor Lighting</a>
+			  <a class="classifyactivebtn" ng-class="{classifyactive :pid == 'commerciallighting'}" href="" ng-click="filterProducts('commerciallighting','')">Commercial Lighting</a>
+		</div>
 	</div>
-	<div class="container ">
-		<ul class="link-filter text-center">
-			<li><a class="btn btn-default " ng-class="{active:pid == 'letter'}" ng-click="filterProducts('letter','')">Channel Letter</a></li>
-			<li><a class="btn btn-default " ng-class="{active:pid == 'sign'}" ng-click="filterProducts('sign','')">Sign Box</a></li>
-			<li><a class="btn btn-default" ng-class="{active:pid == 'wall'}" ng-click="filterProducts('wall','')">Wall Washer</a></li>
-			<li><a class="btn btn-default" ng-class="{active:pid == controller'}" ng-click="filterProducts('controller','')">Controller</a></li>
-			<li><a class="btn btn-default" ng-class="{active:pid == power'}" ng-click="filterProducts('power','')">Power Supply</a></li>
+	<div class="secondclassify">
+		<ul ng-show="pid=='signlighting'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('signlighting','')" class="btn btn-default"  >All</a></li>
+			<li><a ng-click="filterProducts('letter','')" class="btn btn-default"  >channel letter modules</a></li>
+			<li><a ng-click="filterProducts('sign','')" class="btn btn-default" >Sign Cabinet modules</a></li>
+			<li><a ng-click="filterProducts('controller','')" class="btn btn-default"  >Controller</a></li>
+			<li><a ng-click="filterProducts('power','')" class="btn btn-default"  >Power Supplies</a></li>
 
 		</ul>
+		<ul ng-show="pid=='commerciallighting'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('commerciallighting','')" class="btn btn-default"  >All</a></li>
+			<li><a ng-click="filterProducts('tube','')" class="btn btn-default"  >T8 tubes</a></li>
+
+		</ul>
+		<ul ng-show="pid=='outdoorlighting'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('outdoorlighting','')" class="btn btn-default" ng-class="{active:cid == 'channel letter modules'}" >All</a></li>
+			<li><a ng-click="filterProducts('wall','')" class="btn btn-default" ng-class="{active:cid == 'channel letter modules'}" >Wall Washer</a></li>
+			<li><a ng-click="filterProducts('flood','')" class="btn btn-default" ng-class="{active:cid == 'ii_series'}" >Flood Light</a></li>
+			<li><a ng-click="filterProducts('shoebox','')" class="btn btn-default" ng-class="{active:cid == 'v_series'}" >Shoebox Light</a></li>
+			<li><a ng-click="filterProducts('retrofit','')" class="btn btn-default" ng-class="{active:cid == 'vi_series'}" >Retrofit Kit</a></li>
+		</ul>
+
+	</div>
+	<div class="container ">
+
 		
 		<ul ng-show="pid=='wall'" class="portfolio-filter text-center">
 			<li><a ng-click="filterProducts('wall','')" class="btn btn-default" ng-class="{active:cid == 'all'}">All</a></li>
@@ -22,7 +48,17 @@
 			<li><a ng-click="filterProducts('wall','v_series')" class="btn btn-default" ng-class="{active:cid == 'v_series'}" >Ⅴ Series</a></li>
 			<li><a ng-click="filterProducts('wall','vi_series')" class="btn btn-default" ng-class="{active:cid == 'vi_series'}" >Ⅵ Series</a></li>
 			<li><a ng-click="filterProducts('wall','vii_series')" class="btn btn-default" ng-class="{active:cid == 'vii_series'}" >Ⅶ Series</a></li>
-			<li><a ng-click="filterProducts('wall','viii_series')" class="btn btn-default" ng-class="{active:cid == 'letter'}" >Ⅷ Series</a></li>
+			<li><a ng-click="filterProducts('wall','viii_series')" class="btn btn-default" ng-class="{active:cid == 'viii_series'}" >Ⅷ Series</a></li>
+			<li><a ng-click="filterProducts('wall','oona-slim')" class="btn btn-default" ng-class="{active:cid == 'oona-slim'}" >Oona Slim Wall Washer</a></li>
+		</ul>
+		<ul ng-show="pid=='flood'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('flood','')" class="btn btn-default" ng-class="{active:cid == 'all'}">All</a></li>
+			<li><a ng-click="filterProducts('flood','i_series')" class="btn btn-default" ng-class="{active:cid == 'i_series'}" >10W</a></li>
+			<li><a ng-click="filterProducts('flood','ii_series')" class="btn btn-default" ng-class="{active:cid == 'ii_series'}" >20W</a></li>
+			<li><a ng-click="filterProducts('flood','iii_series')" class="btn btn-default" ng-class="{active:cid == 'iii_series'}" >30W</a></li>
+			<li><a ng-click="filterProducts('flood','v_series')" class="btn btn-default" ng-class="{active:cid == 'v_series'}" >50W</a></li>
+			<li><a ng-click="filterProducts('flood','vi_series')" class="btn btn-default" ng-class="{active:cid == 'vi_series'}" >100W</a></li>
+
 		</ul>
 				  
 		<ul ng-show="pid=='letter'" class="portfolio-filter text-center">
@@ -56,16 +92,37 @@
 			<li><a ng-click="filterProducts('power','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
 			<li><a ng-click="filterProducts('power','300W')" class="btn btn-default" ng-class="{active:cid == '300W'}" >300W</a></li>
 		</ul>
+		<ul ng-show="pid=='shoebox'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('shoebox','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+			<li><a ng-click="filterProducts('shoebox','40W')" class="btn btn-default" ng-class="{active:cid == '40W'}" >40W</a></li>
+			<li><a ng-click="filterProducts('shoebox','80W')" class="btn btn-default" ng-class="{active:cid == '80W'}" >80W</a></li>
+			<li><a ng-click="filterProducts('shoebox','120W')" class="btn btn-default" ng-class="{active:cid == '120W'}" >120W</a></li>
+			<li><a ng-click="filterProducts('shoebox','160W')" class="btn btn-default" ng-class="{active:cid == '160W'}" >160W</a></li>
+			<li><a ng-click="filterProducts('shoebox','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
+		</ul>
+		<ul ng-show="pid=='retrofit'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('retrofit','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+			<li><a ng-click="filterProducts('retrofit','105W')" class="btn btn-default" ng-class="{active:cid == '105W'}" >105W</a></li>
+			<li><a ng-click="filterProducts('retrofit','120W')" class="btn btn-default" ng-class="{active:cid == '120W'}" >120W</a></li>
+			<li><a ng-click="filterProducts('retrofit','150W')" class="btn btn-default" ng-class="{active:cid == '150W'}" >150W</a></li>
+			<li><a ng-click="filterProducts('retrofit','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
+		</ul>
+
+		<ul ng-show="pid=='tube'" class="portfolio-filter text-center">
+			<li><a ng-click="filterProducts('tube','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+			<li><a ng-click="filterProducts('tube','4FT')" class="btn btn-default" ng-class="{active:cid == '105W'}" >105W</a></li>
+			<li><a ng-click="filterProducts('tube','4FT')" class="btn btn-default" ng-class="{active:cid == '120W'}" >120W</a></li>
+			<li><a ng-click="filterProducts('tube','8FT')" class="btn btn-default" ng-class="{active:cid == '120W'}" >120W</a></li>
+		</ul>
+
 	  	
-	  	
-	  	
-	
+
 
 		<!--/#product-filter-->
 		<div class="row">
 			<div class="portfolio-items">
 				
-				<div class="portfolio-item {{v.cid}} col-xs-12 col-sm-4 col-md-4" ng-repeat="v in filtered">
+				<div class="portfolio-item {{v.cid}} col-xs-12 col-sm-3 col-md-3" ng-repeat="v in filtered">
 					<a ng-href="#product/{{v.href}}">
 						<img class="img-responsive" src="images/products/{{v.img}}" alt="">
 					</a>

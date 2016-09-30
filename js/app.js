@@ -123,47 +123,126 @@
 	g2gApp.controller('aboutController', function($scope) {});
 	g2gApp.controller('productListController', function($scope, $routeParams){
 		$scope.products = [
-			{pid:'letter', cid:'trico', img: 'channel_letter/TriCo.jpg', href: 'TriCo-Series.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-i-gen-iv.jpg', href: 'Aurora-I-GenIV.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-mini.jpg', href: 'Aurora-mini.html'},
+
+			{pid:'signlighting', cid:'trico', img: 'channel_letter/TIICO.jpg', href: 'TriCo-Series.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/AURORA-I-Gen-IV.jpg', href: 'Aurora-I-GenIV.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-mini-red.jpg', href: 'Aurora-mini-red.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/Aurora-Mini-White.jpg', href: 'Aurora-mini-white.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-iii-gen-i.jpg', href: 'Aurora-III-GenI.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-sv-white.jpg', href: 'Aurora-sv-white.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-sv-red.jpg', href: 'Aurora-sv-red.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/Aurora-Red.jpg', href: 'Aurora-red.html'},
+			{pid:'signlighting', cid:'nox', img: 'channel_letter/G2G-nox.jpg', href: 'NOX-Series.html'},
+			{pid:'signlighting', cid:'anpro', img: 'channel_letter/G2G-anpro.jpg', href: 'AnPro-Series.html'},
+			{pid:'signlighting', cid:'wow', img: 'channel_letter/WOW-WHITE.jpg', href: 'WOW-Series.html'},
+			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow-red.jpg', href: 'WOW-Red.html'},
+
+			{pid:'signlighting', cid:'side', img: 'sign_box/G2G-Side.jpg', href: 'Side-Lighting-System.html'},
+			{pid:'signlighting', cid:'array', img: 'sign_box/array.jpg', href: 'ArRay-Lighting-System.html'},
+			{pid:'signlighting', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
+			{pid:'signlighting', cid:'trident', img: 'sign_box/tridentdf.jpg', href: 'Trident-DF.html'},
+			{pid:'signlighting', cid:'trident', img: 'sign_box/tridentsf.jpg', href: 'Trident-SF.html'},
+			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/trident-stick-DF.jpg', href: 'Trident-Stick-DF.html'},
+			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/trident-stick-SF.jpg', href: 'Trident-Stick-SF.html'},
+
+			{pid:'outdoorlighting', cid:'i_series', img: 'wall_washer/1-SERIES.jpg', href: 'Wall-Washer-I-Series.html'},
+			{pid:'outdoorlighting', cid:'ii_series', img: 'wall_washer/2-SERIES.jpg', href: 'Wall-Washer-II-Series.html'},
+			{pid:'outdoorlighting', cid:'v_series', img: 'wall_washer/5-SERIES.jpg', href: 'Wall-Washer-V-Series.html'},
+			{pid:'outdoorlighting', cid:'vi_series', img: 'wall_washer/6-SERIES.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
+			{pid:'outdoorlighting', cid:'vii_series', img: 'wall_washer/7-SERIES.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
+			{pid:'outdoorlighting', cid:'viii_series', img: 'wall_washer/8-SERIES.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+
+
+			{pid:'outdoorlighting', cid:'i_series', img: 'Flood_light/Flood-Light-10w.jpg', href: 'Flood-Light-10W.html'},
+			{pid:'outdoorlighting', cid:'ii_series', img: 'Flood_light/Flood-Light-20w.jpg', href: 'Flood-Light-20W.html'},
+			{pid:'outdoorlighting', cid:'iii_series', img: 'Flood_light/Flood-Light-30w.jpg', href: 'Flood-Light-30W.html'},
+			{pid:'outdoorlighting', cid:'v_series', img: 'Flood_light/Flood-Light-50w.jpg', href: 'Flood-Light-V-50W.html'},
+			{pid:'outdoorlighting', cid:'vi_series', img: 'Flood_light/Flood-Light-100w.jpg', href: 'Flood-Light-V-100W.html'},
+
+			{pid:'signlighting', cid:'wifi300', img: 'controller/WIFI-300.jpg', href: 'Controllerwifi300.html'},
+			{pid:'signlighting', cid:'diywifi', img: 'controller/DIY-WIFI.jpg', href: 'Controllerdiywifi.html'},
+			{pid:'signlighting', cid:'rf3keys', img: 'controller/RF-3-Keys.jpg', href: 'ControllerRF3keys.html'},
+			{pid:'signlighting', cid:'knod', img: 'controller/Manual-Adjusting-Knob.jpg', href: 'ControllerKnod.html'},
+
+		   /*{pid:'signlighting', cid:'100W', img: 'power/100W.jpg', href: 'power100W.html'},
+			{pid:'signlighting', cid:'200W', img: 'power/200W.jpg', href: 'power200W.html'},
+			{pid:'signlighting', cid:'300W', img: 'power/300W.jpg', href: 'power300W.html'},*/
+
+			{pid:'outdoorlighting', cid:'40W', img: 'shoebox/ShoeBox-Light-40W.jpg', href: 'shoebox40W.html'},
+			{pid:'outdoorlighting', cid:'80W', img: 'shoebox/ShoeBox-Light-80W.jpg', href: 'shoebox80W.html'},
+			{pid:'outdoorlighting', cid:'120W', img: 'shoebox/ShoeBox-Light-120W.jpg', href: 'shoebox120W.html'},
+			{pid:'outdoorlighting', cid:'160W', img: 'shoebox/ShoeBox-Light-160W.jpg', href: 'shoebox160W.html'},
+			{pid:'outdoorlighting', cid:'200W', img: 'shoebox/ShoeBox-Light-200W.jpg', href: 'shoebox200W.html'},
+
+			/*{pid:'retrofit', cid:'105W', img: 'retrofit/105W.jpg', href: 'retrofit105W.html'},
+			{pid:'retrofit', cid:'120W', img: 'retrofit/120W.jpg', href: 'retrofit120W.html'},
+			{pid:'retrofit', cid:'150W', img: 'retrofit/150W.jpg', href: 'retrofit150W.html'},
+			{pid:'retrofit', cid:'200W', img: 'retrofit/200W.jpg', href: 'retrofit200W.html'},*/
+
+			{pid:'commerciallighting', cid:'4ft', img: 'tube/T8-Tubes-4ft.jpg', href: 'tube4ft.html'},
+			{pid:'commerciallighting', cid:'6ft', img: 'tube/T8-Tubes-6ft.jpg', href: 'tube6ft.html'},
+			{pid:'commerciallighting', cid:'8ft', img: 'tube/T8-Tubes-8ft.jpg', href: 'tube8ft.html'},
+
+
+            /*calss2*/
+			{pid:'letter', cid:'trico', img: 'channel_letter/TIICO.jpg', href: 'TriCo-Series.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/AURORA-I-Gen-IV.jpg', href: 'Aurora-I-GenIV.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-mini-red.jpg', href: 'Aurora-mini-red.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/Aurora-Mini-White.jpg', href: 'Aurora-mini-white.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-iii-gen-i.jpg', href: 'Aurora-III-GenI.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-ii.jpg', href: 'Aurora-sv.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-r.jpg', href: 'Aurora-red.html'},
-			{pid:'letter', cid:'nox', img: 'channel_letter/g2g-nox.jpg', href: 'NOX-Series.html'},
-			{pid:'letter', cid:'anpro', img: 'channel_letter/g2g-anpro.jpg', href: 'AnPro-Series.html'},
-			{pid:'letter', cid:'wow', img: 'channel_letter/g2g-wow.jpg', href: 'WOW-Series.html'},
-			{pid:'letter', cid:'wow', img: 'channel_letter/g2g-wow-red.jpg', href: 'WOW-Red.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-white.jpg', href: 'Aurora-sv-white.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-red.jpg', href: 'Aurora-sv-red.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/Aurora-Red.jpg', href: 'Aurora-red.html'},
+			{pid:'letter', cid:'nox', img: 'channel_letter/G2G-nox.jpg', href: 'NOX-Series.html'},
+			{pid:'letter', cid:'anpro', img: 'channel_letter/G2G-anpro.jpg', href: 'AnPro-Series.html'},
+			{pid:'letter', cid:'wow', img: 'channel_letter/WOW-WHITE.jpg', href: 'WOW-Series.html'},
+			{pid:'letter', cid:'wow', img: 'channel_letter/wow-red.jpg', href: 'WOW-Red.html'},
 
-			{pid:'sign', cid:'side', img: 'sign_box/SiDe.jpg', href: 'Side-Lighting-System.html'},
-			{pid:'sign', cid:'array', img: 'sign_box/Array.jpg', href: 'ArRay-Lighting-System.html'},
-			{pid:'sign', cid:'sparx', img: 'sign_box/Spart_X.jpg', href: 'SparX-Lighting-System.html'},
-			{pid:'sign', cid:'trident', img: 'sign_box/Trident_DF.jpg', href: 'Trident-DF.html'},
-			{pid:'sign', cid:'trident', img: 'sign_box/Trident_SF.jpg', href: 'Trident-SF.html'},
-			{pid:'sign', cid:'trident-stick', img: 'sign_box/Trident-stick.jpg', href: 'Trident-Stick-Lighting-System.html'},
+			{pid:'sign', cid:'side', img: 'sign_box/G2G-Side.jpg', href: 'Side-Lighting-System.html'},
+			{pid:'sign', cid:'array', img: 'sign_box/array.jpg', href: 'ArRay-Lighting-System.html'},
+			{pid:'sign', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
+			{pid:'sign', cid:'trident', img: 'sign_box/tridentdf.jpg', href: 'Trident-DF.html'},
+			{pid:'sign', cid:'trident', img: 'sign_box/tridentsf.jpg', href: 'Trident-SF.html'},
+			{pid:'sign', cid:'trident-stick', img: 'sign_box/trident-stick-DF.jpg', href: 'Trident-Stick-DF.html'},
+			{pid:'sign', cid:'trident-stick', img: 'sign_box/trident-stick-SF.jpg', href: 'Trident-Stick-SF.html'},
 
-			{pid:'wall', cid:'i_series', img: 'wall_washer/lww-1c-36p.jpg', href: 'Wall-Washer-I-Series.html'},
-			{pid:'wall', cid:'ii_series', img: 'wall_washer/lww-2-36p-72p-144p.jpg', href: 'Wall-Washer-II-Series.html'},
-			{pid:'wall', cid:'v_series', img: 'wall_washer/lww-5-18p-36p.jpg', href: 'Wall-Washer-V-Series.html'},
-			{pid:'wall', cid:'vi_series', img: 'wall_washer/lww-6-18p-36p.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
-			{pid:'wall', cid:'vii_series', img: 'wall_washer/lww-7-36p-72p.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
-			{pid:'wall', cid:'viii_series', img: 'wall_washer/lww-8a-144p.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
-			{pid:'wall', cid:'viii_series', img: 'wall_washer/lww-8b-108p.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8B-108P.html'},
-			{pid:'wall', cid:'viii_series', img: 'wall_washer/lww-8c-108p-216p.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8C-108P216P.html'},
+			{pid:'wall', cid:'i_series', img: 'wall_washer/1-SERIES.jpg', href: 'Wall-Washer-I-Series.html'},
+			{pid:'wall', cid:'ii_series', img: 'wall_washer/2-SERIES.jpg', href: 'Wall-Washer-II-Series.html'},
+			{pid:'wall', cid:'v_series', img: 'wall_washer/5-SERIES.jpg', href: 'Wall-Washer-V-Series.html'},
+			{pid:'wall', cid:'vi_series', img: 'wall_washer/6-SERIES.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
+			{pid:'wall', cid:'vii_series', img: 'wall_washer/7-SERIES.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
+			{pid:'wall', cid:'viii_series', img: 'wall_washer/8-SERIES.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
 
-			{pid:'flood', cid:'i_series', img: 'Flood_light/10W.jpg', href: 'Flood-Light-I-Series.html'},
-			{pid:'flood', cid:'ii_series', img: 'Flood_light/20W.jpg', href: 'Flood-Light-II-Series.html'},
-			{pid:'flood', cid:'iii_series', img: 'Flood_light/30W.jpg', href: 'Flood-Light-III-Series.html'},
-			{pid:'flood', cid:'v_series', img: 'Flood_light/50W.jpg', href: 'Flood-Light-V-Series.html'},
 
-			{pid:'controller', cid:'wifi300', img: 'controller/wifi300.jpg', href: 'Controllerwifi300.html'},
-			{pid:'controller', cid:'diywifi', img: 'controller/diyWifi.jpg', href: 'Controllerdiywifi.html'},
-			{pid:'controller', cid:'rf3keys', img: 'controller/RF3Keys.jpg', href: 'ControllerRF3keys.html'},
-			{pid:'controller', cid:'knod', img: 'controller/knob.jpg', href: 'ControllerKnod.html'},
+			{pid:'flood', cid:'i_series', img: 'Flood_light/Flood-Light-10w.jpg', href: 'Flood-Light-10W.html'},
+			{pid:'flood', cid:'ii_series', img: 'Flood_light/Flood-Light-20w.jpg', href: 'Flood-Light-20W.html'},
+			{pid:'flood', cid:'iii_series', img: 'Flood_light/Flood-Light-30w.jpg', href: 'Flood-Light-30W.html'},
+			{pid:'flood', cid:'v_series', img: 'Flood_light/Flood-Light-50w.jpg', href: 'Flood-Light-V-50W.html'},
+			{pid:'flood', cid:'vi_series', img: 'Flood_light/Flood-Light-100w.jpg', href: 'Flood-Light-V-100W.html'},
+
+			{pid:'controller', cid:'wifi300', img: 'controller/WIFI-300.jpg', href: 'Controllerwifi300.html'},
+			{pid:'controller', cid:'diywifi', img: 'controller/DIY-WIFI.jpg', href: 'Controllerdiywifi.html'},
+			{pid:'controller', cid:'rf3keys', img: 'controller/RF-3-Keys.jpg', href: 'ControllerRF3keys.html'},
+			{pid:'controller', cid:'knod', img: 'controller/Manual-Adjusting-Knob.jpg', href: 'ControllerKnod.html'},
 
 			{pid:'power', cid:'100W', img: 'power/100W.jpg', href: 'power100W.html'},
 			{pid:'power', cid:'200W', img: 'power/200W.jpg', href: 'power200W.html'},
 			{pid:'power', cid:'300W', img: 'power/300W.jpg', href: 'power300W.html'},
 
+			{pid:'shoebox', cid:'40W', img: 'shoebox/ShoeBox-Light-40W.jpg', href: 'shoebox40W.html'},
+			{pid:'shoebox', cid:'80W', img: 'shoebox/ShoeBox-Light-80W.jpg', href: 'shoebox80W.html'},
+			{pid:'shoebox', cid:'120W', img: 'shoebox/ShoeBox-Light-120W.jpg', href: 'shoebox120W.html'},
+			{pid:'shoebox', cid:'160W', img: 'shoebox/ShoeBox-Light-160W.jpg', href: 'shoebox160W.html'},
+			{pid:'shoebox', cid:'200W', img: 'shoebox/ShoeBox-Light-200W.jpg', href: 'shoebox200W.html'},
+
+			{pid:'retrofit', cid:'105W', img: 'retrofit/105W.jpg', href: 'retrofit105W.html'},
+			{pid:'retrofit', cid:'120W', img: 'retrofit/120W.jpg', href: 'retrofit120W.html'},
+			{pid:'retrofit', cid:'150W', img: 'retrofit/150W.jpg', href: 'retrofit150W.html'},
+			{pid:'retrofit', cid:'200W', img: 'retrofit/200W.jpg', href: 'retrofit200W.html'},
+
+			{pid:'tube', cid:'4ft', img: 'tube/T8-Tubes-4ft.jpg', href: 'tube4ft.html'},
+			{pid:'tube', cid:'6ft', img: 'tube/T8-Tubes-6ft.jpg', href: 'tube6ft.html'},
+			{pid:'tube', cid:'8ft', img: 'tube/T8-Tubes-8ft.jpg', href: 'tube8ft.html'},
 
 
 
@@ -289,16 +368,19 @@
 	        });
 	        */
 		     $scope.division = {
-		     	"Channel letter": {
+		     	"channel letter modules": {
 		     	                   "Aurora Series":[
 		     	                                    "Aurora I Gen IV",
 		     	                                    "Aurora III Gen I",
-		     	                                    "Aurora SV II",
-		     	                                    "Aurora MINI",
-		     	                                    "Aurora Red"
+									                "Aurora Red",
+		     	                                    "Aurora SV 7500K",
+									                "Aurora SV Red",
+		     	                                    "Aurora MINI White",
+		     	                                    "Aurora MiNI Red"
 		     	                   ],
 		     	                   "Anpro Series":[
-		     	                                    "anpro"
+		     	                                    "Anpro 7500K",
+									                "Anpro 6300K"
 		     	                   ],
 		     	                   "WOW Series":[
 		     	                                    "WOW White",
@@ -308,28 +390,41 @@
 		     	                                    "TriCo"
 		     	                   ],
 		     	                   "Nox Series":[
-		     	                                    "Nox"
+		     	                                    "Nox white"
 		     	                   ]
 		     	},
-		     	"sign Box": {
+		     	"Sign Cabinet modules": {
 		     	                   "ArRay":[
-		     	                                    "ArRay PRO DF",
-		     	                                    "ArRay ECO DF"
+		     	                                    "ArRay Pro 3.6W",
+		     	                                    "ArRay ECO 1.8W",
+									                 "ArRay SF 1.0W"
 		     	                   ],
 		     	                   "Trident":[
 		     	                                    "Trident DF",
-		     	                                    "Trident SF"
+		     	                                    "Trident SF",
+									                "Trident SF(NL)"
 		     	                   ],
 		     	                   "Trident DF Stick":[
-		     	                                    "Trident DF Stick 4FT",
-		     	                                    "Trident DF Stick 6FT",
-		     	                                    "Trident DF Stick 8FT",
-		     	                                    "Trident DF Stick 10FT"
+		     	                                    "Trident DF Stick 1FT",
+		     	                                    "Trident DF Stick 18IN",
+		     	                                    "Trident DF Stick 42IN",
+									                "Trident DF Stick 64IN",
+									                "Trident DF Stick 2FT",
+									                "Trident DF Stick 4FT",
+									                "Trident DF Stick 6FT",
+									                "Trident DF Stick 8FT",
+									                "Trident DF Stick 10FT"
+
 		     	                   ],
 		     	                   "Trident SF Stick":[
-		     	                                    "Trident SF Stick 4FT",
-		     	                                    "Trident SF Stick 6FT",
-		     	                                    "Trident SF Stick 8FT",
+		     	                                    "Trident SF Stick 1FT",
+		     	                                    "Trident SF Stick 18IN",
+		     	                                    "Trident SF Stick 42IN",
+									                "Trident SF Stick 64IN",
+									                "Trident SF Stick 2FT",
+									                "Trident SF Stick 4FT",
+									                "Trident SF Stick 6FT",
+									                "Trident SF Stick 8FT",
 		     	                                    "Trident SF Stick 10FT"
 		     	                   ],
 		     	                   "SiDe":[
@@ -361,11 +456,44 @@
 		     	                                    "LWW-7-36P",
 		     	                                    "LWW-7-72P"
 		     	                   ],
-		     	                   "8 Series":[
-		     	                                    "LWW-8C-108P",
-		     	                                    "LWW-8C-216P"
-		     	                   ]
-                }
+									 "Oona slim wall washer":[
+										 "Oona slim washer blue",
+										 "Oona slim washer green",
+										 "Oona slim washer red",
+										 "Oona slim washer white",
+										 "Oona slim washer amber"
+									 ]
+                },
+				 "Controller": {
+									 "RGB Controller":[
+										 "WIFI-300",
+										 "DIY-WIFI"
+
+									 ],
+									 "Dimmer Controller":[
+										 "Manual Adjusting Knob",
+										 "RF-3 Keys",
+										 "Amplifier"
+									 ]
+				 },
+				 "Power Supplies": {
+					 "Module Power Supplies":[
+						 "12VDC 100W",
+						 "12VDC 200W",
+						 "12VDC 320W",
+						 "24VDC 100W"
+
+					 ]
+				 },
+				 "Flood Light": {
+					 "Module Power Supplies":[
+						 "12VDC 100W",
+						 "12VDC 200W",
+						 "12VDC 320W",
+						 "24VDC 100W"
+
+					 ]
+				 }
 		     }
 		     $scope.optionDistributor = [
 		                            {"distributor" : "poineer"},

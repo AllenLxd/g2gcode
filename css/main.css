@@ -451,8 +451,8 @@ h3{
 	display: inline-block;
 	background-color: #ff553e;
 	color: #ffffff;
-	font-size:16px;
-	padding: 7px 10px 7px;
+	font-size:14px;
+	padding: 5px 8px;
 	margin-top: 20px;
 	border-radius: 2px;
 }
@@ -1201,18 +1201,42 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 /**product page开始**/
 
-.top-center{
-	background-color:#eeeeee;
-	border-bottom:1px solid #fff;
-	margin-bottom:40px;
-	padding-bottom:30px;
-	padding-top:100px;
-	text-align:center;
+.classify{
+	height:60px;
+	width:600px;
+	position:absolute;
+	margin:auto;
+	bottom:0px;
+	left:0px;
+	right:0px;
 }
-.top-center h2{
-	font-size:40px;
-	margin-bottom:20px;
-	margin-top:0px;
+.classifyactivebtn{
+	 display:block;
+	 float:left;
+	 line-height:60px;
+	 padding: 0px 5px;
+	 font-size:18px;
+	 background:#ffffff;
+	 margin-right:10px;
+	 color:#444444;
+	 width:190px;
+	 opacity:0.8;
+
+ }
+.classifyactivebtn:hover{
+	text-decoration:none;
+	background:#9fc359;
+	color:#ffffff;
+}
+.classifyactive{
+	background:#9fc359;
+	color:#ffffff;
+}
+.secondclassify{
+	height:60px;
+	width:100%;
+	background:#ededed;
+	padding:5px 0 0 0;
 }
 .lead{
 	font-size:15px;
@@ -1340,6 +1364,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 /**product_details开始***/
 .product-details{
 	margin-bottom:40px;
+	margin-top:70px;
 }
 
 .bottom-line{
