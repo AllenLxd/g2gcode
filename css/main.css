@@ -1,8 +1,15 @@
+.margin-top110{
+	margin-top:110px;
+}
+.top-center{
+	text-align:center;
+}
 .pageTitle{
 	font-size:40px;
 }
 .secondTitle{
 	font-size:17px;
+	color:#444444;
 }
 /*warranty页面开始*/
  .warrantyBg{
@@ -192,7 +199,7 @@ ul.navInfo li a.currantActive{
 }
 h3{
 	margin-top:0px;
-	font-size:20px;
+	font-size:30px;
 }
 .registerRight{
 	width:320px;
@@ -487,7 +494,8 @@ h3{
 .poster-main .poster-next-btn{right:0; background: url('../images/btn_r.png') no-repeat center center;}
 /*首页最新产品旋转木马*/
 .latestProduct{
-	margin-bottom:100px;
+	margin-bottom:130px;
+	margin-top:0px;
 }
 .introductionBtn{
 	position:absolute;
@@ -887,7 +895,7 @@ body{
 	
 }
 .products-bottom{
-	margin-bottom:20px;
+	margin-bottom:40px;
 	text-align:center;
 }
 .products-category{
@@ -921,8 +929,10 @@ body{
 	border-radius: 0;
 	margin-bottom: 0;
 	text-align: center;
-	margin-top:60px;
-	
+	margin-top:70px;
+}
+.products-category-inner p{
+	color:#ffffff;
 }
 .products-category-inner h3{
 	margin: 0;
@@ -1119,7 +1129,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	display:block;
 }
 .footLogo{
-	margin:50px auto;
+	margin:20px auto;
 	text-align:center;
 }
 .foot-log-div{
@@ -1138,6 +1148,11 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	display:block;
 	background:url("../images/icon-log.png") center no-repeat;
 	height:50px;
+}
+.text-center p{
+	color:#ffffff;
+	font-size:15px;
+	margin:0px;
 }
 /**footer_wrapper结束**/
 
@@ -1163,6 +1178,23 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 /**about us 结束**/
 
 /**product page开始**/
+.productInner{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.productInner > .productItem.active{
+	left: 0;
+}
+.productInner > .active{
+	display:block;
+}
+
+.productItem{
+	position: relative;
+	display: none;
+	float:left;
+}
 .produtcbg{
 	position:absolute;
 	left:0px;
@@ -1260,23 +1292,88 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 .portfolio-filter > li {
 	display:inline-block;
 	margin:0 0 0 0;
+
 }
 
+
 .secondclassify  li a.btn-default {
-	background: none repeat scroll 0 0 #ededed;
 	font-size: 16px;
 	font-weight: 400;
 	width:200px;
 	height:50px;
 	line-height:40px;
-	transition: all 0.9s ease 0s;
-	-moz-transition: all 0.9s ease 0s;
-	-webkit-transition: all 0.9s ease 0s;
-	-o-transition: all 0.9s ease 0s;
 	outline: none;
 	border:none;
 	color:#464646;
+	background:url('../images/productup.png') no-repeat;
+}
+.secondclassify  li a.btn-default.active {
+	background:url('../images/productdown.png') no-repeat;
+	background-color:#ffffff;
+}
+.secondclassify  li a.all{
+	background:none;
+}
+.secondclassify  li a.all.active{
+	background:#ffffff;
 
+}
+.secondclassify  li a.letter{
+	background-position:32px 17px;
+}
+.secondclassify  li a.letter.active{
+	background-position:32px 17px;
+
+}
+.secondclassify  li a.sign{
+	background-position:65px 17px;
+}
+.secondclassify  li a.sign.active{
+	background-position:65px 17px;
+}
+.secondclassify  li a.controller{
+	background-position:50px 17px;
+}
+.secondclassify  li a.controller.active{
+	background-position:50px 17px;
+}
+
+.secondclassify  li a.power{
+	background-position:30px 17px;
+}
+.secondclassify  li a.power.active{
+	background-position:30px 17px;
+}
+
+.secondclassify  li a.wall{
+	background-position:38px 17px;
+}
+.secondclassify  li a.wall.active{
+	background-position:38px 17px;
+}
+.secondclassify  li a.flood{
+	background-position:40px 17px;
+}
+.secondclassify  li a.flood.active{
+	background-position:40px 17px;
+}
+.secondclassify  li a.shoe{
+	background-position:33px 17px;
+}
+.secondclassify  li a.shoe.active{
+	background-position:33px 17px;
+}
+.secondclassify  li a.retrofit{
+	background-position:45px 17px;
+}
+.secondclassify  li a.retrofit.active{
+	background-position:45px 17px;
+}
+.secondclassify  li a.t8{
+	background-position:55px 17px;
+}
+.secondclassify  li a.t8.active{
+	background-position:55px 17px;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -1299,7 +1396,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 }
 .thirdclassify  li a.btn-default {
-	background: none repeat scroll 0 0 #ffffff;
+	background: #ffffff;
 	font-size: 13px;
 	font-weight: 400;
 	width:130px;

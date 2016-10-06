@@ -1,7 +1,7 @@
 (function(angular) {
 	'use strict';
 	var g2gApp = angular.module('g2gApp', ['ngAnimate', 'ngRoute', 'ui.bootstrap']);
-	var webRoot = '/g2gcode/api/web/';
+	var webRoot = window.document.location.href;
 	g2gApp.config(function($routeProvider){
 		$routeProvider
 		.when('/', {
@@ -124,20 +124,20 @@
 	g2gApp.controller('productListController', function($scope, $routeParams){
 		$scope.products = [
 
-			{pid:'signlighting', cid:'trico', img: 'channel_letter/TIICO.jpg', href: 'TriCo-Series.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/AURORA-I-Gen-IV.jpg', href: 'Aurora-I-GenIV.html'},
+			{pid:'signlighting', cid:'trico', img: 'channel_letter/trico.jpg', href: 'TriCo-Series.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-i-gen-iv.jpg', href: 'Aurora-I-GenIV.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-mini-red.jpg', href: 'Aurora-mini-red.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/Aurora-Mini-White.jpg', href: 'Aurora-mini-white.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/AURORA-III-GenI.jpg', href: 'Aurora-III-GenI.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-mini-white.jpg', href: 'Aurora-mini-white.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-iii-gen-i.jpg', href: 'Aurora-III-GenI.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-sv-white.jpg', href: 'Aurora-sv-white.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-sv-red.jpg', href: 'Aurora-sv-red.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/Aurora-Red.jpg', href: 'Aurora-red.html'},
-			{pid:'signlighting', cid:'nox', img: 'channel_letter/G2G-nox.jpg', href: 'NOX-Series.html'},
-			{pid:'signlighting', cid:'anpro', img: 'channel_letter/G2G-anpro.jpg', href: 'AnPro-Series.html'},
-			{pid:'signlighting', cid:'wow', img: 'channel_letter/WOW-WHITE.jpg', href: 'WOW-Series.html'},
+			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora-red.jpg', href: 'Aurora-red.html'},
+			{pid:'signlighting', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},
+			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
+			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow-white.jpg', href: 'WOW-Series.html'},
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow-red.jpg', href: 'WOW-Red.html'},
 
-			{pid:'signlighting', cid:'side', img: 'sign_box/G2G-Side.jpg', href: 'Side-Lighting-System.html'},
+			{pid:'signlighting', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
 			{pid:'signlighting', cid:'array', img: 'sign_box/array.jpg', href: 'ArRay-Lighting-System.html'},
 			{pid:'signlighting', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
 			{pid:'signlighting', cid:'trident', img: 'sign_box/tridentdf.jpg', href: 'Trident-DF.html'},
@@ -186,20 +186,20 @@
 
 
             /*calss2*/
-			{pid:'letter', cid:'trico', img: 'channel_letter/TIICO.jpg', href: 'TriCo-Series.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/AURORA-I-Gen-IV.jpg', href: 'Aurora-I-GenIV.html'},
+			{pid:'letter', cid:'trico', img: 'channel_letter/trico.jpg', href: 'TriCo-Series.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-i-gen-iv.jpg', href: 'Aurora-I-GenIV.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-mini-red.jpg', href: 'Aurora-mini-red.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/Aurora-Mini-White.jpg', href: 'Aurora-mini-white.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/AURORA-III-GenI.jpg', href: 'Aurora-III-GenI.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-mini-white.jpg', href: 'Aurora-mini-white.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-iii-gen-i.jpg', href: 'Aurora-III-GenI.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-white.jpg', href: 'Aurora-sv-white.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-sv-red.jpg', href: 'Aurora-sv-red.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/Aurora-Red.jpg', href: 'Aurora-red.html'},
-			{pid:'letter', cid:'nox', img: 'channel_letter/G2G-nox.jpg', href: 'NOX-Series.html'},
-			{pid:'letter', cid:'anpro', img: 'channel_letter/G2G-anpro.jpg', href: 'AnPro-Series.html'},
-			{pid:'letter', cid:'wow', img: 'channel_letter/WOW-WHITE.jpg', href: 'WOW-Series.html'},
+			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora-red.jpg', href: 'Aurora-red.html'},
+			{pid:'letter', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},
+			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
+			{pid:'letter', cid:'wow', img: 'channel_letter/wow-white.jpg', href: 'WOW-Series.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow-red.jpg', href: 'WOW-Red.html'},
 
-			{pid:'sign', cid:'side', img: 'sign_box/G2G-Side.jpg', href: 'Side-Lighting-System.html'},
+			{pid:'sign', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
 			{pid:'sign', cid:'array', img: 'sign_box/array.jpg', href: 'ArRay-Lighting-System.html'},
 			{pid:'sign', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
 			{pid:'sign', cid:'trident', img: 'sign_box/tridentdf.jpg', href: 'Trident-DF.html'},
