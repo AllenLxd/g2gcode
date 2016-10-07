@@ -1,14 +1,4 @@
 
-.settings/org.eclipse.php.core.prefs
-
-.idea/copyright/profiles_settings.xml
-
-.idea/workspace.xml
-
-.settings/org.eclipse.wst.common.project.facet.core.xml
-
-.idea/workspace.xml
-
-*.xml
-
-.idea/workspace.xml
+.settings/*
+.idea
+rsync.php
