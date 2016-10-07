@@ -138,7 +138,7 @@
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
 
 			{pid:'signlighting', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
-			{pid:'signlighting', cid:'array', img: 'sign_box/array.jpg', href: 'ArRay-Lighting-System.html'},
+			{pid:'signlighting', cid:'array', img: 'sign_box/g2g_array.jpg', href: 'ArRay-Lighting-System.html'},
 			{pid:'signlighting', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
 			{pid:'signlighting', cid:'trident', img: 'sign_box/trident_df.jpg', href: 'Trident-DF.html'},
 			{pid:'signlighting', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
@@ -200,7 +200,7 @@
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
 
 			{pid:'sign', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
-			{pid:'sign', cid:'array', img: 'sign_box/array.jpg', href: 'ArRay-Lighting-System.html'},
+			{pid:'sign', cid:'array', img: 'sign_box/g2g_array.jpg', href: 'ArRay-Lighting-System.html'},
 			{pid:'sign', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_df.jpg', href: 'Trident-DF.html'},
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
