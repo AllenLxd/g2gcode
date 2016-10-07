@@ -1,8 +1,21 @@
+.productcontent{
+	margin-bottom:60px;
+}
+.feacture{
+	text-indent:-15px;
+}
+.h3space{
+	margin-bottom:20px;
+}
 .margin-top110{
 	margin-top:110px;
 }
 .top-center{
 	text-align:center;
+}
+.sectitle{
+	color:#ffffff;
+	font-size:15px;
 }
 .pageTitle{
 	font-size:40px;
@@ -361,7 +374,7 @@ h3{
 }
 .download-text p{
     margin:0;
-	font-size:14px;
+	font-size:13px;
 	color: #212121;
 	line-height:30px;
 	text-decoration:underline;
