@@ -1,11 +1,9 @@
 (function(angular) {
 	'use strict';
 	var g2gApp = angular.module('g2gApp', ['ngAnimate', 'ngRoute', 'ui.bootstrap']);
-<<<<<<< HEAD
+
 	var webRoot = window.document.location.pathname +'api/web/';
-=======
-	var webRoot = window.document.location.pathname+'api/web/';
->>>>>>> origin/master
+
 	g2gApp.config(function($routeProvider){
 		$routeProvider
 		.when('/', {
