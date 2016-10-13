@@ -1,7 +1,11 @@
 (function(angular) {
 	'use strict';
 	var g2gApp = angular.module('g2gApp', ['ngAnimate', 'ngRoute', 'ui.bootstrap']);
+<<<<<<< HEAD
+	var webRoot = window.document.location.pathname +'api/web/';
+=======
 	var webRoot = window.document.location.pathname+'api/web/';
+>>>>>>> origin/master
 	g2gApp.config(function($routeProvider){
 		$routeProvider
 		.when('/', {
@@ -62,6 +66,7 @@
                 	if(data.success == true)
                 	{
 						console.log($scope.reg);
+
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
@@ -78,6 +83,7 @@
 		}
 		$scope.login = function()
 		{
+
 			$http.post(webRoot+'user/login', $scope.log).success(
                 function (data) {
 
@@ -85,8 +91,7 @@
                 	{
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
-						//console.log($rootScope.user);
-						//$rootScope.templateUrl = 'index.html';
+						$rootScope.templateUrl = 'home.html';
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
                 		$window.location.href = '/'
                 	}
@@ -143,16 +148,17 @@
 			{pid:'signlighting', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
 			{pid:'signlighting', cid:'trident', img: 'sign_box/trident_df.jpg', href: 'Trident-DF.html'},
 			{pid:'signlighting', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
-			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'Trident-Stick-DF.html'},
-			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/stick_sf.jpg', href: 'Trident-Stick-SF.html'},
+			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'trident_stick_df.html'},
+			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/stick_sf.jpg', href: 'trident_stick_sf.html'},
 
+			{pid:'outdoorlighting', cid:'oona-slim', img: 'wall_washer/oona_slim.jpg', href: 'oona_slim_wall_washer.html'},
 			{pid:'outdoorlighting', cid:'i_series', img: 'wall_washer/lww_1.jpg', href: 'Wall-Washer-I-Series.html'},
 			{pid:'outdoorlighting', cid:'ii_series', img: 'wall_washer/lww_2.jpg', href: 'Wall-Washer-II-Series.html'},
 			{pid:'outdoorlighting', cid:'v_series', img: 'wall_washer/lww_5.jpg', href: 'Wall-Washer-V-Series.html'},
 			{pid:'outdoorlighting', cid:'vi_series', img: 'wall_washer/lww_6.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
 			{pid:'outdoorlighting', cid:'vii_series', img: 'wall_washer/lww_7.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
 			{pid:'outdoorlighting', cid:'viii_series', img: 'wall_washer/lww_8.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
-			{pid:'outdoorlighting', cid:'oona-slim', img: 'wall_washer/oona_slim.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+
 
 
 			{pid:'outdoorlighting', cid:'i_series', img: 'flood_light/flood_10.jpg', href: 'Flood-Light-10W.html'},
@@ -176,10 +182,12 @@
 			{pid:'outdoorlighting', cid:'160W', img: 'shoebox/shoebox_160.jpg', href: 'shoebox160W.html'},
 			{pid:'outdoorlighting', cid:'200W', img: 'shoebox/shoebox_200.jpg', href: 'shoebox200W.html'},
 
-			/*{pid:'retrofit', cid:'105W', img: 'retrofit/105W.jpg', href: 'retrofit105W.html'},
-			{pid:'retrofit', cid:'120W', img: 'retrofit/120W.jpg', href: 'retrofit120W.html'},
-			{pid:'retrofit', cid:'150W', img: 'retrofit/150W.jpg', href: 'retrofit150W.html'},
-			{pid:'retrofit', cid:'200W', img: 'retrofit/200W.jpg', href: 'retrofit200W.html'},*/
+			{pid:'outdoorlighting', cid:'105W', img: 'retrofit/retrofit_105.jpg', href: 'retrofit105W.html'},
+			{pid:'outdoorlighting', cid:'120W', img: 'retrofit/retrofit_120.jpg', href: 'retrofit120W.html'},
+			{pid:'outdoorlighting', cid:'150W', img: 'retrofit/retrofit_150.jpg', href: 'retrofit150W.html'},
+			{pid:'outdoorlighting', cid:'200W', img: 'retrofit/retrofit_200.jpg', href: 'retrofit200W.html'},
+
+
 
 			{pid:'commerciallighting', cid:'4ft', img: 'tube/tube_4ft.jpg', href: 'tube4ft.html'},
 			{pid:'commerciallighting', cid:'6ft', img: 'tube/tube_6ft.jpg', href: 'tube6ft.html'},
@@ -205,16 +213,17 @@
 			{pid:'sign', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_df.jpg', href: 'Trident-DF.html'},
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
-			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'Trident-Stick-DF.html'},
-			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_sf.jpg', href: 'Trident-Stick-SF.html'},
+			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'trident_stick_df.html'},
+			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_sf.jpg', href: 'trident_stick_sf.html'},
 
+			{pid:'wall', cid:'oona-slim', img: 'wall_washer/oona_slim.jpg', href: 'oona_slim_wall_washer.html'},
 			{pid:'wall', cid:'i_series', img: 'wall_washer/lww_1.jpg', href: 'Wall-Washer-I-Series.html'},
 			{pid:'wall', cid:'ii_series', img: 'wall_washer/lww_2.jpg', href: 'Wall-Washer-II-Series.html'},
 			{pid:'wall', cid:'v_series', img: 'wall_washer/lww_5.jpg', href: 'Wall-Washer-V-Series.html'},
 			{pid:'wall', cid:'vi_series', img: 'wall_washer/lww_6.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
 			{pid:'wall', cid:'vii_series', img: 'wall_washer/lww_7.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
 			{pid:'wall', cid:'viii_series', img: 'wall_washer/lww_8.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
-			{pid:'wall', cid:'oona-slim', img: 'wall_washer/oona_slim.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+
 
 
 			{pid:'flood', cid:'i_series', img: 'flood_light/flood_10.jpg', href: 'Flood-Light-10W.html'},
