@@ -21,7 +21,7 @@
 			<li><a ng-click="filterProducts('letter','')" class="btn btn-default letter" ng-class="{active :pid == 'letter'}" >channel letter</a></li>
 			<li><a ng-click="filterProducts('sign','')" class="btn btn-default product_sign" ng-class="{active :pid == 'sign'}">Sign Cabinet</a></li>
 			<li><a ng-click="filterProducts('controller','')" class="btn btn-default controller" ng-class="{active :pid == 'controller'}" >Controller</a></li>
-			<li><a ng-click="filterProducts('power','')" class="btn btn-default power" ng-class="{active :pid == 'power'}" >Power Supplies</a></li>
+			<!--<li><a ng-click="filterProducts('power','')" class="btn btn-default power" ng-class="{active :pid == 'power'}" >Power Supplies</a></li> -->
 
 		</ul>
 		<ul ng-show="pid=='commerciallighting'||flag==3" class="portfolio-filter text-center">
@@ -84,12 +84,13 @@
 			<li><a ng-click="filterProducts('controller','rf3keys')" class="btn btn-default" ng-class="{active:cid == 'RF3Keys'}" >RF 3 keys dimmer</a></li>
 			<li><a ng-click="filterProducts('controller','knod')" class="btn btn-default" ng-class="{active:cid == 'knod'}" >Manual adjusting knod</a></li>
 		</ul>
-		<ul ng-show="pid=='power'" class="portfolio-filter text-center">
+		<!--<ul ng-show="pid=='power'" class="portfolio-filter text-center">
 			<li><a ng-click="filterProducts('power','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
 			<li><a ng-click="filterProducts('power','100W')" class="btn btn-default" ng-class="{active:cid == '100W'}" >100W</a></li>
 			<li><a ng-click="filterProducts('power','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
 			<li><a ng-click="filterProducts('power','300W')" class="btn btn-default" ng-class="{active:cid == '300W'}" >300W</a></li>
 		</ul>
+		-->
 		<ul ng-show="pid=='shoebox'" class="portfolio-filter text-center">
 			<li><a ng-click="filterProducts('shoebox','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
 			<li><a ng-click="filterProducts('shoebox','40W')" class="btn btn-default" ng-class="{active:cid == '40W'}" >40W</a></li>

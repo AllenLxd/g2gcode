@@ -62,7 +62,7 @@
                 	if(data.success == true)
                 	{
 						console.log($scope.reg);
-						
+
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
