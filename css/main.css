@@ -1,3 +1,14 @@
+.specification{
+	margin:20px 0px;
+}
+.caption {
+	width: 60%;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	text-align: center;
+	color:#ffffff;
+}
 .productcontent{
 	margin-bottom:80px;
 }
@@ -21,7 +32,7 @@
 	font-size:20px;
 }
 .pageTitle{
-	font-size:30px;
+	font-size:50px;
 	margin-bottom:20px;
 }
 .secondTitle{
@@ -1165,7 +1176,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	display:block;
 }
 .footLogo{
-	margin:70px auto 50px auto;
+	margin:70px auto 30px auto;
 	text-align:center;
 }
 .foot-log-div{
@@ -1507,7 +1518,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	border-bottom:1px solid #32382f;
 }
 .product-features{
-	padding:30px 0;
+	padding:5px 0;
 }
 .features p span{
 	font-weight:bold;
