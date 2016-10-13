@@ -62,6 +62,7 @@
                 	if(data.success == true)
                 	{
 						console.log($scope.reg);
+						
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
@@ -78,14 +79,14 @@
 		}
 		$scope.login = function()
 		{
+
 			$http.post(webRoot+'user/login', $scope.log).success(
                 function (data) {
                 	if(data.success == true)
                 	{
                 		$window.localStorage['user'] = JSON.stringify(data.data);
                 		$rootScope.user = data.data;
-						//console.log($rootScope.user);
-						//$rootScope.templateUrl = 'index.html';
+						$rootScope.templateUrl = 'home.html';
                 		$http.defaults.headers.common['Authorization'] = 'Basic ' + $scope.user.auth_key;
                 		$window.location.href = '/'
                 	}
