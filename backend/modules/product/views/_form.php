@@ -26,8 +26,9 @@ use yii\helpers\Url;
             ]); ?>
 <div class="box-body">
     <?=
-        $form->field($model, 'category_id')->widget(Select2::classname(), [
+        $form->field($model, 'category3_id')->widget(Select2::classname(), [
             'options' => ['placeholder' => '请选择分类 ...'],
+
             'data' => ArrayHelper::map($category, 'id', 'name'),
         ]);
     ?>
@@ -38,12 +39,26 @@ use yii\helpers\Url;
             'data' => ArrayHelper::map($childCategory, 'id', 'name'),
             'select2Options'=>['pluginOptions'=>['allowClear'=>true]],
             'pluginOptions'=>[
-                'depends'=>['product-category_id'],
+                'depends'=>['product-category3_id'],
                 'placeholder' => '请选择分类 ...',
                 'url' => Url::to(['product-category/child-category']),
                 'loadingText' => '加载中 ...',
             ]
         ])->label('子类');
+    ?>
+
+    <?=
+    $form->field($model, 'category_id')->widget(DepDrop::classname(), [
+        'type' => DepDrop::TYPE_SELECT2,
+        'data' => ArrayHelper::map($childCategory, 'id', 'name'),
+        'select2Options'=>['pluginOptions'=>['allowClear'=>true]],
+        'pluginOptions'=>[
+            'depends'=>['product-category2_id'],
+            'placeholder' => '请选择分类 ...',
+            'url' => Url::to(['product-category/child-category']),
+            'loadingText' => '加载中 ...',
+        ]
+    ])->label('子类');
     ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>

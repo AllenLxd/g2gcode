@@ -96,6 +96,14 @@ return [
                 'from'=>['admin@bnboxes.com'=>'admin']
             ],
         ],
+        'formatter' => [
+            'dateFormat' => 'yyyy-MM-dd',
+            'datetimeFormat' => 'yyyy-MM-dd H:i:s',
+            'timeFormat' => 'H:i:s',
+
+            'locale' => 'de-DE', //your language locale
+            'defaultTimeZone' => 'Europe/Berlin', // time zone
+        ],
 
         /*
         'urlManager' => [
@@ -106,5 +114,6 @@ return [
         ],
         */
     ],
+    'timeZone' => 'Asia/Shanghai',
     'params' => $params,
 ];

@@ -21,6 +21,7 @@ class ProductCategory extends TreeModel
     /**
      * @inheritdoc
      */
+
     public static function tableName()
     {
         return '{{%product_category}}';

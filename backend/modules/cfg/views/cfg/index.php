@@ -49,12 +49,13 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div>
 		</div>  
 		<?php endif;?>
-    	<?= $form->field($model, 'qq') ?>
     	<?= $form->field($model, 'tel') ?>
     	<?= $form->field($model, 'fax') ?>
-    	<?= $form->field($model, 'email') ?>
-    	<?= $form->field($model, 'wechat') ?>
-    	<?= $form->field($model, 'address') ?>
+		<?= $form->field($model, 'estimate_email') ?>
+		<?= $form->field($model, 'accounting_email') ?>
+		<?= $form->field($model, 'tech_support_email') ?>
+		<?= $form->field($model, 'customer_service_email') ?>
+		<?= $form->field($model, 'address') ?>
     	
     	<div class="form-group field-cfg-google_map_lat required">
 			<label for="cfg-google_map_lat" class="control-label col-sm-3"></label>

@@ -80,6 +80,7 @@
 		{
 			$http.post(webRoot+'user/login', $scope.log).success(
                 function (data) {
+
                 	if(data.success == true)
                 	{
                 		$window.localStorage['user'] = JSON.stringify(data.data);

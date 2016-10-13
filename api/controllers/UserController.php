@@ -30,6 +30,7 @@ class UserController extends BaseController
             	'id'=>Yii::$app->user->identity->id,
             	'username'=>Yii::$app->user->identity->username,
             ];
+
         } else {
 
         	die(json_encode(['status'=>false, 'error_code'=>400,'message'=>$model->getErrors()]));	

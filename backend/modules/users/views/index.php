@@ -29,12 +29,12 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'auth_key',
             // 'password_hash',
              'email:email',
-             'status',
+             //'status',
              'reg_ip',
-             'created_at',
+             'created_at:datetime',
             // 'updated_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn','header' => '操作'],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>
