@@ -1,5 +1,19 @@
+.specification{
+	margin:20px 0px;
+}
+.caption {
+	width: 60%;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	text-align: center;
+	color:#ffffff;
+}
 .productcontent{
-	margin-bottom:60px;
+	margin-bottom:80px;
+}
+.welcome{
+	margin-top:50px;
 }
 .feacture{
 	text-indent:-15px;
@@ -15,10 +29,11 @@
 }
 .sectitle{
 	color:#ffffff;
-	font-size:15px;
+	font-size:20px;
 }
 .pageTitle{
-	font-size:30px;
+	font-size:50px;
+	margin-bottom:20px;
 }
 .secondTitle{
 	font-size:17px;
@@ -242,6 +257,7 @@ h3{
 .container-fluid{
 	padding-left:0px;
 	padding-right:0px;
+	position:relative;
 }
 .img-responsive{
 	border-radius:0px;
@@ -423,8 +439,8 @@ h3{
 	background-size: 1350px;
 }
 .aboutUsTp{
-	padding-top:40px;
-	margin-bottom:40px;
+	padding-top:20px;
+	margin-bottom:20px;
 }
 .about-us{
 	margin-bottom:20px;
@@ -467,9 +483,6 @@ h3{
 	background-size: 1350px;
 }
 
-.serviceBg h2{
-	font-size:40px;
-}
 
 .layout{
 	text-align:center;
@@ -544,10 +557,12 @@ h3{
 }
 .contentPadding{
 	padding:15px 0px;
+	margin-top:35px;
 }
 .titleSet{
-	margin:0px 0px 20px 0px;
+	margin:0px 0px 5px 0px;
 	color:#5c5c5c;
+	font-size:25px;
 }
 .arrow{
 	background: url('../images/arrow.png') no-repeat;
@@ -556,7 +571,7 @@ h3{
 	width:60px;
 	height:40px;
 	color:#5c5c5c;
-	font-size:18px;
+	font-size:15px;
 	cursor:pointer;
 }
 .arrow:hover{
@@ -566,8 +581,8 @@ h3{
 .introduceUs{
 	position:relative;
 	width:750px;
-	height:550px;
-	margin:0 auto;
+	height:620px;
+	margin:0 auto 50px auto;
 }
 
 .otherVideo{
@@ -599,6 +614,7 @@ h3{
 }
 .ourproductBg h3{
 	color:#444444;
+	margin-bottom:10px;
 }
 .ourproductBg p{
 	color:#444444;
@@ -1160,7 +1176,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	display:block;
 }
 .footLogo{
-	margin:70px auto 50px auto;
+	margin:70px auto 30px auto;
 	text-align:center;
 }
 .foot-log-div{
@@ -1268,6 +1284,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	width:100%;
 	background:#ededed;
 	padding:10px 0 0 0;
+	margin-bottom:5px;
 }
 
 .lead{
@@ -1352,11 +1369,11 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	background-position:32px 17px;
 
 }
-.secondclassify  li a.sign{
-	background-position:65px 17px;
+.secondclassify  li a.product_sign{
+	background-position:38px 17px;
 }
-.secondclassify  li a.sign.active{
-	background-position:65px 17px;
+.secondclassify  li a.product_sign.active{
+	background-position:38px 17px;
 }
 .secondclassify  li a.controller{
 	background-position:50px 17px;
@@ -1501,7 +1518,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	border-bottom:1px solid #32382f;
 }
 .product-features{
-	padding:30px 0;
+	padding:5px 0;
 }
 .features p span{
 	font-weight:bold;
