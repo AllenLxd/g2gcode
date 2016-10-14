@@ -23,29 +23,8 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
-        'r' => 
-        array (
-            'rmrevin\\yii\\fontawesome\\' => 24,
-        ),
-        'k' => 
-        array (
-            'kucha\\ueditor\\' => 14,
-            'kartik\\select2\\' => 15,
-            'kartik\\plugins\\fileinput\\' => 25,
-            'kartik\\plugins\\depdrop\\' => 23,
-            'kartik\\growl\\' => 13,
-            'kartik\\file\\' => 12,
-            'kartik\\depdrop\\' => 15,
-            'kartik\\date\\' => 12,
-            'kartik\\base\\' => 12,
-        ),
-        'd' => 
-        array (
-            'dmstr\\' => 6,
-        ),
         'c' => 
         array (
-            'creocoder\\nestedsets\\' => 21,
             'cebe\\markdown\\' => 14,
         ),
         'F' => 
@@ -87,54 +66,6 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
-        'rmrevin\\yii\\fontawesome\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
-        ),
-        'kucha\\ueditor\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kucha/ueditor',
-        ),
-        'kartik\\select2\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-select2',
-        ),
-        'kartik\\plugins\\fileinput\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/bootstrap-fileinput',
-        ),
-        'kartik\\plugins\\depdrop\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/dependent-dropdown',
-        ),
-        'kartik\\growl\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-growl',
-        ),
-        'kartik\\file\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-fileinput',
-        ),
-        'kartik\\depdrop\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-depdrop',
-        ),
-        'kartik\\date\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-datepicker',
-        ),
-        'kartik\\base\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base',
-        ),
-        'dmstr\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dmstr/yii2-adminlte-asset',
-        ),
-        'creocoder\\nestedsets\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/creocoder/yii2-nested-sets/src',
-        ),
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
@@ -146,13 +77,6 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
     );
 
     public static $prefixesPsr0 = array (
-        'c' => 
-        array (
-            'cebe\\gravatar\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/cebe/yii2-gravatar',
-            ),
-        ),
         'H' => 
         array (
             'HTMLPurifier' => 

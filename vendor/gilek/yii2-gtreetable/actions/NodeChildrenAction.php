@@ -16,7 +16,7 @@ use yii\validators\NumberValidator;
 
 class NodeChildrenAction extends BaseAction {
 
-    public function run($id) {
+    public function run($id,$isReturn=false) {
         $validator = new NumberValidator();
         $validator->integerOnly = true;
         if (!$validator->validate($id, $error)) {
@@ -44,6 +44,7 @@ class NodeChildrenAction extends BaseAction {
                 'type' => $node->getType()
             ];
         }
+        if($isReturn) return $result;
         echo Json::encode(['nodes' => $result]);
     }
 

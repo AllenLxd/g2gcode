@@ -7,18 +7,17 @@ use Yii;
 /**
  * This is the model class for table "config".
  *
- * @property string $id
- * @property string $site_url
- * @property string $site_name
- * @property string $site_logo
- * @property string $logo_alt
- * @property string $mail_form
- * @property string $mail_address
- * @property string $mail_username
- * @property string $mail_userpass
- * @property string $mail_name
- * @property string $google_map_lat
- * @property string $google_map_lng
+ * @property integer $id
+ * @property string $url
+ * @property string $name
+ * @property string $logo
+ * @property string $tel
+ * @property string $fax
+ * @property string $estimate_email
+ * @property string $accounting_email
+ * @property string $tech_support_email
+ * @property string $customer_service_email
+ * @property string $address
  */
 class Cfg extends \yii\db\ActiveRecord
 {
@@ -36,9 +35,11 @@ class Cfg extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['url', 'name', 'logo','qq', 'tel', 'fax', 'email', 'wechat', 'address'], 'required'],
-        	['logo', 'file', 'extensions' => ['png', 'jpg','jpeg', 'gif'], 'maxSize' => 1024*1024*2],
-        	['logo', 'safe']
+            [['url', 'name', 'tel', 'fax', 'address'], 'required'],
+            [['url', 'name', 'tel'], 'string', 'max' => 100],
+            [['logo', 'address'], 'string', 'max' => 150],
+            [['fax'], 'string', 'max' => 50],
+            [['estimate_email', 'accounting_email', 'tech_support_email', 'customer_service_email'], 'string', 'max' => 255],
         ];
     }
 
@@ -48,16 +49,17 @@ class Cfg extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'url' => '网站网址',
-            'name' => '网站全称',
-            'logo' => '网站LOGO',
-            'qq' => 'QQ',
-            'tel' => '联系电话',
-            'fax' => '传真',
-            'email' => '邮箱',
-            'wechat' => '微信',
-            'address' => '地址',
+            'id' => Yii::t('app', 'ID'),
+            'url' => Yii::t('app', 'Url'),
+            'name' => Yii::t('app', 'Name'),
+            'logo' => Yii::t('app', 'Logo'),
+            'tel' => Yii::t('app', 'Tel'),
+            'fax' => Yii::t('app', 'Fax'),
+            'estimate_email' => Yii::t('app', 'Estimate Email'),
+            'accounting_email' => Yii::t('app', 'Accounting Email'),
+            'tech_support_email' => Yii::t('app', 'Tech Support Email'),
+            'customer_service_email' => Yii::t('app', 'Customer Service Email'),
+            'address' => Yii::t('app', 'Address'),
         ];
     }
 }

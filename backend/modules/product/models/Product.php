@@ -25,6 +25,9 @@ class Product extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $category2_id;
+    public $category3_id;
+
     public static function tableName()
     {
         return '{{%product}}';
@@ -63,7 +66,8 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'category_id' => Yii::t('app', '分类'),
+            'category_id' => Yii::t('app', '子分类'),
+            'category3_id' => Yii::t('app', '大分类'),
             'name' => Yii::t('app', '产品名称'),
             'pic' => Yii::t('app', '产品图片'),
             'guarantee_time' => Yii::t('app', '质保时间'),

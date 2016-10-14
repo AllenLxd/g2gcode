@@ -50,24 +50,27 @@ public function actions() {
   	}
 
   	public function actionChildCategory() {
-  		$out = [];
-  		if ($id = Yii::$app->request->post()['depdrop_all_params']) {
-  			$list = ProductCategory::find()->select(['id','name'])->where(['root'=>$id])->all();
 
-  			$selected  = null;
-  			if ($id != null && count($list) > 0) {
-  				$selected = '';
-  				foreach ($list as $k => $v) {
-  					if($id['product-category_id'] !=$v->id) $out[$v->id] = ['id' => $v->id, 'name' => $v->name];
-  					if ($k == 0) {
-  						$selected = $v->id;
-  					}
-  				}
+        $out = [];
+        if (isset($_POST['depdrop_parents'])) {
+            $id = end($_POST['depdrop_parents']);
+            $list = Yii::$app->runAction('product/product-category/nodeChildren',['id'=>(int)$id,'isReturn'=>true]);
 
-  				echo Json::encode(['output' => $out, 'selected'=>$selected]);
-  				return;
-  			}
-  		}
-  		echo Json::encode(['output' => '', 'selected'=>'']);
+            //print_r($list);die;
+            $selected  = null;
+            if ($id != null && count($list) > 0) {
+                $selected = '';
+                foreach ($list as $i => $account) {
+                    $out[] = ['id' => $account['id'], 'name' => $account['name']];
+                    if ($i == 0) {
+                        $selected = $account['id'];
+                    }
+                }
+                // Shows how you can preselect a value
+                echo Json::encode(['output' => $out, 'selected'=>$selected]);
+                return;
+            }
+        }
+        echo Json::encode(['output' => '', 'selected'=>'']);
   	}
 }

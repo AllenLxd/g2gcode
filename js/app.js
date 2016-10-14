@@ -1,7 +1,9 @@
 (function(angular) {
 	'use strict';
 	var g2gApp = angular.module('g2gApp', ['ngAnimate', 'ngRoute', 'ui.bootstrap']);
-	var webRoot = window.document.location.pathname+'api/web/';
+
+	var webRoot = window.document.location.pathname +'api/web/';
+
 	g2gApp.config(function($routeProvider){
 		$routeProvider
 		.when('/', {
@@ -82,6 +84,7 @@
 
 			$http.post(webRoot+'user/login', $scope.log).success(
                 function (data) {
+
                 	if(data.success == true)
                 	{
                 		$window.localStorage['user'] = JSON.stringify(data.data);

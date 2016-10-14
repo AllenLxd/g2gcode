@@ -63,7 +63,7 @@ class ProductController extends CommonController
     public function actionCreate()
     {
         $model = new Product();
-        $category = ProductCategory::find()->select(['id', 'name'])->where(['level'=>0])->indexBy('id')->all();
+        $category = ProductCategory::find()->select(['id','lft', 'name'])->where(['level'=>0])->indexBy('id')->all();
 
         $data = Yii::$app->request->post();
 
