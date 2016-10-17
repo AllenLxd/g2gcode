@@ -63,19 +63,16 @@ class ProductController extends CommonController
     public function actionCreate()
     {
         $model = new Product();
-        $category = ProductCategory::find()->select(['id','lft', 'name'])->where(['level'=>0])->indexBy('id')->all();
+        $category = ProductCategory::find()->select(['id', 'name'])->where(['level'=>0])->indexBy('id')->all();
 
         $data = Yii::$app->request->post();
-
         if($data)
         {
-            //$data['Product']['parent_id2'] = $data['Product']['id'];
-            //unset($data['Product']['id']);
+            $listImgFile = Common::uploadFile('Product[list_img]');
+            if($listImgFile) $data['Product']['list_img'] = $listImgFile['path'];
+            $proImgFile = Common::uploadFile('Product[pro_img]');
+            if($proImgFile) $data['Product']['pro_img'] = $proImgFile['path'];
 
-            $picFile = Common::uploadFile('Product[pic]');
-            unset($data['Product']['pic']);
-            if($picFile) $data['Product']['pic'] = $picFile['path'];
-            $data['Product']['supply'] = implode(',', $data['Product']['supply']);
             if ($model->load($data) && $model->save())
             {
                 Yii::$app->session->setFlash('success', ['delay'=>3000,'message'=>'保存成功！']);
@@ -104,20 +101,13 @@ class ProductController extends CommonController
     {
         $model = $this->findModel($id);
         $category = ProductCategory::find()->select(['id', 'name'])->where(['level'=>0])->indexBy('id')->all();
-        $childCategory = ProductCategory::find()->select(['id','name'])->where(['root'=>$model->category_id])->asArray()->indexBy('id')->all();
-        if($childCategory){
-            unset($childCategory[$model->category_id]);
-        }else{
-            $childCategory = [];
-        }
-        $model->supply = explode(',', $model->supply);
 
         $data = Yii::$app->request->post();
         if ($data) {
-            $picFile = Common::uploadFile('Product[pic]');
-            unset($data['Product']['pic']);
-            $data['Product']['pic'] = $picFile ? $picFile['path'] : $model->pic;
-            $data['Product']['supply'] = implode(',', $data['Product']['supply']);
+            $listImgFile = Common::uploadFile('Product[list_img]');
+            if($listImgFile) $data['Product']['list_img'] = $listImgFile['list_img'];
+            $proImgFile = Common::uploadFile('Product[list_img]');
+            if($proImgFile) $data['Product']['pro_img'] = $proImgFile['pro_img'];
 
             if ($model->load($data) && $model->save())
             {
@@ -128,7 +118,6 @@ class ProductController extends CommonController
             return $this->render('/update', [
                 'model' => $model,
                 'category' => $category,
-                'childCategory' => $childCategory,
             ]);
         }
     }

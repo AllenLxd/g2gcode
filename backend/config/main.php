@@ -33,19 +33,16 @@ return [
         'cfg' => [
             'class' => 'app\modules\cfg\Module',
         ],
+        'ad' => [
+            'class' => 'app\modules\ad\Module',
+        ],
     ],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
         ],
-    	'view' => [
-    		'theme' => [
-    			'pathMap' => [
-    				'@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
-    			],
-    		],
-    	],
+
     	'assetManager' => [
     		'bundles' => [
     			'dmstr\web\AdminLteAsset' => [
@@ -104,7 +101,19 @@ return [
             'locale' => 'de-DE', //your language locale
             'defaultTimeZone' => 'Europe/Berlin', // time zone
         ],
-
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    //'basePath' => '@app/messages',
+                    //'sourceLanguage' => 'en-US',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
+                ],
+            ],
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -114,6 +123,7 @@ return [
         ],
         */
     ],
+    'language' => 'zh-CN',
     'timeZone' => 'Asia/Shanghai',
     'params' => $params,
 ];
