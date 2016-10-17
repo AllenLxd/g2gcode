@@ -13656,3 +13656,2356 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1476343631.416
     'REQUEST_TIME' => 1476343631
 ]
+2016-10-14 10:51:59 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][yii\base\InvalidParamException] yii\base\InvalidParamException: The view file does not exist: /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php in /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#1 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#6 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#7 [internal function]: backend\controllers\SiteController->actionLogin()
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#14 {main}
+2016-10-14 10:51:59 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56404'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413519.772
+    'REQUEST_TIME' => 1476413519
+]
+2016-10-14 10:54:39 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 10:54:39 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56607'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413679.81
+    'REQUEST_TIME' => 1476413679
+]
+2016-10-14 10:54:39 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 10:54:39 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56607'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413679.81
+    'REQUEST_TIME' => 1476413679
+]
+2016-10-14 10:58:14 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 10:58:13 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56878'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413893.989
+    'REQUEST_TIME' => 1476413893
+]
+2016-10-14 10:58:14 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 10:58:13 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56878'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413893.989
+    'REQUEST_TIME' => 1476413893
+]
+2016-10-14 10:58:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 10:58:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413927.757
+    'REQUEST_TIME' => 1476413927
+]
+2016-10-14 10:58:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 10:58:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476413927.757
+    'REQUEST_TIME' => 1476413927
+]
+2016-10-14 11:00:52 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:00:52 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57077'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414052.542
+    'REQUEST_TIME' => 1476414052
+]
+2016-10-14 11:00:52 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:00:52 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57077'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414052.542
+    'REQUEST_TIME' => 1476414052
+]
+2016-10-14 11:00:53 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:00:53 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414053.891
+    'REQUEST_TIME' => 1476414053
+]
+2016-10-14 11:00:53 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:00:53 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414053.891
+    'REQUEST_TIME' => 1476414053
+]
+2016-10-14 11:00:54 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:00:54 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57081'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414054.246
+    'REQUEST_TIME' => 1476414054
+]
+2016-10-14 11:00:54 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:00:54 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57081'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414054.246
+    'REQUEST_TIME' => 1476414054
+]
+2016-10-14 11:02:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:02:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414167.654
+    'REQUEST_TIME' => 1476414167
+]
+2016-10-14 11:02:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:02:47 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414167.654
+    'REQUEST_TIME' => 1476414167
+]
+2016-10-14 11:06:01 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:06:01 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57455'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414361.321
+    'REQUEST_TIME' => 1476414361
+]
+2016-10-14 11:06:01 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:06:01 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57455'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414361.321
+    'REQUEST_TIME' => 1476414361
+]
+2016-10-14 11:08:18 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:08:18 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414498.223
+    'REQUEST_TIME' => 1476414498
+]
+2016-10-14 11:08:18 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:08:18 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414498.223
+    'REQUEST_TIME' => 1476414498
+]
+2016-10-14 11:08:27 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:08:27 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57612'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414507.351
+    'REQUEST_TIME' => 1476414507
+]
+2016-10-14 11:08:27 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:08:27 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57612'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414507.351
+    'REQUEST_TIME' => 1476414507
+]
+2016-10-14 11:10:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:10:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57768'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414621.347
+    'REQUEST_TIME' => 1476414621
+]
+2016-10-14 11:10:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:10:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57768'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414621.347
+    'REQUEST_TIME' => 1476414621
+]
+2016-10-14 11:11:20 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:11:20 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57845'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414680.705
+    'REQUEST_TIME' => 1476414680
+]
+2016-10-14 11:11:20 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:11:20 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57845'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414680.705
+    'REQUEST_TIME' => 1476414680
+]
+2016-10-14 11:14:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:14:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58069'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414861.456
+    'REQUEST_TIME' => 1476414861
+]
+2016-10-14 11:14:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:14:21 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58069'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414861.456
+    'REQUEST_TIME' => 1476414861
+]
+2016-10-14 11:14:25 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:14:25 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58078'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414865.214
+    'REQUEST_TIME' => 1476414865
+]
+2016-10-14 11:14:25 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:14:25 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58078'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476414865.214
+    'REQUEST_TIME' => 1476414865
+]
+2016-10-14 11:17:13 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][ParseError] ParseError: syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting ',' or ';' in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#2 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#7 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#15 {main}
+2016-10-14 11:17:13 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58347'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476415033.619
+    'REQUEST_TIME' => 1476415033
+]
+2016-10-14 11:17:13 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(ParseError))
+#6 {main}
+2016-10-14 11:17:13 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58347'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476415033.619
+    'REQUEST_TIME' => 1476415033
+]
+2016-10-14 11:18:45 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:18:45 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58469'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476415125.211
+    'REQUEST_TIME' => 1476415125
+]
+2016-10-14 11:18:45 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:18:45 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58469'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476415125.211
+    'REQUEST_TIME' => 1476415125
+]
+2016-10-14 11:18:46 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][error][Error] Error: Class 'dmstr\web\AdminLteAsset' not found in /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main-login.php:8
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#3 /Users/carl/www/g2gcode/vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app/layouts/main.php(16): yii\base\View->render('main-login', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/Users/carl/www...', Array, Object(backend\controllers\SiteController))
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 /Users/carl/www/g2gcode/backend/controllers/SiteController.php(77): yii\base\Controller->render('login', Array)
+#9 [internal function]: backend\controllers\SiteController->actionLogin()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('login', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('site/login', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#16 {main}
+2016-10-14 11:18:46 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476415126.697
+    'REQUEST_TIME' => 1476415126
+]
+2016-10-14 11:18:46 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-10-14 11:18:46 [::1][-][4ti2uk92n3sfqtmf0hljkrbqr3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => '0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7\";}'
+    'PHPSESSID' => '4ti2uk92n3sfqtmf0hljkrbqr3'
+    'advanced-backend' => 'jastj8g9h75q11e1a047b8bk67'
+    '_csrf-backend' => '44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=0d0d94cb2e97cf1f5a232f096f7b4bce6e19ecf2de104254a770ede61cd52857a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TNsdtmz0m6UU8A5wajSiWPNx4CcpCpA7%22%3B%7D; PHPSESSID=4ti2uk92n3sfqtmf0hljkrbqr3; advanced-backend=jastj8g9h75q11e1a047b8bk67; _csrf-backend=44b60228a944937d0c4b9cfac1fec0424a38acd471267f7ca8eb71ef400599b5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BrByYIl8KVzC3YEzyeYJhzHXpkZ2Zfou%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '58471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476415126.697
+    'REQUEST_TIME' => 1476415126
+]

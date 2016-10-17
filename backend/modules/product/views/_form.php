@@ -64,7 +64,7 @@ use yii\helpers\Url;
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?=
-        $form->field($model, 'pic')->widget(FileInput::classname(), [
+        $form->field($model, 'list_img')->widget(FileInput::classname(), [
             'options' => [
                 'accept' => 'image/*',
             ],
@@ -78,29 +78,23 @@ use yii\helpers\Url;
 
         ]);
     ?>
-
     <?=
-        $form->field($model, 'guarantee_time')->widget(Select2::classname(), [
-            'options' => ['placeholder' => '请选择时间...'],
-            'data' => [1=>'1年',2=>'2年',3=>'3年',4=>'4年',5=>'5年'],
-        ]);
+    $form->field($model, 'pro_img')->widget(FileInput::classname(), [
+        'options' => [
+            'accept' => 'image/*',
+        ],
+        'pluginOptions' =>[
+            'showUpload' => false,
+            'showRemove' => false,
+            'showPreview' => false,
+            'showCaption' => true,
+            'allowedFileExtensions'=>['jpg','jpeg','png'],
+        ],
+
+    ]);
     ?>
-    <?=
-        $form->field($model, 'labor_time')->widget(Select2::classname(), [
-            'options' => ['placeholder' => '请选择时间...'],
-            'data' => [1=>'1年',2=>'2年',3=>'3年',4=>'4年',5=>'5年'],
-        ]);
-    ?>
 
-    <?= $form->field($model, 'supply')->checkboxList(['Pioneer'=>'Pioneer','Denco'=>'Denco','Wensco'=>'Wensco']) ?>
-
-    <?= $form->field($model, 'video1')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'video2')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'video3')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'video4')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'info')->textarea() ?>
 
     <?= $form->field($model,'content')->widget('kucha\ueditor\UEditor',[]);?>
 </div>

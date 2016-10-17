@@ -15,8 +15,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
-<<<<<<< HEAD
-        "yiisoft/yii2": "*",
+        "yiisoft/yii2": "2.0.9",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "kartik-v/yii2-widget-growl": "*",
@@ -25,12 +24,8 @@
         "kartik-v/yii2-widget-depdrop": "@dev",
         "kartik-v/yii2-widget-select2": "@dev",
         "gilek/yii2-gtreetable": "@dev",
-        "yiisoft/yii2-jui": "~2.0.0"
-=======
-        "yiisoft/yii2": "2.0.9",
-        "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*"
->>>>>>> f35752707209fbc1a2f5e4e02ea1a94f35ef7060
+        "yiisoft/yii2-jui": "~2.0.0",
+        "dmstr/yii2-adminlte-asset": "2.*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -46,11 +41,9 @@
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
-<<<<<<< HEAD
-=======
+
     },
     "scripts": {
         "post-install-cmd": "php init --env=Development --overwrite=n"
->>>>>>> f35752707209fbc1a2f5e4e02ea1a94f35ef7060
     }
 }
