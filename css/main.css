@@ -938,7 +938,7 @@ body{
 	
 }
 .products-bottom{
-	margin-bottom:40px;
+	margin-bottom:20px;
 	text-align:center;
 }
 .products-category{
@@ -1070,26 +1070,18 @@ body{
 	display:block;
 }
 .ul-height li{
-	height:60px;
+	height:44px;
 }
-.logIn{
-	background:#9bc641;
-}
-.navbar-default .navbar-nav > li.logIn > a{
-	color:#f0f5fb;
-}
-.navbar-default .navbar-nav > li.logIn > a:hover{
-	color:#f0f5fb;
-}
+
 .navbar-default .navbar-nav > li > a{
 	display:block;
 	padding: 0 15px;
-	line-height:60px;
-	font-size:16px;
+	line-height:44px;
+	font-size:14px;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-	color:#ccc;
+	color:#9bc641;
     text-decoration: none;
 }
 
