@@ -35,7 +35,7 @@ class PagesController extends CommonController
     		'upload' => ['class' => 'kucha\ueditor\UEditorAction'],
     		'config' => [
     			'imageUrlPrefix' => $_SERVER['HTTP_HOST'],
-    			'imagePathFormat' => "/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}"
+    			'imagePathFormat' => "upload/image/{yyyy}{mm}{dd}/{time}{rand:6}"
     		]
     	];
     }

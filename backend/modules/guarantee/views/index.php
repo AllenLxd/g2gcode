@@ -7,36 +7,41 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\modules\guarantee\models\GuaranteeSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', '用户质保产品列表');
+$this->title = Yii::t('app', 'Guarantees');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="box box-info">
-    <div class="box-header">
-
-    <h5><?= Html::encode($this->title) ?></h5>
+    <div class="box box-info guarantee-index">
+        <div class="box-header">
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-<?php Pjax::begin(); ?>    <?= GridView::widget([
+    <p>
+        <?= Html::a(Yii::t('app', 'Create Guarantee'), ['create'], ['class' => 'btn btn-success btn-xs']) ?>
+    </p>
+    <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
+            'user_id',
             'user_name',
             'product_name',
-            'checkd',
             'distributor',
-            'warranty',
-            'labor',
-            'quantity',
-            'company',
-            'project_location',
-            'completion_date:datetime',
-            'project_photo',
+            // 'warranty',
+            // 'labor',
+            // 'quantity',
+            // 'company',
+            // 'project_location',
+            // 'completion_date',
+            // 'email:email',
+            // 'phone',
+            // 'project_photo',
+            // 'checkd',
+            // 'created_at',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn','header'=>'操作'],
         ],
     ]); ?>
-<?php Pjax::end(); ?></div>
-</div>
+    <?php Pjax::end(); ?></div>
+    </div>

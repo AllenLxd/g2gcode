@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $model app\modules\guarantee\models\Guarantee */
 
 $this->title = Yii::t('app', 'Update {modelClass}: ', [
-    'modelClass' => 'Guarantee',
-]) . $model->id;
+        'modelClass' => 'Guarantee',
+    ]) . $model->id;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Guarantees'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Yii::t('app', 'Update');

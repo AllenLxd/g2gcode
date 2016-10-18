@@ -30,7 +30,7 @@ use yii\helpers\Url;
             'options' => ['placeholder' => '请选择分类 ...'],
 
             'data' => ArrayHelper::map($category, 'id', 'name'),
-        ]);
+        ])->label('产品大类');
     ?>
 
     <?=
@@ -44,7 +44,7 @@ use yii\helpers\Url;
                 'url' => Url::to(['product-category/child-category']),
                 'loadingText' => '加载中 ...',
             ]
-        ])->label('子类');
+        ])->label('产品子类');
     ?>
 
     <?=
@@ -58,7 +58,7 @@ use yii\helpers\Url;
             'url' => Url::to(['product-category/child-category']),
             'loadingText' => '加载中 ...',
         ]
-    ])->label('子类');
+    ])->label('产品子类');
     ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>

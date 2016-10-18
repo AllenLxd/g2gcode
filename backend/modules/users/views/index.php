@@ -12,9 +12,10 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-info">
     <div class="box-header">
-    <h5><?= Html::encode($this->title) ?></h5>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+        <p>
+            <?= Html::a(Yii::t('app', 'Create User'), ['create'], ['class' => 'btn btn-success btn-xs']) ?>
+        </p>
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

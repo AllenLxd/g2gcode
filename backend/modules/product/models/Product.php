@@ -21,6 +21,8 @@ class Product extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $category3_id;
+    public $category2_id;
     public static function tableName()
     {
         return '{{%product}}';
@@ -37,6 +39,7 @@ class Product extends \yii\db\ActiveRecord
             [['content'], 'string'],
             [['name', 'info'], 'string', 'max' => 1000],
             [['list_img', 'pro_img'], 'string', 'max' => 90],
+            ['created_at', 'default','value' => time()]
         ];
     }
 
@@ -49,9 +52,9 @@ class Product extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'category_id' => Yii::t('app', 'Category ID'),
             'name' => Yii::t('app', 'Name'),
-            'list_img' => Yii::t('app', '列表图片'),
-            'pro_img' => Yii::t('app', '产品图片'),
-            'info' => Yii::t('app', '介绍内容'),
+            'list_img' => Yii::t('app', 'List Img'),
+            'pro_img' => Yii::t('app', 'Pro Img'),
+            'info' => Yii::t('app', 'Info'),
             'content' => Yii::t('app', 'Content'),
             'created_at' => Yii::t('app', 'Created At'),
         ];

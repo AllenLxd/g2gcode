@@ -18,8 +18,8 @@ class ProductSearch extends Product
     public function rules()
     {
         return [
-            [['id', 'category_id', 'guarantee_time', 'labor_time'], 'integer'],
-            [['name', 'pic', 'supply', 'video1', 'video2', 'video3', 'video4', 'content'], 'safe'],
+            [['id', 'category_id', 'created_at'], 'integer'],
+            [['name', 'list_img', 'pro_img', 'info', 'content'], 'safe'],
         ];
     }
 
@@ -61,17 +61,13 @@ class ProductSearch extends Product
         $query->andFilterWhere([
             'id' => $this->id,
             'category_id' => $this->category_id,
-            'guarantee_time' => $this->guarantee_time,
-            'labor_time' => $this->labor_time,
+            'created_at' => $this->created_at,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'pic', $this->pic])
-            ->andFilterWhere(['like', 'supply', $this->supply])
-            ->andFilterWhere(['like', 'video1', $this->video1])
-            ->andFilterWhere(['like', 'video2', $this->video2])
-            ->andFilterWhere(['like', 'video3', $this->video3])
-            ->andFilterWhere(['like', 'video4', $this->video4])
+            ->andFilterWhere(['like', 'list_img', $this->list_img])
+            ->andFilterWhere(['like', 'pro_img', $this->pro_img])
+            ->andFilterWhere(['like', 'info', $this->info])
             ->andFilterWhere(['like', 'content', $this->content]);
 
         return $dataProvider;

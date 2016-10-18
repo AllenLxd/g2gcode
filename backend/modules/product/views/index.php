@@ -7,36 +7,31 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\modules\product\models\ProductSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', '产品列表');
+$this->title = Yii::t('app', 'Products');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="box box-info">
-    <div class="box-header">
-
-    <h5><?= Html::encode($this->title) ?></h5>
+    <div class="box box-info product-index">
+        <div class="box-header">
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-<?php Pjax::begin(); ?>    <?= GridView::widget([
+    <p>
+        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-success btn-xs']) ?>
+    </p>
+    <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'category_id',
             'name',
-            'pic',
-            'guarantee_time:datetime',
-            // 'labor_time:datetime',
-            // 'supply',
-            // 'video1',
-            // 'video2',
-            // 'video3',
-            // 'video4',
+            'list_img',
+            'pro_img',
+            // 'info',
             // 'content:ntext',
+            'created_at:datetime',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn','header'=>'操作'],
         ],
     ]); ?>
-<?php Pjax::end(); ?></div>
-</div>
+    <?php Pjax::end(); ?></div>
+    </div>
