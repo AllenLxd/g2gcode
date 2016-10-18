@@ -6,9 +6,9 @@ use dmstr\widgets\Alert;
 <div class="content-wrapper">
     <section class="content-header">
         <?php if (isset($this->blocks['content-header'])) { ?>
-            <h1><?= $this->blocks['content-header'] ?></h1>
+            <h5><?= $this->blocks['content-header'] ?></h5>
         <?php } else { ?>
-            <h1>
+            <h5>
                 <?php
                 if ($this->title !== null) {
                     echo \yii\helpers\Html::encode($this->title);
@@ -18,7 +18,7 @@ use dmstr\widgets\Alert;
                     );
                     echo ($this->context->module->id !== \Yii::$app->id) ? '<small>Module</small>' : '';
                 } ?>
-            </h1>
+            </h5>
         <?php } ?>
 
         <?=

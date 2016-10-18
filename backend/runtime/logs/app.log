@@ -19878,3 +19878,68 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1476686846.48
     'REQUEST_TIME' => 1476686846
 ]
+2016-10-18 11:06:23 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant fale - assumed 'fale' in /Users/carl/www/g2gcode/backend/modules/product/views/index.php:24
+Stack trace:
+#0 /Users/carl/www/g2gcode/backend/modules/product/views/index.php(24): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/Users/carl/www...', 24, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/index', Array, Object(app\modules\product\controllers\ProductController))
+#5 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(42): yii\base\Controller->render('/index', Array)
+#6 [internal function]: app\modules\product\controllers\ProductController->actionIndex()
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-18 11:06:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/index'
+    'sort' => '-name'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57620'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Findex&sort=-name'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex&sort=-name'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476759982.996
+    'REQUEST_TIME' => 1476759982
+]

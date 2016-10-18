@@ -15,14 +15,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-success btn-xs']) ?>
     </p>
     <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'category_id',
             'name',
@@ -30,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'pro_img',
             // 'info',
             // 'content:ntext',
-            // 'created_at',
+            'created_at:datetime',
 
             ['class' => 'yii\grid\ActionColumn','header'=>'操作'],
         ],
