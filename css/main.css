@@ -1078,6 +1078,7 @@ body{
 	padding: 0 15px;
 	line-height:44px;
 	font-size:14px;
+	cursor: pointer;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
