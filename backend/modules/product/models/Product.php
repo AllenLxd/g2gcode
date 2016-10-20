@@ -14,6 +14,7 @@ use Yii;
  * @property string $pro_img
  * @property string $info
  * @property string $content
+ * @property string $status
  * @property integer $created_at
  */
 class Product extends \yii\db\ActiveRecord
@@ -35,7 +36,7 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             [['category_id', 'name', 'content'], 'required'],
-            [['category_id', 'created_at'], 'integer'],
+            [['category_id', 'created_at','status'], 'integer'],
             [['content'], 'string'],
             [['name', 'info'], 'string', 'max' => 1000],
             [['list_img', 'pro_img'], 'string', 'max' => 90],
@@ -56,6 +57,7 @@ class Product extends \yii\db\ActiveRecord
             'pro_img' => Yii::t('app', 'Pro Img'),
             'info' => Yii::t('app', 'Info'),
             'content' => Yii::t('app', 'Content'),
+            'status' => Yii::t('app', 'Statua'),
             'created_at' => Yii::t('app', 'Created At'),
         ];
     }

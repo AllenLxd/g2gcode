@@ -18,6 +18,7 @@ return [
     'Name' => '名称',
     'List Img' => '产品列表图片',
     'Pro Img' => '产品图片',
+    'Status' => '状态',
     'Info' => '介绍',
     'Content' => '内容',
     'Created At' => '创建时间',

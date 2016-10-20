@@ -19943,3 +19943,761 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1476759982.996
     'REQUEST_TIME' => 1476759982
 ]
+2016-10-18 16:30:09 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: scrawlAllowFiles in /Users/carl/www/g2gcode/vendor/kucha/ueditor/UEditorAction.php:107
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/kucha/ueditor/UEditorAction.php(107): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Users/carl/www...', 107, Array)
+#1 /Users/carl/www/g2gcode/vendor/kucha/ueditor/UEditorAction.php(52): kucha\ueditor\UEditorAction->actionUpload()
+#2 /Users/carl/www/g2gcode/vendor/kucha/ueditor/UEditorAction.php(29): kucha\ueditor\UEditorAction->handleAction()
+#3 [internal function]: kucha\ueditor\UEditorAction->run()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('upload', Array)
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-10-18 16:30:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/upload'
+    'action' => 'uploadscrawl'
+]
+
+$_POST = [
+    'upfile' => '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'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fcreate'
+    'CONTENT_LENGTH' => '2917'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '52150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupload&action=uploadscrawl&'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupload&action=uploadscrawl&'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476779409.072
+    'REQUEST_TIME' => 1476779409
+]
+2016-10-18 16:31:27 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: childCategory in /Users/carl/www/g2gcode/backend/modules/product/views/update.php:17
+Stack trace:
+#0 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/carl/www...', 17, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#5 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(120): yii\base\Controller->render('/update', Array)
+#6 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-18 16:31:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '57170'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476779487.644
+    'REQUEST_TIME' => 1476779487
+]
+2016-10-18 16:35:29 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: childCategory in /Users/carl/www/g2gcode/backend/modules/product/views/update.php:17
+Stack trace:
+#0 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/carl/www...', 17, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#5 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(120): yii\base\Controller->render('/update', Array)
+#6 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-18 16:35:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476779729.098
+    'REQUEST_TIME' => 1476779729
+]
+2016-10-18 16:35:32 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: childCategory in /Users/carl/www/g2gcode/backend/modules/product/views/update.php:17
+Stack trace:
+#0 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/carl/www...', 17, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#5 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(120): yii\base\Controller->render('/update', Array)
+#6 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-18 16:35:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '56583'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476779732.23
+    'REQUEST_TIME' => 1476779732
+]
+2016-10-18 16:38:01 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: childCategory in /Users/carl/www/g2gcode/backend/modules/product/views/update.php:17
+Stack trace:
+#0 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/carl/www...', 17, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#5 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(120): yii\base\Controller->render('/update', Array)
+#6 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-10-18 16:38:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '49699'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476779881.279
+    'REQUEST_TIME' => 1476779881
+]
+2016-10-19 08:52:34 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: kartik\select2\Select2::selected in /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Component->__set('selected', '2')
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(kartik\select2\Select2), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('kartik\\select2\\...', Array, Array)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('kartik\\select2\\...', Array, Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#7 /Users/carl/www/g2gcode/vendor/kartik-v/yii2-widget-depdrop/DepDrop.php(102): yii\base\Widget::widget(Array)
+#8 /Users/carl/www/g2gcode/vendor/kartik-v/yii2-widget-depdrop/DepDrop.php(75): kartik\depdrop\DepDrop->registerAssets()
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Widget.php(102): kartik\depdrop\DepDrop->run()
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#11 /Users/carl/www/g2gcode/backend/modules/product/views/_form.php(46): yii\widgets\ActiveField->widget('kartik\\depdrop\\...', Array)
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#15 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\View->render('_form', Array)
+#16 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#17 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#18 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#19 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#20 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(119): yii\base\Controller->render('/update', Array)
+#21 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#22 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#23 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#25 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#26 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2016-10-19 08:52:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '49926'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476838354.453
+    'REQUEST_TIME' => 1476838354
+]
+2016-10-19 09:14:58 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Missing argument 2 for yii\helpers\BaseArrayHelper::map(), called in /Users/carl/www/g2gcode/backend/modules/product/views/_form.php on line 34 and defined in /Users/carl/www/g2gcode/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php:461
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(461): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', '/Users/carl/www...', 461, Array)
+#1 /Users/carl/www/g2gcode/backend/modules/product/views/_form.php(34): yii\helpers\BaseArrayHelper::map(Array)
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#5 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\View->render('_form', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#8 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#10 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(119): yii\base\Controller->render('/update', Array)
+#11 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#12 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#15 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#16 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#18 {main}
+2016-10-19 09:14:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53701'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476839698.283
+    'REQUEST_TIME' => 1476839698
+]
+2016-10-19 09:21:36 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: kartik\select2\Select2::placeholder in /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Component->__set('placeholder', '\xE8\xAF\xB7\xE9\x80\x89\xE6\x8B\xA9\xE5\x88\x86\xE7\xB1\xBB...')
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(kartik\select2\Select2), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('kartik\\select2\\...', Array, Array)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('kartik\\select2\\...', Array, Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /Users/carl/www/g2gcode/backend/modules/product/views/_form.php(34): yii\widgets\ActiveField->widget('kartik\\select2\\...', Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#12 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\View->render('_form', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#15 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#16 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#17 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(119): yii\base\Controller->render('/update', Array)
+#18 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#19 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#20 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#21 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#22 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#23 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#25 {main}
+2016-10-19 09:21:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '62920'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476840095.884
+    'REQUEST_TIME' => 1476840095
+]
+2016-10-19 09:30:08 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: kartik\select2\Select2::depends in /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Component->__set('depends', Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(kartik\select2\Select2), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/di/Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('kartik\\select2\\...', Array, Array)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('kartik\\select2\\...', Array, Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Widget.php(101): yii\BaseYii::createObject(Array)
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/widgets/ActiveField.php(678): yii\base\Widget::widget(Array)
+#8 /Users/carl/www/g2gcode/backend/modules/product/views/_form.php(33): yii\widgets\ActiveField->widget('kartik\\select2\\...', Array)
+#9 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#10 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#11 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, NULL)
+#12 /Users/carl/www/g2gcode/backend/modules/product/views/update.php(17): yii\base\View->render('_form', Array)
+#13 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(325): require('/Users/carl/www...')
+#14 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/carl/www...', Array)
+#15 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/carl/www...', Array, Object(app\modules\product\controllers\ProductController))
+#16 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('/update', Array, Object(app\modules\product\controllers\ProductController))
+#17 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(119): yii\base\Controller->render('/update', Array)
+#18 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#19 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#20 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#21 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#22 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#23 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#25 {main}
+2016-10-19 09:30:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '62436'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476840607.893
+    'REQUEST_TIME' => 1476840607
+]
+2016-10-19 10:14:37 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '=' in /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php:103
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\pro...')
+#1 [internal function]: spl_autoload_call('app\\modules\\pro...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(562): class_exists('app\\modules\\pro...')
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(520): yii\base\Module->createControllerByID('product')
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->createController('update')
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('product/update')
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-10-19 10:14:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53053'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=7'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=7'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476843277.035
+    'REQUEST_TIME' => 1476843277
+]
+2016-10-19 11:14:24 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: app\modules\product\models\Product::ategory2_id in /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/db/BaseActiveRecord.php(272): yii\base\Component->__set('ategory2_id', 33)
+#1 /Users/carl/www/g2gcode/backend/modules/product/controllers/ProductController.php(104): yii\db\BaseActiveRecord->__set('ategory2_id', 33)
+#2 [internal function]: app\modules\product\controllers\ProductController->actionUpdate('6')
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#6 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('product/product...', Array)
+#7 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/carl/www/g2gcode/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-10-19 11:14:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'c3g4iirgvku6ajsphh2r0j2f47'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    '_identity' => '476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=c3g4iirgvku6ajsphh2r0j2f47; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D; _identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; _identity=476ab5946675bd04bead01f3130b800bef793d107a790baedb6f54249a2fac4ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '52841'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct%2Fupdate&id=6'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1476846863.951
+    'REQUEST_TIME' => 1476846863
+]

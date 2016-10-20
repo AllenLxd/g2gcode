@@ -100,8 +100,9 @@ class ProductController extends CommonController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $category = ProductCategory::find()->select(['id', 'name'])->where(['level'=>0])->indexBy('id')->all();
-
+        $model->category3_id = 4;
+        $model->category2_id = 33;
+        $category = ProductCategory::find()->select(['id','root', 'name'])->where(['level'=>0])->indexBy('id')->all();
         $data = Yii::$app->request->post();
         if ($data) {
             $listImgFile = Common::uploadFile('Product[list_img]');
@@ -118,6 +119,7 @@ class ProductController extends CommonController
             return $this->render('/update', [
                 'model' => $model,
                 'category' => $category,
+                'childCategory' => []
             ]);
         }
     }

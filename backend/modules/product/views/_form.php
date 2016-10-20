@@ -7,6 +7,7 @@ use \kartik\depdrop\DepDrop;
 use \kartik\file\FileInput;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
+use app\modules\product\models\ProductCategory;
 /* @var $this yii\web\View */
 /* @var $model app\modules\product\models\Product */
 /* @var $form yii\widgets\ActiveForm */
@@ -27,9 +28,10 @@ use yii\helpers\Url;
 <div class="box-body">
     <?=
         $form->field($model, 'category3_id')->widget(Select2::classname(), [
+
             'options' => ['placeholder' => '请选择分类 ...'],
 
-            'data' => ArrayHelper::map($category, 'id', 'name'),
+            'data' => ArrayHelper::map($category,'id','name'),
         ])->label('产品大类');
     ?>
 
@@ -39,6 +41,7 @@ use yii\helpers\Url;
             'data' => ArrayHelper::map($childCategory, 'id', 'name'),
             'select2Options'=>['pluginOptions'=>['allowClear'=>true]],
             'pluginOptions'=>[
+                'initialize' => true,
                 'depends'=>['product-category3_id'],
                 'placeholder' => '请选择分类 ...',
                 'url' => Url::to(['product-category/child-category']),
@@ -53,6 +56,7 @@ use yii\helpers\Url;
         'data' => ArrayHelper::map($childCategory, 'id', 'name'),
         'select2Options'=>['pluginOptions'=>['allowClear'=>true]],
         'pluginOptions'=>[
+
             'depends'=>['product-category2_id'],
             'placeholder' => '请选择分类 ...',
             'url' => Url::to(['product-category/child-category']),
