@@ -21,105 +21,146 @@
 
 
 </head>
-<body ng-controller="mainController">
-	
-	<header id="header">
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header log">
-					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" ng-href="#home" >
-						<img class="img-responsive media-edit" alt="Cinque Terre" src="images/logo.png">
-					</a>
+<body ng-controller="mainController" class="cbp-spmenu-push">
+
+
+		<header id="header">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header log">
+						<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" ng-href="#home" >
+							<img class="img-responsive media-edit" alt="Cinque Terre" src="images/logo.png">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right ul-height">
+							<li>
+								<a ng-href="#about">About Us</a>
+							</li>
+							<li class="productList">
+								<a ng-href="#products/signlighting/all">Products</a>
+							</li>
+							<li>
+								<a ng-href="#services">Services</a>
+							</li>
+							<li>
+								<a ng-href="#support/download">download</a>
+							</li>
+							<li>
+								<a ng-href="#support/contact">Contact</a>
+							</li>
+							<li>
+								<a ng-href="#support/video">Video</a>
+							</li>
+							<li class="logIn">
+								<a href="#login" ng-if="!user.username" data-target="" data-toggle="modal">Log in</a>
+								<a href="#usercenter/{{user.id}}" ng-if="user" >{{user.username}}</a>
+							</li>
+
+						</ul>
+
+					</div>
 				</div>
-	
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right ul-height">
-						<li>
-							<a ng-href="#about">About Us</a>
-						</li>
-						<li class="productList">
-							<a ng-href="#products/signlighting/all">Products</a>
-						</li>
-						<li>
-							<a ng-href="#services">Services</a>
-						</li>						
-						<li>
-							<a ng-href="#support/download">download</a>
-						</li>
-						<li>
-							<a ng-href="#support/contact">Contact</a>
-						</li>
-						<li>
-							<a ng-href="#support/video">Video</a>
-						</li>
-						<li class="logIn">
-							<a href="#login" ng-if="!user.username" data-target="" data-toggle="modal">Log in</a>
-							<a href="#usercenter/{{user.id}}" ng-if="user" >{{user.username}}</a>
-						</li>
-						
-					</ul>
-	
-				</div>
-			</div>
-		</nav>
-	</header>
-	
-	<div id="main">
-		<div ng-view></div>
-	</div>
-	<div id="goTop">
-		<span class="hint">Up to top</span>
-	</div>
-	
-	
-	<div class="footer_wrapper">
-	        
-			     <div class="footer">
-			     	<div class="container">
-			     		<div class="col-xs-12 col-sm-2"><a href="#">About US</a></div>
-				     	<div class="col-xs-12 col-sm-2"><a href="#">Products</a></div>
-				     	<div class="col-xs-12 col-sm-2"><a href="#">Service</a></div>
-				     	<div class="col-xs-12 col-sm-2"><a href="#">Download</a></div>
-				     	<div class="col-xs-12 col-sm-2"><a href="#">Video</a></div>
-				     	<div class="col-xs-12 col-sm-2"><a href="#">Contact Us</a></div>
-				    </div>
-			     </div>
-			     <div class="container">
-			     	   
-			     	   <div class="col-xs-12 col-sm-2 col-md-2">
-			     	   	   <img class="signLog" src="images/signLogo4.jpg" >
-			     	   	   	
-			     	   </div>
-			     	   <div class="sign col-xs-12 col-sm-3 col-md-3">
-			     	   	   <img src="images/signLogo2.png" >
-			     	   </div>
-			     	   <div class="col-xs-12 col-sm-2 col-md-2">
-			     	   	   <img src="images/signLogo3.png" >
-			     	   </div>
-			     	   <div class="col-xs-12 col-sm-3 col-md-3">
-			     	   	   <img class="signLogo" src="images/signLogo1.png" >
-			     	   </div>
-			     </div>
-			     <div class="container">
-			     	   <div class="footLogo">
-			     	   	   <img src="images/footLogo.png" >
-			     	   </div>
-			     	   
-			     </div>
-                 <div class="text-center">
-					 <p>Copyrights © 2016 by G2G LIGHTING,INC All Rights Reserved.</p>
+			</nav>
+		</header>
+
+		<!--
+ <header id="header">
+     <nav class="navbar navbar-default">
+         <div class="container">
+             <div class="navbar-header log">
+                 <a class="navbar-brand" ng-href="#home" >
+                     <img class="img-responsive media-edit" alt="Cinque Terre" src="images/logo.png">
+                 </a>
+             </div>
+
+             <div class="top-nav">
+                  <nav id="cbp-spmenu-s2" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right ">
+                      <ul>
+                          <li><a ng-href="#home">Home</a></li>
+                          <li><a ng-href="#about">About Us</a></li>
+                          <li><a ng-href="#products/signlighting/all">Products</a></li>
+                          <li><a ng-href="#services">Services</a></li>
+                          <li><a ng-href="#support/download">download</a></li>
+                          <li><a ng-href="#support/contact">Contact</a></li>
+                          <li><a ng-href="#support/video">Video</a></li>
+                          <li>
+                              <a href="#login" ng-if="!user.username" >Log in</a>
+                              <a href="#usercenter/{{user.id}}" ng-if="user" >{{user.username}}</a>
+                          </li>
+
+                      </ul>
+
+                  </nav>
+                  <div class="main buttonset">
+                      <button id="showRightPush">
+                          <img src="images/menu.png" alt="">
+                      </button>
+
+                  </div>
+             </div>
+
+         </div>
+     </nav>
+ </header>
+ 	-->
+ <div id="main">
+     <div ng-view></div>
+ </div>
+ <div id="goTop">
+     <span class="hint">Up to top</span>
+ </div>
+
+
+ <div class="footer_wrapper">
+
+              <div class="footer">
+                  <div class="container">
+                      <div class="col-xs-12 col-sm-2"><a href="#">About US</a></div>
+                      <div class="col-xs-12 col-sm-2"><a href="#">Products</a></div>
+                      <div class="col-xs-12 col-sm-2"><a href="#">Service</a></div>
+                      <div class="col-xs-12 col-sm-2"><a href="#">Download</a></div>
+                      <div class="col-xs-12 col-sm-2"><a href="#">Video</a></div>
+                      <div class="col-xs-12 col-sm-2"><a href="#">Contact Us</a></div>
                  </div>
+              </div>
+              <div class="container">
+
+                     <div class="col-xs-12 col-sm-2 col-md-2">
+                            <img class="signLog" src="images/signLogo4.jpg" >
+
+                     </div>
+                     <div class="sign col-xs-12 col-sm-3 col-md-3">
+                            <img src="images/signLogo2.png" >
+                     </div>
+                     <div class="col-xs-12 col-sm-2 col-md-2">
+                            <img src="images/signLogo3.png" >
+                     </div>
+                     <div class="col-xs-12 col-sm-3 col-md-3">
+                            <img class="signLogo" src="images/signLogo1.png" >
+                     </div>
+              </div>
+              <div class="container">
+                     <div class="footLogo">
+                            <img src="images/footLogo.png" >
+                     </div>
+
+              </div>
+              <div class="text-center">
+                  <p>Copyright 2016 by G2G lighting,Inc.All rights reserved.</p>
+              </div>
 
 
-	   </div> 
-	   
-	   <span id="video-btn"></span>
+    </div>
+
+    <span id="video-btn"></span>
 
 </body>
 </html>

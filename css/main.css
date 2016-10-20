@@ -1,3 +1,93 @@
+/**下拉菜单导航条**/
+
+.cbp-spmenu-push {
+	left: 0;
+	overflow-x: hidden;
+	position: relative;
+}
+.cbp-spmenu-left, .cbp-spmenu-push-toleft {
+	left: -190px;
+}
+.top-nav{
+	width:8%;
+	float:right;
+	height:25px;
+}
+nav#cbp-spmenu-s2 {
+	text-align: center;
+	border-left:1px solid #ccc;
+}
+.cbp-spmenu-right {
+	right: -190px;
+}
+.cbp-spmenu-vertical {
+	font-size: 90%;
+	width: 190px;
+}
+.cbp-spmenu, .cbp-spmenu-push {
+	transition: all 0.3s ease 0s;
+}
+.cbp-spmenu-vertical {
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.cbp-spmenu {
+	position: fixed;
+}
+
+nav#cbp-spmenu-s2 a.active {
+	color: #fecd67;
+}
+nav#cbp-spmenu-s2 a {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color -moz-use-text-color rgba(255, 255, 255, 0.35);
+	border-image: none;
+	border-style: none none dotted;
+	border-width: medium medium 1px;
+	color: #777;
+	display: block;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 25px;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+	border-bottom:1px solid #ccc;
+}
+
+nav#cbp-spmenu-s2 a:hover {
+	font-weight:bold ;
+}
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+nav#cbp-spmenu-s2 ul{
+	padding-left:0px;
+}
+.cbp-spmenu a {
+	color: #fff;
+	display: block;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+button#showRightPush {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+	outline: medium none;
+	padding: 8px;
+	z-index: 1;
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0;
+}
+
+
+
+/**下拉菜单导航条**/
 .specification{
 	margin:20px 0px;
 }
@@ -127,7 +217,6 @@ ul.navInfo li a.currantActive{
     -o-background-size: cover;
     -moz-background-size: cover;
     text-align: center;
-   margin-top:40px;
     background-size:100% 738px;
 }
 .registerContent h2{
@@ -403,7 +492,6 @@ h3{
 	background:url('../images/download.jpg') no-repeat;
 	min-height:558px;
 	position:relative;
-	margin-top:60px;
 	padding-top:180px;
 	text-align:center;
 	color:#ffffff;
@@ -432,7 +520,6 @@ h3{
 	background: url(../images/aboutus_bg.jpg) no-repeat;
 	min-height: 558px;
 	position: relative;
-	margin-top: 60px;
 	padding-top: 180px;
 	text-align: center;
 	color: #ffffff;
