@@ -16,15 +16,34 @@ $(function(){
 	  $('#goTop').hover(function(){
 			      $(this).children('.hint').finish().slideToggle(100);
 		});
-		$('body').on('click','#videoBtn',function(){
+	  $('body').on('click','#videoBtn',function(){
 			    $(this).hide();
 			    $('.bgImg').hide();
 			    $('#videoIframe').show();
 			
-		})
-		$(window).on('load',function(){
+	  });
+	  $(window).on('load',function(){
 	         Carousel.init($(".pictureSlider"));           
 	  });
+	  //导航条下拉
+	  var slip = 0;
+	  $('#showRightPush').click(function(){
+
+		  if(slip == 0){
+			  $('body').addClass("cbp-spmenu-push-toleft");
+			  $('#cbp-spmenu-s2').addClass("cbp-spmenu-open");
+			  slip = 1;
+		  }else{
+			  $('body').removeClass("cbp-spmenu-push-toleft");
+			  $('#cbp-spmenu-s2').removeClass("cbp-spmenu-open");
+			  slip = 0;
+		  }
+
+	  })
+	$('nav a').click(function(){
+		$('body').removeClass("cbp-spmenu-push-toleft");
+		$('#cbp-spmenu-s2').removeClass("cbp-spmenu-open");
+	})
 	
 });
 
