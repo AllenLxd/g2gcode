@@ -12,25 +12,26 @@
 		<div class="classify text-center">
               <a class="classifyactivebtn " ng-class="{classifyactive :pid == 'signlighting'||flag==1}"  ng-click="filterProducts('signlighting','')">Sign Lighting</a>
 			  <a class="classifyactivebtn" ng-class="{classifyactive :pid == 'outdoorlighting'||flag==2}"  ng-click="filterProducts('outdoorlighting','')">Outdoor Lighting</a>
-			  <a class="classifyactivebtn" ng-class="{classifyactive :pid == 'commerciallighting'||flag==3}"  ng-click="filterProducts('commerciallighting','')">Commercial Lighting</a>
-		</div>
-	</div>
-	<div class="secondclassify">
-		<ul ng-show="pid=='signlighting'||flag==1" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('signlighting','')" class="btn btn-default all" ng-class="{active :pid == 'signlighting'}" >All</a></li>
+			<!-- <a class="classifyactivebtn" ng-class="{classifyactive :pid == 'commerciallighting'||flag==3}"  ng-click="filterProducts('commerciallighting','')">Commercial Lighting</a>-->
+       </div>
+   </div>
+   <div class="secondclassify">
+       <ul ng-show="pid=='signlighting'||flag==1" class="portfolio-filter text-center">
+           <!--<li><a ng-click="filterProducts('signlighting','')" class="btn btn-default all" ng-class="{active :pid == 'signlighting'}" >All</a></li>-->
 			<li><a ng-click="filterProducts('letter','')" class="btn btn-default letter" ng-class="{active :pid == 'letter'}" >channel letter</a></li>
 			<li><a ng-click="filterProducts('sign','')" class="btn btn-default product_sign" ng-class="{active :pid == 'sign'}">Sign Cabinet</a></li>
 			<li><a ng-click="filterProducts('controller','')" class="btn btn-default controller" ng-class="{active :pid == 'controller'}" >Controller</a></li>
 			<!--<li><a ng-click="filterProducts('power','')" class="btn btn-default power" ng-class="{active :pid == 'power'}" >Power Supplies</a></li> -->
 
 		</ul>
-		<ul ng-show="pid=='commerciallighting'||flag==3" class="portfolio-filter text-center">
+		<!--<ul ng-show="pid=='commerciallighting'||flag==3" class="portfolio-filter text-center">
 			<li><a ng-click="filterProducts('commerciallighting','')" class="btn btn-default all" ng-class="{active:pid == 'commerciallighting'}" >All</a></li>
 			<li><a ng-click="filterProducts('tube','')" class="btn btn-default t8" ng-class="{active:pid == 'tube'}" >T8 tubes</a></li>
 
 		</ul>
+		-->
 		<ul ng-show="pid=='outdoorlighting'||flag==2" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('outdoorlighting','')" class="btn btn-default all" ng-class="{active:pid == 'outdoorlighting'}" >All</a></li>
+			<!--<li><a ng-click="filterProducts('outdoorlighting','')" class="btn btn-default all" ng-class="{active:pid == 'outdoorlighting'}" >All</a></li>-->
 			<li><a ng-click="filterProducts('wall','')" class="btn btn-default wall" ng-class="{active:pid == 'wall'}" >Wall Washer</a></li>
 			<li><a ng-click="filterProducts('flood','')" class="btn btn-default flood" ng-class="{active:pid == 'flood'}" >Flood Light</a></li>
 			<li><a ng-click="filterProducts('shoebox','')" class="btn btn-default shoe" ng-class="{active:pid == 'shoebox'}" >Shoebox Light</a></li>
@@ -40,7 +41,7 @@
 	</div>
 	<div class="container thirdclassify">
 		<ul ng-show="pid=='wall'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('wall','')" class="btn btn-default" ng-class="{active:cid == 'all'}">All</a></li>
+			<!--<li><a ng-click="filterProducts('wall','')" class="btn btn-default" ng-class="{active:cid == 'all'}">All</a></li>-->
 			<li><a ng-click="filterProducts('wall','i_series')" class="btn btn-default" ng-class="{active:cid == 'i_series'}" >Ⅰ Series</a></li>
 			<li><a ng-click="filterProducts('wall','ii_series')" class="btn btn-default" ng-class="{active:cid == 'ii_series'}" >Ⅱ Series</a></li>
 			<li><a ng-click="filterProducts('wall','v_series')" class="btn btn-default" ng-class="{active:cid == 'v_series'}" >Ⅴ Series</a></li>
@@ -50,7 +51,7 @@
 			<li><a ng-click="filterProducts('wall','oona-slim')" class="btn btn-default" ng-class="{active:cid == 'oona-slim'}" >Oona Slim Wall Washer</a></li>
 		</ul>
 		<ul ng-show="pid=='flood'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('flood','')" class="btn btn-default" ng-class="{active:cid == 'all'}">All</a></li>
+			<!--<li><a ng-click="filterProducts('flood','')" class="btn btn-default" ng-class="{active:cid == 'all'}">All</a></li>-->
 			<li><a ng-click="filterProducts('flood','i_series')" class="btn btn-default" ng-class="{active:cid == 'i_series'}" >10W</a></li>
 			<li><a ng-click="filterProducts('flood','ii_series')" class="btn btn-default" ng-class="{active:cid == 'ii_series'}" >20W</a></li>
 			<li><a ng-click="filterProducts('flood','iii_series')" class="btn btn-default" ng-class="{active:cid == 'iii_series'}" >30W</a></li>
@@ -60,7 +61,7 @@
 		</ul>
 				  
 		<ul ng-show="pid=='letter'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('letter','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+			<!--<li><a ng-click="filterProducts('letter','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>-->
 			<li><a ng-click="filterProducts('letter','aurora')" class="btn btn-default" ng-class="{active:cid == 'aurora'}" >Aurora Series</a></li>
 			<li><a ng-click="filterProducts('letter','nox')" class="btn btn-default" ng-class="{active:cid == 'nox'}" >NOX Series</a></li>
 			<li><a ng-click="filterProducts('letter','anpro')" class="btn btn-default" ng-class="{active:cid == 'anpro'}" >AnPro Series</a></li>
@@ -69,30 +70,30 @@
 		</ul>
 		
 		<ul ng-show="pid=='sign'" class="portfolio-filter text-center">
-	      	<li><a ng-click="filterProducts('sign','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
-		  	<li><a ng-click="filterProducts('sign','array')" class="btn btn-default" ng-class="{active:cid == 'array'}" >ArRay Series</a></li>
-		  	<li><a ng-click="filterProducts('sign','sparx')" class="btn btn-default" ng-class="{active:cid == 'sparx'}" >SparX Series</a></li>
-		  	<li><a ng-click="filterProducts('sign','trident-stick')" class="btn btn-default" ng-class="{active:cid == 'trident-stick'}" >Trident Stick Series</a></li>
-		  	<li><a ng-click="filterProducts('sign','trident')" class="btn btn-default" ng-class="{active:cid == 'trident'}" >Trident Series</a></li>
-		  	<li><a ng-click="filterProducts('sign','side')" class="btn btn-default" ng-class="{active:cid == 'side'}" >SiDe Series</a></li>
-		  	 
-	  	</ul>
-		<ul ng-show="pid=='controller'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('controller','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
-			<li><a ng-click="filterProducts('controller','diywifi')" class="btn btn-default" ng-class="{active:cid == 'diywifi'}" >DIY Wifi</a></li>
-			<li><a ng-click="filterProducts('controller','wifi300')" class="btn btn-default" ng-class="{active:cid == 'wifi300'}" >Wifi 300</a></li>
-			<li><a ng-click="filterProducts('controller','rf3keys')" class="btn btn-default" ng-class="{active:cid == 'RF3Keys'}" >RF 3 keys dimmer</a></li>
-			<li><a ng-click="filterProducts('controller','knod')" class="btn btn-default" ng-class="{active:cid == 'knod'}" >Manual adjusting knod</a></li>
-		</ul>
-		<!--<ul ng-show="pid=='power'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('power','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
-			<li><a ng-click="filterProducts('power','100W')" class="btn btn-default" ng-class="{active:cid == '100W'}" >100W</a></li>
-			<li><a ng-click="filterProducts('power','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
-			<li><a ng-click="filterProducts('power','300W')" class="btn btn-default" ng-class="{active:cid == '300W'}" >300W</a></li>
-		</ul>
-		-->
+			<!--<li><a ng-click="filterProducts('sign','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>-->
+            <li><a ng-click="filterProducts('sign','array')" class="btn btn-default" ng-class="{active:cid == 'array'}" >ArRay Series</a></li>
+            <li><a ng-click="filterProducts('sign','sparx')" class="btn btn-default" ng-class="{active:cid == 'sparx'}" >SparX Series</a></li>
+            <li><a ng-click="filterProducts('sign','trident-stick')" class="btn btn-default" ng-class="{active:cid == 'trident-stick'}" >Trident Stick Series</a></li>
+            <li><a ng-click="filterProducts('sign','trident')" class="btn btn-default" ng-class="{active:cid == 'trident'}" >Trident Series</a></li>
+            <li><a ng-click="filterProducts('sign','side')" class="btn btn-default" ng-class="{active:cid == 'side'}" >SiDe Series</a></li>
+
+        </ul>
+      <ul ng-show="pid=='controller'" class="portfolio-filter text-center">
+		  <!--<li><a ng-click="filterProducts('controller','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>-->
+          <li><a ng-click="filterProducts('controller','diywifi')" class="btn btn-default" ng-class="{active:cid == 'diywifi'}" >DIY Wifi</a></li>
+          <li><a ng-click="filterProducts('controller','wifi300')" class="btn btn-default" ng-class="{active:cid == 'wifi300'}" >Wifi 300</a></li>
+          <li><a ng-click="filterProducts('controller','rf3keys')" class="btn btn-default" ng-class="{active:cid == 'RF3Keys'}" >RF 3 keys dimmer</a></li>
+          <li><a ng-click="filterProducts('controller','knod')" class="btn btn-default" ng-class="{active:cid == 'knod'}" >Manual adjusting knod</a></li>
+      </ul>
+      <!--<ul ng-show="pid=='power'" class="portfolio-filter text-center">
+          <li><a ng-click="filterProducts('power','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+          <li><a ng-click="filterProducts('power','100W')" class="btn btn-default" ng-class="{active:cid == '100W'}" >100W</a></li>
+          <li><a ng-click="filterProducts('power','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
+          <li><a ng-click="filterProducts('power','300W')" class="btn btn-default" ng-class="{active:cid == '300W'}" >300W</a></li>
+      </ul>
+      -->
 		<ul ng-show="pid=='shoebox'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('shoebox','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+			<!--<li><a ng-click="filterProducts('shoebox','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>-->
 			<li><a ng-click="filterProducts('shoebox','40W')" class="btn btn-default" ng-class="{active:cid == '40W'}" >40W</a></li>
 			<li><a ng-click="filterProducts('shoebox','80W')" class="btn btn-default" ng-class="{active:cid == '80W'}" >80W</a></li>
 			<li><a ng-click="filterProducts('shoebox','120W')" class="btn btn-default" ng-class="{active:cid == '120W'}" >120W</a></li>
@@ -100,19 +101,20 @@
 			<li><a ng-click="filterProducts('shoebox','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
 		</ul>
 		<ul ng-show="pid=='retrofit'" class="portfolio-filter text-center">
-			<li><a ng-click="filterProducts('retrofit','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
+			<!--<li><a ng-click="filterProducts('retrofit','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>-->
 			<li><a ng-click="filterProducts('retrofit','105W')" class="btn btn-default" ng-class="{active:cid == '105W'}" >105W</a></li>
 			<li><a ng-click="filterProducts('retrofit','120W')" class="btn btn-default" ng-class="{active:cid == '120W'}" >120W</a></li>
 			<li><a ng-click="filterProducts('retrofit','150W')" class="btn btn-default" ng-class="{active:cid == '150W'}" >150W</a></li>
 			<li><a ng-click="filterProducts('retrofit','200W')" class="btn btn-default" ng-class="{active:cid == '200W'}" >200W</a></li>
 		</ul>
 
-		<ul ng-show="pid=='tube'" class="portfolio-filter text-center">
+		<!--<ul ng-show="pid=='tube'" class="portfolio-filter text-center">
 			<li><a ng-click="filterProducts('tube','')" class="btn btn-default" ng-class="{active:cid == 'all'}" >All</a></li>
 			<li><a ng-click="filterProducts('tube','4ft')" class="btn btn-default" ng-class="{active:cid == '4FT'}" >4FT</a></li>
 			<li><a ng-click="filterProducts('tube','6ft')" class="btn btn-default" ng-class="{active:cid == '6FT'}" >6FT</a></li>
 			<li><a ng-click="filterProducts('tube','8ft')" class="btn btn-default" ng-class="{active:cid == '8FT'}" >8FT</a></li>
 		</ul>
+		-->
 
 	  	
 

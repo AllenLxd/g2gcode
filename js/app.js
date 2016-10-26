@@ -161,8 +161,8 @@
 			{pid:'outdoorlighting', cid:'i_series', img: 'flood_light/flood_10.jpg', href: 'Flood-Light-10W.html'},
 			{pid:'outdoorlighting', cid:'ii_series', img: 'flood_light/flood_20.jpg', href: 'Flood-Light-20W.html'},
 			{pid:'outdoorlighting', cid:'iii_series', img: 'flood_light/flood_30.jpg', href: 'Flood-Light-30W.html'},
-			{pid:'outdoorlighting', cid:'v_series', img: 'flood_light/flood_50.jpg', href: 'Flood-Light-V-50W.html'},
-			{pid:'outdoorlighting', cid:'vi_series', img: 'flood_light/flood_100.jpg', href: 'Flood-Light-V-100W.html'},
+			{pid:'outdoorlighting', cid:'v_series', img: 'flood_light/flood_50.jpg', href: 'Flood-Light-50W.html'},
+			{pid:'outdoorlighting', cid:'vi_series', img: 'flood_light/flood_100.jpg', href: 'Flood-Light-100W.html'},
 
 			{pid:'signlighting', cid:'wifi300', img: 'controller/wifi_300.jpg', href: 'Controllerwifi300.html'},
 			{pid:'signlighting', cid:'diywifi', img: 'controller/diy_wifi.jpg', href: 'Controllerdiywifi.html'},
@@ -226,8 +226,8 @@
 			{pid:'flood', cid:'i_series', img: 'flood_light/flood_10.jpg', href: 'Flood-Light-10W.html'},
 			{pid:'flood', cid:'ii_series', img: 'flood_light/flood_20.jpg', href: 'Flood-Light-20W.html'},
 			{pid:'flood', cid:'iii_series', img: 'flood_light/flood_30.jpg', href: 'Flood-Light-30W.html'},
-			{pid:'flood', cid:'v_series', img: 'flood_light/flood_50.jpg', href: 'Flood-Light-V-50W.html'},
-			{pid:'flood', cid:'vi_series', img: 'flood_light/flood_100.jpg', href: 'Flood-Light-V-100W.html'},
+			{pid:'flood', cid:'v_series', img: 'flood_light/flood_50.jpg', href: 'Flood-Light-50W.html'},
+			{pid:'flood', cid:'vi_series', img: 'flood_light/flood_100.jpg', href: 'Flood-Light-100W.html'},
 
 			{pid:'controller', cid:'wifi300', img: 'controller/wifi_300.jpg', href: 'Controllerwifi300.html'},
 			{pid:'controller', cid:'diywifi', img: 'controller/diy_wifi.jpg', href: 'Controllerdiywifi.html'},
