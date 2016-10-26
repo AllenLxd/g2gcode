@@ -112,7 +112,7 @@ class ProductController extends CommonController
 
         $data = Yii::$app->request->post();
         if ($data) {
-            
+
             $listImgFile = Common::uploadFile('Product[list_img]');
             if($listImgFile) $data['Product']['list_img'] = $listImgFile['list_img'];
             $proImgFile = Common::uploadFile('Product[list_img]');
