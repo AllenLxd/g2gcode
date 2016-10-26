@@ -15,6 +15,8 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
+        'js/comm.js',
+        'js/linkagesel-min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

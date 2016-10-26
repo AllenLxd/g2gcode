@@ -43,3 +43,11 @@ table tr th.action-column {
 .summary {
 	padding-top: 10px;
 }
+.form-control {
+	padding: 0 3px;
+}
+.category select {
+	width: auto;
+	float: left;
+	margin-left: 16px;
+}

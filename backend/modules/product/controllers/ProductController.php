@@ -63,7 +63,6 @@ class ProductController extends CommonController
     public function actionCreate()
     {
         $model = new Product();
-        $category = ProductCategory::find()->select(['id', 'name'])->where(['level'=>0])->indexBy('id')->all();
 
         $data = Yii::$app->request->post();
         if($data)
@@ -86,8 +85,6 @@ class ProductController extends CommonController
 
         return $this->render('/create', [
             'model' => $model,
-            'category' => $category,
-            'childCategory' => [],
         ]);
     }
 
@@ -100,11 +97,22 @@ class ProductController extends CommonController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $model->category3_id = 4;
-        $model->category2_id = 33;
-        $category = ProductCategory::find()->select(['id','root', 'name'])->where(['level'=>0])->indexBy('id')->all();
+
+        $categoryInfo = ProductCategory::find()->where(['id'=>$model->category_id])->asArray()->one();
+        $categoryPath = ProductCategory::find()
+            ->where(['<','lft',$categoryInfo['lft']])
+            ->andWhere(['>','rgt',$categoryInfo['rgt']])
+            ->andWhere(['root' => $categoryInfo['root']])
+            ->orderBy('lft')
+            ->indexBy('id')
+            ->asArray()
+            ->all();
+
+        $categoryPath[$categoryInfo['id']] = $categoryInfo;
+
         $data = Yii::$app->request->post();
         if ($data) {
+            
             $listImgFile = Common::uploadFile('Product[list_img]');
             if($listImgFile) $data['Product']['list_img'] = $listImgFile['list_img'];
             $proImgFile = Common::uploadFile('Product[list_img]');
@@ -118,8 +126,7 @@ class ProductController extends CommonController
         } else {
             return $this->render('/update', [
                 'model' => $model,
-                'category' => $category,
-                'childCategory' => []
+                'categoryPath' => $categoryPath
             ]);
         }
     }
