@@ -49,28 +49,24 @@ public function actions() {
 		]);
   	}
 
-  	public function actionChildCategory() {
-
-        $out = [];
-        if (isset($_POST['depdrop_parents'])) {
-            $id = end($_POST['depdrop_parents']);
-            $list = Yii::$app->runAction('product/product-category/nodeChildren',['id'=>(int)$id,'isReturn'=>true]);
-
-            //print_r($list);die;
-            $selected  = null;
-            if ($id != null && count($list) > 0) {
-                $selected = '';
-                foreach ($list as $i => $account) {
-                    $out[] = ['id' => $account['id'], 'name' => $account['name']];
-                    if ($i == 0) {
-                        $selected = $account['id'];
-                    }
-                }
-                // Shows how you can preselect a value
-                echo Json::encode(['output' => $out, 'selected'=>$selected]);
-                return;
-            }
+  	public function actionGetNode($id) {
+  	    if(!$id)
+        {
+            $categoryPath = ProductCategory::find()->where(['level' => 0])->indexBy('id')->asArray()->all();
         }
-        echo Json::encode(['output' => '', 'selected'=>'']);
+        else
+        {
+            $nodeInfo = ProductCategory::find()->where(['id' => $id])->asArray()->one();
+            $categoryPath = ProductCategory::find()
+                ->where(['level' => $nodeInfo['level'] + 1])
+                ->andWhere(['root' => $nodeInfo['root']])
+                ->andWhere(['>', 'lft', $nodeInfo['lft']])
+                ->andWhere(['<', 'rgt', $nodeInfo['rgt']])
+                ->orderBy('lft')
+                ->indexBy('id')
+                ->asArray()
+                ->all();
+        }
+        echo json_encode($categoryPath);
   	}
 }

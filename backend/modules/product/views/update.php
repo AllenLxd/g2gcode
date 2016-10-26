@@ -13,8 +13,7 @@ $this->params['breadcrumbs'][] = Yii::t('app', '修改产品');
 
     <?= $this->render('_form', [
         'model' => $model,
-        'category' => $category,
-        'childCategory' => $childCategory,
+        'categoryPath' => $categoryPath,
     ]) ?>
 
 </div>

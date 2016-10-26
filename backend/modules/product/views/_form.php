@@ -2,12 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use \kartik\select2\Select2;
-use \kartik\depdrop\DepDrop;
 use \kartik\file\FileInput;
-use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
-use app\modules\product\models\ProductCategory;
 /* @var $this yii\web\View */
 /* @var $model app\modules\product\models\Product */
 /* @var $form yii\widgets\ActiveForm */
@@ -26,45 +22,15 @@ use app\modules\product\models\ProductCategory;
                 ]
             ]); ?>
 <div class="box-body">
-    <?=
-        $form->field($model, 'category3_id')->widget(Select2::classname(), [
 
-            'options' => ['placeholder' => '请选择分类 ...'],
+    <div class="form-group">
+        <div class="category">
+            <label class="col-sm-2 control-label">产品分类</label>
+            <select class="form-control" id="category"></select>
+        </div>
 
-            'data' => ArrayHelper::map($category,'id','name'),
-        ])->label('产品大类');
-    ?>
-
-    <?=
-        $form->field($model, 'category2_id')->widget(DepDrop::classname(), [
-            'type' => DepDrop::TYPE_SELECT2,
-            'data' => ArrayHelper::map($childCategory, 'id', 'name'),
-            'select2Options'=>['pluginOptions'=>['allowClear'=>true]],
-            'pluginOptions'=>[
-                'initialize' => true,
-                'depends'=>['product-category3_id'],
-                'placeholder' => '请选择分类 ...',
-                'url' => Url::to(['product-category/child-category']),
-                'loadingText' => '加载中 ...',
-            ]
-        ])->label('产品子类');
-    ?>
-
-    <?=
-    $form->field($model, 'category_id')->widget(DepDrop::classname(), [
-        'type' => DepDrop::TYPE_SELECT2,
-        'data' => ArrayHelper::map($childCategory, 'id', 'name'),
-        'select2Options'=>['pluginOptions'=>['allowClear'=>true]],
-        'pluginOptions'=>[
-
-            'depends'=>['product-category2_id'],
-            'placeholder' => '请选择分类 ...',
-            'url' => Url::to(['product-category/child-category']),
-            'loadingText' => '加载中 ...',
-        ]
-    ])->label('产品子类');
-    ?>
-
+    </div>
+    <?= Html::hiddenInput('Product[category_id]','', ['id' => 'category_id'])?>
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?=
@@ -109,3 +75,21 @@ use app\modules\product\models\ProductCategory;
     <?php ActiveForm::end(); ?>
 
 </div>
+
+ <?php $this->beginBlock('js_end') ?>
+    var categoryPath = <?= json_encode(array_keys(isset($categoryPath) ? $categoryPath : []))?>;
+    var opts = {
+        ajax: '?r=/product/product-category/get-node',
+        select: '#category',
+        selClass: 'form-control',
+        head: '--请选择--',
+        defVal: categoryPath
+
+    };
+    var linkageSel = new LinkageSel(opts);
+    $('form button[type=submit]').on('click', function(){
+        $('#category_id').val(linkageSel.getSelectedValue());
+    });
+ <?php $this->endBlock(); ?>
+
+<?php $this->registerJs($this->blocks['js_end'],\yii\web\View::POS_LOAD);//将编写的js代码注册到页面底部 ?>
