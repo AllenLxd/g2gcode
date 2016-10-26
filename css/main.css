@@ -1,3 +1,35 @@
+.signlogo{
+	float:left;
+	margin-left:10px;
+}
+.sign1{
+	height:50px;
+	width:350px;
+}
+.sign2{
+	height:50px;
+	width:130px;
+}
+.sign3{
+	height:50px;
+	width:110px;
+}
+.sign4{
+	height:50px;
+	width:230px;
+}
+.sign5{
+	 height:50px;
+	 width:130px;
+ }
+.sign6{
+	height:50px;
+	width:100px;
+}
+.sign0{
+	height:40px;
+	width:220px;
+}
 /**下拉菜单导航条**/
 
 .cbp-spmenu-push {
@@ -102,9 +134,7 @@ button#showRightPush {
 .productcontent{
 	margin-bottom:80px;
 }
-.welcome{
-	margin-top:50px;
-}
+
 .feacture{
 	text-indent:-15px;
 }
@@ -243,7 +273,7 @@ ul.navInfo li a.currantActive{
 }
 .form-info div.form-left{
 	width:280px;
-	height:240px;
+	height:180px;
 	float:left;
 }
 
@@ -265,19 +295,19 @@ ul.navInfo li a.currantActive{
 	border-color:#a1e919;
 	box-shadow:none;
 }
-.form-left input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	color: #97b2c3;
+.form-left input:-moz-placeholder,.registerRight input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+	color: #cbdfec;
 }
 
-.form-left input::-moz-placeholder { /* Mozilla Firefox 19+ */
-	color: #97b2c3;
+.form-left input::-moz-placeholder,.registerRight input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+	color: #cbdfec;
 }
 
-.form-left input:-ms-input-placeholder{
-	color: #97b2c3;
+.form-left input:-ms-input-placeholder,.registerRight input:-ms-input-placeholder{
+	color: #cbdfec;
 }
 
-.form-left input::-webkit-input-placeholder{
+.form-left input::-webkit-input-placeholder,.registerRight input::-webkit-input-placeholder{
 	color: #97b2c3;
 }
 .logp{
@@ -328,7 +358,25 @@ h3{
 	float:right;
 	text-align:left;
 	padding-left:40px;
-	border-left:1px solid #c5c6cb;
+}
+
+.registerRight input{
+	padding:0px;
+	color:#a1e919;
+	border-bottom:1px solid #c6d3dc; /* 下划线效果 */
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+	background-color:transparent;
+	border-radius: 0px;
+	box-shadow:none;
+}
+.registerRight input:focus{
+	border-color:#a1e919;
+	box-shadow:none;
+}
+.registerRight input::-moz-placeholder {
+	color: #cbdfec;
 }
 .registerH3{
 	margin-top:40px;
@@ -669,7 +717,7 @@ h3{
 	position:relative;
 	width:750px;
 	height:620px;
-	margin:0 auto 50px auto;
+	margin:0 auto 60px auto;
 }
 
 .otherVideo{
@@ -697,7 +745,7 @@ h3{
 	background: url('../images/ourproduct.jpg') no-repeat;
 	min-height:664px;
 	text-align:center;
-	padding:60px 0px;
+	padding:60px 0px 0px 0px;
 }
 .ourproductBg h3{
 	color:#444444;
@@ -1025,8 +1073,10 @@ body{
 	
 }
 .products-bottom{
-	margin-bottom:20px;
+	margin-bottom:40px;
 	text-align:center;
+	margin-top:40px;
+
 }
 .products-category{
 	position:relative;
@@ -1234,7 +1284,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 .footer{
 	min-height:40px;
 	background:#8aafcc;
-	margin-bottom:50px;
+	margin-bottom:60px;
 }
 .signLogo{
 	width:350px;
@@ -1256,7 +1306,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	display:block;
 }
 .footLogo{
-	margin:70px auto 30px auto;
+	margin:70px auto 10px auto;
 	text-align:center;
 }
 .foot-log-div{
@@ -1324,7 +1374,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 }
 .classify{
 	height:60px;
-	width:400px;
+	width:600px;
 	position:absolute;
 	margin:auto;
 	bottom:0px;
@@ -1456,17 +1506,17 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	background-position:38px 17px;
 }
 .secondclassify  li a.controller{
-	background-position:50px 17px;
+	background-position:20px 17px;
 }
 .secondclassify  li a.controller.active{
-	background-position:50px 17px;
+	background-position:20px 17px;
 }
 
-.secondclassify  li a.power{
-	background-position:30px 17px;
+.secondclassify  li a.accessories{
+	background-position:43px 17px;
 }
-.secondclassify  li a.power.active{
-	background-position:30px 17px;
+.secondclassify  li a.accessories.active{
+	background-position:43px 17px;
 }
 
 .secondclassify  li a.wall{
