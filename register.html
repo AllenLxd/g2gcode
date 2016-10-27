@@ -6,8 +6,9 @@
 				<p>Save your favorite properties, Users get the certification, you will get more service</p>
 				<div class="form-info">
 					<div class="form-input">
-						 <div class="form-left">
+
 						 	<form ng-submit="register()">
+								<div class="form-left">
 						 		  <div class="form-group"> 
 								    <input type="text" ng-model="reg.username" class="form-control"  placeholder="Username">
 								  </div>
@@ -17,18 +18,27 @@
 								  <div class="form-group"> 
 								    <input type="password" ng-model="reg.password" class="form-control"  placeholder="Password">
 								  </div>
-								  <button type="submit" ng-disabled="form.$invalid" class="btn btn-success btn-log">Create Account</button>
-								  
+
+								</div>
+								<div class="registerRight">
+									<div class="form-group">
+										<input type="text" ng-model="reg.telephone" class="form-control"  placeholder="Telephone">
+									</div>
+									<div class="form-group">
+										<input type="text" ng-model="reg.company" class="form-control"  placeholder="Company">
+									</div>
+									<div class="form-group">
+										<input type="text" ng-model="reg.address" class="form-control"  placeholder="Address">
+									</div>
+
+								</div>
+								<div>
+									<button type="submit" ng-disabled="form.$invalid" class="btn btn-success btn-log">Create Account</button>
+								</div>
 						 	</form>
 						 	
-						 </div>
-						 <div class="registerRight">
-						 	<h3>Warranty</h3>
-						 	<p>Log in and know more details about the warranty information of your purchase products.</p>
-						 	<h3 class="registerH3">Labor insurance</h3>
-						 	<p>A certain period of time free installation and solve the problem.</p>
-						 	
-						 </div>
+
+
 					</div>
 				</div>
 				<p><a class="login"ng-href="#login">Already have an account?</a></p>
