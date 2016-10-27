@@ -116,13 +116,13 @@ class ProductController extends CommonController
             $listImgFile = Common::uploadFile('Product[list_img]');
             if($listImgFile)
             {
-                $data['Product']['list_img'] = $listImgFile['list_img'];
+                $data['Product']['list_img'] = $listImgFile['path'];
                 @unlink(\Yii::getAlias('@upPath') . '/' . $model->list_img);
             }
             $proImgFile = Common::uploadFile('Product[list_img]');
             if($proImgFile)
             {
-                $data['Product']['pro_img'] = $proImgFile['pro_img'];
+                $data['Product']['pro_img'] = $proImgFile['path'];
                 @unlink(\Yii::getAlias('@upPath') . '/' . $model->pro_img);
             }
 
