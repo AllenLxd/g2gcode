@@ -112,11 +112,20 @@ class ProductController extends CommonController
 
         $data = Yii::$app->request->post();
         if ($data) {
-
+            $data['Product']['list_img'] = $model->list_img;
             $listImgFile = Common::uploadFile('Product[list_img]');
-            if($listImgFile) $data['Product']['list_img'] = $listImgFile['list_img'];
+            if($listImgFile)
+            {
+                $data['Product']['list_img'] = $listImgFile['path'];
+                @unlink(\Yii::getAlias('@upPath') . '/' . $model->list_img);
+            }
+            $data['Product']['pro_img'] = $model->pro_img;
             $proImgFile = Common::uploadFile('Product[list_img]');
-            if($proImgFile) $data['Product']['pro_img'] = $proImgFile['pro_img'];
+            if($proImgFile)
+            {
+                $data['Product']['pro_img'] = $proImgFile['path'];
+                @unlink(\Yii::getAlias('@upPath') . '/' . $model->pro_img);
+            }
 
             if ($model->load($data) && $model->save())
             {
@@ -139,8 +148,12 @@ class ProductController extends CommonController
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
+        $model = $this->findModel($id);
+        if($model->delete())
+        {
+            @unlink(\Yii::getAlias('@upPath') . '/' . $model->list_img);
+            @unlink(\Yii::getAlias('@upPath') . '/' . $model->pro_img);
+        }
         return $this->redirect(['index']);
     }
 
