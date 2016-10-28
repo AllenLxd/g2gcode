@@ -37,7 +37,7 @@ class Product extends \yii\db\ActiveRecord
         return [
             [['category_id', 'name', 'content'], 'required'],
             [['category_id', 'created_at','status'], 'integer'],
-            [['content'], 'string'],
+            [['content','pdf_name'], 'string'],
             [['name', 'info'], 'string', 'max' => 1000],
             [['list_img', 'pro_img'], 'string', 'max' => 90],
             ['created_at', 'default','value' => time()]
@@ -55,6 +55,7 @@ class Product extends \yii\db\ActiveRecord
             'name' => Yii::t('app', 'Name'),
             'list_img' => Yii::t('app', 'List Img'),
             'pro_img' => Yii::t('app', 'Pro Img'),
+            'pdf_name' => Yii::t('app', 'Pdf name'),
             'info' => Yii::t('app', 'Info'),
             'content' => Yii::t('app', 'Content'),
             'status' => Yii::t('app', 'Statua'),
