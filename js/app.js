@@ -124,7 +124,14 @@
 	});
 	g2gApp.controller('servicesController', function($scope) {});
 	g2gApp.controller('aboutController', function($scope) {});
-	g2gApp.controller('productListController', function($scope, $routeParams){
+	g2gApp.controller('productListController', function($scope, $http, $routeParams){
+		//获取产品分类
+		$http.get(webRoot+'category-product').success(
+		 function (data) {
+		 $scope.category =JSON.stringify(data.data);
+
+		 });
+
 		$scope.products = [
 
 			{pid:'signlighting', cid:'trico', img: 'channel_letter/trico.jpg', href: 'TriCo-Series.html'},

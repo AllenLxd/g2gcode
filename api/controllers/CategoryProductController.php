@@ -20,7 +20,26 @@ class CategoryProductController extends BaseController
 	public function actionIndex()
 	{
 		$modelClass = $this->modelClass;
-		return $modelClass::find()->select(['id','root','name'])->indexBy('id')->all();
+		$model = $modelClass::find()->indexBy('id')->asArray()->all();
+        $level = 0;
+        $catetory = [];
+        foreach ($model as $v)
+        {
+            if($v['level'] > $level) $level = $v['level'];
+        }
+
+        for ($i = 0; $i<$level; $i++)
+        {
+            foreach ($model as $v)
+            {
+               if(isset($catetory[$i]) && $i==$v['root'])
+                   $catetory[$i] = $v;
+                else
+                    $catetory[$i] = $v;
+            }
+        }
+
+        print_r($catetory);die;
 	}
 
 	public function actionView($id)

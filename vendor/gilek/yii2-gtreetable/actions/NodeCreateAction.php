@@ -35,7 +35,7 @@ class NodeCreateAction extends ModifyAction {
             if (is_callable($this->beforeAction)) {
                 call_user_func_array($this->beforeAction,['model' => $model]);
             }
-            
+
             $action = $isRootNode ? 'makeRoot' : $this->getInsertAction($model);
             if (!call_user_func(array($model, $action), $model->relatedNode)) {
                 throw new Exception(Yii::t('gtreetable', 'Adding operation `{name}` failed!', ['{name}' => Html::encode((string) $model)]));
@@ -49,7 +49,7 @@ class NodeCreateAction extends ModifyAction {
                 'id' => $model->getPrimaryKey(),
                 'name' => $model->getName(),
                 'level' => $model->getDepth(),
-                'type' => $model->getType()
+                'type' => $model->getType(),
             ]);
         } catch (\Exception $e) {
             throw new HttpException(500, $e->getMessage());

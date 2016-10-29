@@ -46,6 +46,10 @@ class NestedSetsBehavior extends Behavior
      */
     public $depthAttribute = 'depth';
     /**
+     * @var string
+     */
+    public $parentAttribute = 'parent';
+    /**
      * @var string|null
      */
     protected $operation;
@@ -366,6 +370,7 @@ class NestedSetsBehavior extends Behavior
         $this->owner->setAttribute($this->leftAttribute, 1);
         $this->owner->setAttribute($this->rightAttribute, 2);
         $this->owner->setAttribute($this->depthAttribute, 0);
+        $this->owner->setAttribute($this->parentAttribute, 0);
     }
 
     /**
@@ -382,8 +387,8 @@ class NestedSetsBehavior extends Behavior
         if ($depth === 0 && $this->node->isRoot()) {
             throw new Exception('Can not create a node when the target node is root.');
         }
-
         $this->owner->setAttribute($this->leftAttribute, $value);
+        $this->owner->setAttribute($this->parentAttribute, $this->owner->parent);
         $this->owner->setAttribute($this->rightAttribute, $value + 1);
         $this->owner->setAttribute($this->depthAttribute, $this->node->getAttribute($this->depthAttribute) + $depth);
 

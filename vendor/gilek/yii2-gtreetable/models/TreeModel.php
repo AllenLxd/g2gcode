@@ -41,7 +41,8 @@ abstract class TreeModel extends ActiveRecord {
     public $rightAttribute = 'rgt';   
     public $treeAttribute = 'root';
     public $depthAttribute = 'level';
-    
+    public $parentAttribute = 'parent';
+
     public function getName() {
         return $this->{$this->nameAttribute};
     }
@@ -49,7 +50,9 @@ abstract class TreeModel extends ActiveRecord {
     public function getType() {
         return $this->{$this->typeAttribute};
     }
-
+    public function getParent() {
+        return $this->{$this->parentAttribute};
+    }
     public function getLeft() {
         return $this->{$this->leftAttribute};
     }
@@ -73,7 +76,9 @@ abstract class TreeModel extends ActiveRecord {
     public function setType($type) {
         $this->{$this->typeAttribute} = $type;
     }
-
+    public function setParent($parent) {
+        $this->{$this->parentAttribute} = $parent;
+    }
     public function setLeft($left) {
         $this->{$this->leftAttribute} = $left;
     }
@@ -105,7 +110,7 @@ abstract class TreeModel extends ActiveRecord {
     
     public function getNestedSetParams() {
         $params = [];
-        foreach (['leftAttribute', 'rightAttribute', 'treeAttribute', 'depthAttribute'] as $attribute) {
+        foreach (['leftAttribute', 'rightAttribute', 'treeAttribute', 'depthAttribute' ,'parentAttribute'] as $attribute) {
             if ($this->$attribute !== null) {
                 $params[$attribute] = $this->$attribute;
             }
@@ -123,7 +128,8 @@ abstract class TreeModel extends ActiveRecord {
                 'leftAttribute' => $this->leftAttribute, 
                 'rightAttribute' => $this->rightAttribute, 
                 'treeAttribute' => $this->treeAttribute,
-                'depthAttribute' => $this->depthAttribute
+                'depthAttribute' => $this->depthAttribute,
+                'parentAttribute' => $this->parentAttribute
             ]
         ];
     }    
@@ -175,6 +181,7 @@ abstract class TreeModel extends ActiveRecord {
      * @inheritdoc
      */
     public function beforeSave($insert) {
+
         parent::beforeSave($insert);
 
         if ($this->isNewRecord) {
