@@ -128,8 +128,8 @@
 		//获取产品分类
 		$http.get(webRoot+'category-product').success(
 		 function (data) {
-		 $scope.category =JSON.stringify(data.data);
-
+		 	$scope.category = data.data;
+			console.log($scope.category);
 		 });
 
 		$scope.products = [

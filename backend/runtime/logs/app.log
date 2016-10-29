@@ -38957,3 +38957,1906 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1477709349.703
     'REQUEST_TIME' => 1477709349
 ]
+2016-10-29 10:55:30 [::1][11][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:55:30 [::1][11][-][info][application] $_GET = [
+    'r' => 'product/product-category/index'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+    '__id' => 11
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2Findex'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709730.731
+    'REQUEST_TIME' => 1477709730
+]
+2016-10-29 10:55:32 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:55:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '0'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53705'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=0'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=0'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709731.964
+    'REQUEST_TIME' => 1477709731
+]
+2016-10-29 10:55:37 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:55:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '136'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=136'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=136'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709737.033
+    'REQUEST_TIME' => 1477709737
+]
+2016-10-29 10:55:38 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:55:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '137'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=137'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=137'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709738.136
+    'REQUEST_TIME' => 1477709738
+]
+2016-10-29 10:56:23 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:56:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '4'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53716'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=4'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=4'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709783.082
+    'REQUEST_TIME' => 1477709783
+]
+2016-10-29 10:57:36 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:57:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '106'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=106'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=106'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709856.89
+    'REQUEST_TIME' => 1477709856
+]
+2016-10-29 10:58:58 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 10:58:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '33'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53744'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=33'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=33'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477709938.13
+    'REQUEST_TIME' => 1477709938
+]
+2016-10-29 11:00:51 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:00:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '34'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=34'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=34'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710051.339
+    'REQUEST_TIME' => 1477710051
+]
+2016-10-29 11:00:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:00:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '107'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=107'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=107'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710059.523
+    'REQUEST_TIME' => 1477710059
+]
+2016-10-29 11:01:02 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:01:02 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '108'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=108'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=108'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710062.142
+    'REQUEST_TIME' => 1477710062
+]
+2016-10-29 11:01:04 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:01:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '145'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=145'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=145'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710064.327
+    'REQUEST_TIME' => 1477710064
+]
+2016-10-29 11:01:11 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:01:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '146'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'ZlFkTlhHRE4SaAp2Nx0HIhMwLS8yHgB/VxMjHRBxKQ8uGhQCFAU9AQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53781'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=146'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=146'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710071.117
+    'REQUEST_TIME' => 1477710071
+]
+2016-10-29 11:04:47 [::1][11][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:04:47 [::1][11][-][info][application] $_GET = [
+    'r' => 'product/product-category/index'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+    '__id' => 11
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2Findex'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710287.063
+    'REQUEST_TIME' => 1477710287
+]
+2016-10-29 11:04:48 [::1][11][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:04:48 [::1][11][-][info][application] $_GET = [
+    'r' => 'product/product-category/index'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+    '__id' => 11
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2Findex'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710288.3
+    'REQUEST_TIME' => 1477710288
+]
+2016-10-29 11:04:51 [::1][11][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:04:51 [::1][11][-][info][application] $_GET = [
+    'r' => 'product/product-category/index'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/g2gcode/backend/web/index.php'
+    '__id' => 11
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2Findex'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710291.26
+    'REQUEST_TIME' => 1477710291
+]
+2016-10-29 11:04:52 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:04:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '0'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=0'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=0'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710292.547
+    'REQUEST_TIME' => 1477710292
+]
+2016-10-29 11:04:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:04:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '4'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=4'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=4'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710297.186
+    'REQUEST_TIME' => 1477710297
+]
+2016-10-29 11:05:00 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:05:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '106'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=106'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=106'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710300.1
+    'REQUEST_TIME' => 1477710300
+]
+2016-10-29 11:05:02 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:05:02 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '136'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=136'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=136'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710302.415
+    'REQUEST_TIME' => 1477710302
+]
+2016-10-29 11:08:08 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:08:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '33'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53854'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=33'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=33'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710488.132
+    'REQUEST_TIME' => 1477710488
+]
+2016-10-29 11:08:11 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:08:11 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '34'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53854'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=34'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=34'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710491.36
+    'REQUEST_TIME' => 1477710491
+]
+2016-10-29 11:09:38 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '67'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53865'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=67'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=67'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710578.925
+    'REQUEST_TIME' => 1477710578
+]
+2016-10-29 11:09:44 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '35'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=35'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=35'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710584.435
+    'REQUEST_TIME' => 1477710584
+]
+2016-10-29 11:09:49 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '36'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=36'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=36'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710589.002
+    'REQUEST_TIME' => 1477710589
+]
+2016-10-29 11:09:52 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:52 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '107'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=107'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=107'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710592.748
+    'REQUEST_TIME' => 1477710592
+]
+2016-10-29 11:09:55 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '108'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=108'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=108'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710595.23
+    'REQUEST_TIME' => 1477710595
+]
+2016-10-29 11:09:57 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '145'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=145'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=145'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710597.15
+    'REQUEST_TIME' => 1477710597
+]
+2016-10-29 11:09:59 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:09:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '146'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=146'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=146'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710599.177
+    'REQUEST_TIME' => 1477710599
+]
+2016-10-29 11:10:01 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:10:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '137'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=137'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=137'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477710601.143
+    'REQUEST_TIME' => 1477710601
+]
+2016-10-29 11:17:26 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Warning 'yii\base\ErrorException' with message 'touch(): Utime failed: Permission denied' 
+
+in /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php:75
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'touch(): Utime ...', '/Users/carl/www...', 75, Array)
+#1 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(75): touch('/Users/carl/www...')
+#2 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('/Users/carl/www...', Array)
+#3 /Users/carl/www/g2gcode/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#4 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 /Users/carl/www/g2gcode/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2016-10-29 11:17:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'product/product-category/nodeChildren'
+    'id' => '104'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a:2:{i:0;s:17:\"_identity-backend\";i:1;s:47:\"[11,\"a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF\",2592000]\";}'
+    'advanced-frontend' => '52panqaec8rlvj8jk8i268ar00'
+    '_csrf' => 'b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t9n8oZCluaIajYD11BGSH6mAHKpLLByO\";}'
+    'PHPSESSID' => 'ps0neejjgqae63flbualu1d6d2'
+    'advanced-backend' => 'ihhfhhrap8otc7icjn26ubhh77'
+    '_csrf-backend' => 'dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'eU9Yd005Nm4NdjZPImN1AgwuERYnYHJfSA0fJAUPWy8xBCg7AXtPIQ=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2Findex'
+    'HTTP_COOKIE' => '_identity-backend=4bbc8e0264c9672add86e91466bf4f1d748ee9a88a3b9bdfd4d62527b2bb36b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22a8IvWdnu1Sxli52teCQh-LJeeVHNGKGF%22%2C2592000%5D%22%3B%7D; advanced-frontend=52panqaec8rlvj8jk8i268ar00; _csrf=b2f983ca4af061c0673f814ab0804fbe51c8958e2b1be425931997f164bd1204a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t9n8oZCluaIajYD11BGSH6mAHKpLLByO%22%3B%7D; PHPSESSID=ps0neejjgqae63flbualu1d6d2; advanced-backend=ihhfhhrap8otc7icjn26ubhh77; _csrf-backend=dc865d384a664ad42bc947e115119c76ffaceba56b823be6aafc5008ab6dfd17a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sLZCv_ZH2p9MJfkwyN6XQWALwnTxdUCL%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/carl/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/carl/www/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/carl/www/g2gcode/backend/web/index.php'
+    'REMOTE_PORT' => '53940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=product%2Fproduct-category%2FnodeChildren&id=104'
+    'REQUEST_URI' => '/g2gcode/backend/web/index.php?r=product%2Fproduct-category%2FnodeChildren&id=104'
+    'SCRIPT_NAME' => '/g2gcode/backend/web/index.php'
+    'PHP_SELF' => '/g2gcode/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477711046.237
+    'REQUEST_TIME' => 1477711046
+]

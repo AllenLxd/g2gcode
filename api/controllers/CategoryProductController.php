@@ -21,25 +21,16 @@ class CategoryProductController extends BaseController
 	{
 		$modelClass = $this->modelClass;
 		$model = $modelClass::find()->indexBy('id')->asArray()->all();
-        $level = 0;
-        $catetory = [];
-        foreach ($model as $v)
-        {
-            if($v['level'] > $level) $level = $v['level'];
-        }
 
-        for ($i = 0; $i<$level; $i++)
-        {
-            foreach ($model as $v)
-            {
-               if(isset($catetory[$i]) && $i==$v['root'])
-                   $catetory[$i] = $v;
-                else
-                    $catetory[$i] = $v;
+        $tree = array();
+        foreach($model as $item){
+            if(isset($model[$item['parent']])){
+                $model[$item['parent']]['son'][] = &$model[$item['id']];
+            }else{
+                $tree[] = &$model[$item['id']];
             }
         }
-
-        print_r($catetory);die;
+        return $tree;
 	}
 
 	public function actionView($id)
