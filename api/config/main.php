@@ -23,7 +23,8 @@ return [
 	                'controller' => [
                         'user',
                         'guarantee',
-	                	'category-product',
+                        'category-product',
+                        'product',
 	                ],
 	                'pluralize'=>false
 	            ],
