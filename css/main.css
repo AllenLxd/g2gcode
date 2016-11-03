@@ -1376,7 +1376,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	left:0px;
 }
 .classify{
-	height:60px;
+	height:40px;
 	width:600px;
 	position:absolute;
 	margin:auto;
@@ -1387,15 +1387,15 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 .classifyactivebtn{
 	 display:block;
 	 float:left;
-	 line-height:60px;
+	 line-height:40px;
 	 padding: 0px 5px;
 	 font-size:18px;
 	 background:#ffffff;
-	 margin-right:10px;
+	 margin-right:5px;
 	 color:#444444;
-	 width:190px;
+	 width:170px;
 	 opacity:0.8;
-	cursor:pointer;
+	 cursor:pointer;
 
  }
 .classifyactivebtn:hover{
@@ -1413,11 +1413,12 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 }
 .secondclassify{
-	height:60px;
+	height:40px;
 	width:100%;
 	background:#ededed;
-	padding:10px 0 0 0;
+	padding:5px 0 0 0;
 	margin-bottom:5px;
+
 }
 
 .lead{
@@ -1474,11 +1475,11 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 
 .secondclassify  li a.btn-default {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	width:200px;
-	height:50px;
-	line-height:40px;
+	height:40px;
+	line-height:30px;
 	outline: none;
 	border:none;
 	color:#464646;
@@ -1496,61 +1497,61 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 }
 .secondclassify  li a.letter{
-	background-position:32px 17px;
+	background-position:32px 12px;
 }
 .secondclassify  li a.letter.active{
-	background-position:32px 17px;
+	background-position:32px 12px;
 
 }
 .secondclassify  li a.product_sign{
-	background-position:38px 17px;
+	background-position:38px 12px;
 }
 .secondclassify  li a.product_sign.active{
-	background-position:38px 17px;
+	background-position:38px 12px;
 }
 .secondclassify  li a.controller{
-	background-position:20px 17px;
+	background-position:20px 12px;
 }
 .secondclassify  li a.controller.active{
-	background-position:20px 17px;
+	background-position:20px 12px;
 }
 
 .secondclassify  li a.accessories{
-	background-position:43px 17px;
+	background-position:43px 12px;
 }
 .secondclassify  li a.accessories.active{
-	background-position:43px 17px;
+	background-position:43px 12px;
 }
 
 .secondclassify  li a.wall{
-	background-position:38px 17px;
+	background-position:38px 12px;
 }
 .secondclassify  li a.wall.active{
-	background-position:38px 17px;
+	background-position:38px 12px;
 }
 .secondclassify  li a.flood{
-	background-position:40px 17px;
+	background-position:40px 12px;
 }
 .secondclassify  li a.flood.active{
-	background-position:40px 17px;
+	background-position:40px 12px;
 }
 .secondclassify  li a.shoe{
-	background-position:33px 17px;
+	background-position:33px 12px;
 }
 .secondclassify  li a.shoe.active{
-	background-position:33px 17px;
+	background-position:33px 12px;
 }
 .secondclassify  li a.retrofit{
-	background-position:45px 17px;
+	background-position:45px 12px;
 }
 .secondclassify  li a.retrofit.active{
-	background-position:45px 17px;
+	background-position:45px 12px;
 }
 .secondclassify  li a.t8{
-	background-position:55px 17px;
+	background-position:55px 12px;
 }
 .secondclassify  li a.t8.active{
-	background-position:55px 17px;
+	background-position:55px 12px;
 }
 .btn:active, .btn.active {
 	background-image: none;
