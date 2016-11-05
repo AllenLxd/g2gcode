@@ -142,14 +142,14 @@
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_white.jpg', href: 'Aurora-sv-white.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_red.jpg', href: 'Aurora-red.html'},
-			{pid:'signlighting', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},
+			/*{pid:'signlighting', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
 			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
 
 			{pid:'signlighting', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
 			{pid:'signlighting', cid:'array', img: 'sign_box/g2g_array.jpg', href: 'ArRay-Lighting-System.html'},
-			{pid:'signlighting', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
+			/*{pid:'signlighting', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},*/
 			{pid:'signlighting', cid:'trident', img: 'sign_box/trident_df.jpg', href: 'Trident-DF.html'},
 			{pid:'signlighting', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
 			{pid:'signlighting', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'trident_stick_df.html'},
@@ -210,14 +210,14 @@
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_white.jpg', href: 'Aurora-sv-white.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_red.jpg', href: 'Aurora-red.html'},
-			{pid:'letter', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},
+			/*{pid:'letter', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
 
 			{pid:'sign', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
 			{pid:'sign', cid:'array', img: 'sign_box/g2g_array.jpg', href: 'ArRay-Lighting-System.html'},
-			{pid:'sign', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},
+			/*{pid:'sign', cid:'sparx', img: 'sign_box/sparx.jpg', href: 'SparX-Lighting-System.html'},*/
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_df.jpg', href: 'Trident-DF.html'},
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
 			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'trident_stick_df.html'},
