@@ -1515,6 +1515,12 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 .secondclassify  li a.product_sign.active{
 	background-position:38px 12px;
 }
+.secondclassify  li a.neon{
+	background-position:50px 12px;
+}
+.secondclassify  li a.neon.active{
+	background-position:50px 12px;
+}
 .secondclassify  li a.controller{
 	background-position:20px 12px;
 }
