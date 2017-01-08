@@ -1,3 +1,41 @@
+.g2gpart{
+	width: 70%;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	text-align: center;
+	color:#ffffff;
+}
+.g2gpart h2{
+	font-size:68px;
+	margin-bottom: 5px;
+	font-family:"Avgardd";
+}
+.g2gpart h3{
+	font-size:30px;
+	margin-bottom:5%;
+	font-weight: Normal;
+}
+.g2gpart p{
+	font-size:14px;
+	margin-bottom:5%;
+}
+.g2gpart a{
+	font-size:30px;
+	width:20%;
+	border-radius:5px;
+	font-weight: Normal;
+	background:#4FC4F7;
+	border:none;
+	color:#fff;
+	line-height:45px;
+	height:55px;
+	padding-top:8px;
+}
+.g2gpart a:hover,.g2gpart a:active:hover{
+	color:#fff;
+	background-color:#46C1F7;
+}
 sup{
 	font-size:5px;
 }
@@ -533,7 +571,7 @@ h3{
 }
 .installation{
 	padding-left:70px;
-	padding-top:30px;
+	
 }
 .download-text{
 	float:left;
@@ -786,16 +824,16 @@ h3{
 	border-radius:0px;
 }
 .latestPart{
-	width:250px;
-	height:350px;
+	width:300px;
+	height:325px;
 	float:left;
-	margin-left:6px;
+	margin-left:30px;
 	position:relative;
 }
 .ourproduct{
-	width:800px;
+	width:1000px;
 	height:400px;
-	margin:50px auto;
+	margin:40px auto;
 }
 .navbar-default {
     background: #ffffff;
