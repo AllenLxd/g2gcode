@@ -1,3 +1,191 @@
+.anpro_pro{
+	width:900px;
+	overflow:hidden;
+}
+/*neon page 开始*/
+.colorshow{
+	width:840px;
+	height:80px;
+
+}
+.colorshow .color_point{
+	width:168px;
+	height:80px;
+	float:left;
+
+}
+.colorshow .color_point div{
+	width:100%;
+	height:50%;
+    font-size:18px;
+    color:#595858;
+}
+.colorshow .color_point .white{
+	background:url('../images/yellow.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .red{
+	background:url('../images/red.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .green{
+	background:url('../images/green.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .blue{
+	background:url('../images/blue.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .yellow{
+	background:url('../images/yellow.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .pink_purple{
+	background:url('../images/pink_purple.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .warm_white{
+	background:url('../images/warm_white.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .ice_blue{
+	background:url('../images/ice_blue.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .amber_yellow{
+	background:url('../images/amber_yellow.png') 70px 10px no-repeat; 
+}
+.colorshow .color_point .orange{
+	background:url('../images/orange.png') 70px 10px no-repeat; 
+}
+.ten_colors{
+	color:#7a7979;
+	font-size:26px;
+	padding:15px 0px 3px 0px;
+	border-bottom:1px solid #e7e3e4;
+	width:840px;
+	margin-bottom:10px;
+}
+.icons{
+	width:840px;
+	height:80px;
+	background:#f0f0f0;
+}
+.icons .icon_label{
+	height:80px;
+	float:left;
+}
+.icons .icon_label1{
+	width:150px;
+}
+.icons .icon_label2{
+	width:170px;
+}
+.icons .icon_label3{
+	width:190px;
+}
+.icons .icon_label4{
+	width:150px;
+}
+.icons .icon_label5{
+	width:180px;
+}
+.icons .icon_label div{
+	float:left;
+	height:100%;
+	line-height:80px;
+	color:#acacac;
+	font-size:13px;
+}
+.icons .icon_label .icon_logo{
+	width:35%;
+}
+.icons .icon_label .uv{
+	background:url('../images/uv.png') 5px 18px no-repeat; 
+}
+.icons .icon_label .ambient{
+	background:url('../images/ambient.png') 5px 20px no-repeat; 
+}
+.icons .icon_label .saltwater{
+	background:url('../images/saltwater.png') 5px 20px no-repeat; 
+}
+.icons .icon_label .dimmable{
+	background:url('../images/dimmable.png') 5px 20px no-repeat; 
+}
+.icons .icon_label .flame{
+	background:url('../images/flame.png') 5px 20px no-repeat; 
+}
+.neon_sign{
+	background:url('../images/neon_sign.jpg')  no-repeat; 
+	width:850px;
+	height:600px;
+	position:relative;
+}
+.neon_sign_text{
+	position:absolute;
+	width:500px;
+	height:50px;
+	top:155px;
+	left:30px;
+}
+
+.neon_sign_text h3{
+	font-size:50px;
+	color:#3B57AC;
+	font-family: "Helvetica Light";
+}
+.neon_sign_info{
+	position:absolute;
+	width:410px;
+	height:100px;
+	bottom:0px;
+	right:40px;
+}
+.neon_sign_info p{
+	font-size:16px;
+}
+.neon_text{
+	width:840px;
+	height:120px;
+	margin-top:20px;
+	background:#f0f0f0;
+	padding:20px 20px;
+}
+.neon_text p{
+	font-size:29px;
+}
+.flex_mini{
+	background:url('../images/flex_mini.jpg')  no-repeat; 
+	width:850px;
+	height:600px;
+	position:relative;
+}
+.flex_mini_text{
+	position:absolute;
+	width:400px;
+	height:50px;
+	top:100px;
+	right:0px;
+}
+
+.flex_mini_text h3{
+	font-size:50px;
+	color:#3B57AC;
+	font-family: "Helvetica Light";
+}
+.flex_mini_info{
+	position:absolute;
+	width:410px;
+	height:100px;
+	bottom:60px;
+	left:25px;
+}
+.flex_mini_info p{
+	font-size:16px;
+}
+.flex{
+	background:url('../images/flex.jpg')  no-repeat; 
+	margin-bottom:20px;
+}
+.size{
+	width:850px;
+}
+.size h3{
+	border-bottom:1px solid;
+}
+/*neon page 结束*/
 .g2gpart{
 	width: 70%;
 	position: absolute;
