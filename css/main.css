@@ -1729,7 +1729,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 
 }
 .secondclassify  li a.letter{
-	background-position:32px 12px;
+	background-position:27px 12px;
 }
 .secondclassify  li a.letter.active{
 	background-position:28px 12px;
@@ -1742,10 +1742,10 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	background-position:38px 12px;
 }
 .secondclassify  li a.neon{
-	background-position:50px 12px;
+	background-position:43px 12px;
 }
 .secondclassify  li a.neon.active{
-	background-position:50px 12px;
+	background-position:43px 12px;
 }
 .secondclassify  li a.controller{
 	background-position:20px 12px;
