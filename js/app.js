@@ -160,6 +160,8 @@
 			{pid:'signlighting', cid:'tridentbracket', img: 'accessories/tridentbracket.jpg', href: 'tridentbracket.html'},
 			{pid:'signlighting', cid:'hosocket', img: 'accessories/hosocket.jpg', href: 'Ho_socket.html'},
 			{pid:'signlighting', cid:'neon', img: 'neon/neon.jpg', href: 'neon.html'},
+			{pid:'signlighting', cid:'anpro-stick', img: 'sign_box/anpro_180_stick_sf.jpg', href: 'anpro_stick_sf.html'},
+			{pid:'signlighting', cid:'anpro-stick', img: 'sign_box/anpro_180_stick_df.jpg', href: 'anpro_stick_df.html'},
 
 			{pid:'outdoorlighting', cid:'oona-slim', img: 'wall_washer/oona_slim.jpg', href: 'oona_slim_wall_washer.html'},
 			{pid:'outdoorlighting', cid:'i_series', img: 'wall_washer/lww_1.jpg', href: 'Wall-Washer-I-Series.html'},
@@ -226,6 +228,8 @@
 			{pid:'sign', cid:'trident', img: 'sign_box/trident_sf.jpg', href: 'Trident-SF.html'},
 			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_df.jpg', href: 'trident_stick_df.html'},
 			{pid:'sign', cid:'trident-stick', img: 'sign_box/stick_sf.jpg', href: 'trident_stick_sf.html'},
+			{pid:'sign', cid:'anpro-stick', img: 'sign_box/anpro_180_stick_sf.jpg', href: 'anpro_stick_sf.html'},
+			{pid:'sign', cid:'anpro-stick', img: 'sign_box/anpro_180_stick_df.jpg', href: 'anpro_stick_df.html'},
 			
 			{pid:'accessories', cid:'arraybracket', img: 'accessories/arraybracket.jpg', href: 'arraybracket.html'},
 			{pid:'accessories', cid:'tridentbracket', img: 'accessories/tridentbracket.jpg', href: 'tridentbracket.html'},
