@@ -117,12 +117,23 @@
 	position:absolute;
 	width:500px;
 	height:50px;
-	top:155px;
-	left:30px;
+	top:70px;
+	left:0px;
 }
-
+.neon_sign_content{
+	position:absolute;
+	width:500px;
+	height:50px;
+	top:120px;
+	left:0px;
+}
+.neon_sign_content h3{
+	font-size:47px;
+	color:#3B57AC;
+	font-family: "Helvetica Light";
+}
 .neon_sign_text h3{
-	font-size:50px;
+	font-size:47px;
 	color:#3B57AC;
 	font-family: "Helvetica Light";
 }
@@ -130,10 +141,20 @@
 	position:absolute;
 	width:410px;
 	height:100px;
-	bottom:0px;
-	right:40px;
+	bottom:40px;
+	right:70px;
 }
 .neon_sign_info p{
+	font-size:16px;
+}
+.aurora_flex_info{
+	position:absolute;
+	width:410px;
+	height:100px;
+	bottom:70px;
+	right:90px;
+}
+.aurora_flex_info p{
 	font-size:16px;
 }
 .neon_text{
@@ -156,7 +177,7 @@
 	position:absolute;
 	width:400px;
 	height:50px;
-	top:100px;
+	top:85px;
 	right:0px;
 }
 
@@ -167,10 +188,10 @@
 }
 .flex_mini_info{
 	position:absolute;
-	width:410px;
+	width:380px;
 	height:100px;
-	bottom:60px;
-	left:25px;
+	bottom:70px;
+	left:0px;
 }
 .flex_mini_info p{
 	font-size:16px;
