@@ -1,3 +1,7 @@
+.product-features p{
+	text-indent: 10px;
+	margin: 0 0 0px;
+}
 .anpro_pro{
 	width:900px;
 	overflow:hidden;

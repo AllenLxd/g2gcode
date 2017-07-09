@@ -147,6 +147,8 @@
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
 			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro_180.jpg', href: 'anpro_pro.html'},
+			{pid:'signlighting', cid:'micro', img: 'channel_letter/micro.jpg', href: 'g2g_micro.html'},
+			
 			
 
 			{pid:'signlighting', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
@@ -221,6 +223,7 @@
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro_180.jpg', href: 'anpro_pro.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
+			{pid:'letter', cid:'micro', img: 'channel_letter/micro.jpg', href: 'g2g_micro.html'},
 
 			{pid:'sign', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
 			{pid:'sign', cid:'array', img: 'sign_box/g2g_array.jpg', href: 'ArRay-Lighting-System.html'},
