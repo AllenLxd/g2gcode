@@ -1650,7 +1650,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	 background:#ffffff;
 	 margin-right:5px;
 	 color:#444444;
-	 width:170px;
+	 width:190px;
 	 opacity:0.8;
 	 cursor:pointer;
 
@@ -1799,7 +1799,7 @@ header > nav > div > div > ul > li > div.dropdown-menu > div.container > ul.nav{
 	background-position:40px 12px;
 }
 .secondclassify  li a.shoe{
-	background-position:33px 12px;
+	background-position:28px 12px;
 }
 .secondclassify  li a.shoe.active{
 	background-position:33px 12px;
