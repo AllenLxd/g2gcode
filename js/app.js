@@ -172,7 +172,7 @@
 			{pid:'outdoorlighting', cid:'v_series', img: 'wall_washer/lww_5.jpg', href: 'Wall-Washer-V-Series.html'},
 			{pid:'outdoorlighting', cid:'vi_series', img: 'wall_washer/lww_6.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
 			{pid:'outdoorlighting', cid:'vii_series', img: 'wall_washer/lww_7.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
-			{pid:'outdoorlighting', cid:'viii_series', img: 'wall_washer/lww_8.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+			{pid:'outdoorlighting', cid:'viii_series', img: 'wall_washer/lww_8.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8B-108P.html'},
 
 
 
@@ -249,7 +249,7 @@
 			{pid:'wall', cid:'v_series', img: 'wall_washer/lww_5.jpg', href: 'Wall-Washer-V-Series.html'},
 			{pid:'wall', cid:'vi_series', img: 'wall_washer/lww_6.jpg', href: 'Wall-Washer-Ⅵ-Series.html'},
 			{pid:'wall', cid:'vii_series', img: 'wall_washer/lww_7.jpg', href: 'Wall-Washer-Ⅶ-Series.html'},
-			{pid:'wall', cid:'viii_series', img: 'wall_washer/lww_8.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8A-144P.html'},
+			{pid:'wall', cid:'viii_series', img: 'wall_washer/lww_8.jpg', href: 'Wall-Washer-Ⅷ-Series-LWW-8B-108P.html'},
 
 
 
