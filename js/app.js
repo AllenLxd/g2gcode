@@ -145,7 +145,7 @@
 			/*{pid:'signlighting', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
 			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
-			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
+			/*{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},*/
 			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro_180.jpg', href: 'anpro_pro.html'},
 			{pid:'signlighting', cid:'micro', img: 'channel_letter/micro.jpg', href: 'g2g_micro.html'},
 			
@@ -222,7 +222,7 @@
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro_180.jpg', href: 'anpro_pro.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
-			{pid:'letter', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},
+			/*{pid:'letter', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},*/
 			{pid:'letter', cid:'micro', img: 'channel_letter/micro.jpg', href: 'g2g_micro.html'},
 
 			{pid:'sign', cid:'side', img: 'sign_box/side.jpg', href: 'Side-Lighting-System.html'},
