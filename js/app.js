@@ -321,7 +321,7 @@
 	    		}
 
 	    		$scope.pid = pid;
-			    $scope.cid = cid;
+			$scope.cid = cid;
 
 	    };
 	});
