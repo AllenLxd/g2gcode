@@ -9,7 +9,7 @@
   src: url('../fonts/Champagne.ttf') format('truetype');
   
    font-family: Shree; 
-  src: url('../fonts/Shree714.ttc') ;
+  src: url('../fonts/Shree714.ttf') format('truetype');
   
   
   
@@ -23,7 +23,7 @@
   src: url('../fonts/TamilMN.ttf') format('truetype'); 
    
   font-family: DevanagariSangam; 
-  src: url('../fonts/Devanagari-Sangam.ttc') format('truetype');  
+  src: url('../fonts/Devanagari.ttf') format('truetype');  
  
   
   font-family: sfnew; 
