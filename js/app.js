@@ -55,6 +55,8 @@
 	});
 
 	g2gApp.controller('mainController', function($scope,$http,$window,$rootScope) {
+		
+		
         $scope.reg = {};
 		$scope.log = {};
 		$scope.register = function(){
@@ -140,7 +142,7 @@
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_mini_white.jpg', href: 'Aurora-mini-white.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_iii_gen_i.jpg', href: 'Aurora-III-GenI.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_white.jpg', href: 'Aurora-sv-white.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},
+			/*{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},*/
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_red.jpg', href: 'Aurora-red.html'},
 			/*{pid:'signlighting', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
 			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
@@ -186,6 +188,7 @@
 			{pid:'signlighting', cid:'diywifi', img: 'controller/diy_wifi.jpg', href: 'Controllerdiywifi.html'},
 			{pid:'signlighting', cid:'rf3keys', img: 'controller/rf_3keys.jpg', href: 'ControllerRF3keys.html'},
 			{pid:'signlighting', cid:'knod', img: 'controller/knob.jpg', href: 'ControllerKnod.html'},
+			{pid:'signlighting', cid:'talenti', img: 'controller/talent_i.jpg', href: 'talent_i.html'},
 
 		   /*{pid:'signlighting', cid:'100W', img: 'power/100W.jpg', href: 'power100W.html'},
 			{pid:'signlighting', cid:'200W', img: 'power/200W.jpg', href: 'power200W.html'},
@@ -216,7 +219,7 @@
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_mini_white.jpg', href: 'Aurora-mini-white.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_iii_gen_i.jpg', href: 'Aurora-III-GenI.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_white.jpg', href: 'Aurora-sv-white.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},
+			/*{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},*/
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_red.jpg', href: 'Aurora-red.html'},
 			/*{pid:'letter', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro-Series.html'},
@@ -263,6 +266,7 @@
 			{pid:'controller', cid:'diywifi', img: 'controller/diy_wifi.jpg', href: 'Controllerdiywifi.html'},
 			{pid:'controller', cid:'rf3keys', img: 'controller/rf_3keys.jpg', href: 'ControllerRF3keys.html'},
 			{pid:'controller', cid:'knod', img: 'controller/knob.jpg', href: 'ControllerKnod.html'},
+			{pid:'controller', cid:'talenti', img: 'controller/talent_i.jpg', href: 'talent_i.html'},
 
 			{pid:'power', cid:'100W', img: 'power/power_100.jpg', href: 'power100W.html'},
 			{pid:'power', cid:'200W', img: 'power/power_200.jpg', href: 'power200W.html'},
@@ -689,5 +693,6 @@
 		    }
 		  };
 		});*/
+		
 	
 })(window.angular);

@@ -1,3 +1,808 @@
+@font-face { 
+  font-family: Krungthep; 
+  src: url('../fonts/Krungthep.ttf');
+  
+    font-family: Leelaw; 
+  src: url('../fonts/LeelawUI.ttf');
+  
+  font-family: Champagne; 
+  src: url('../fonts/Champagne.ttf');
+  
+   font-family: Shree; 
+  src: url('../fonts/Shree714.ttc');
+  
+  
+  
+  font-family: sfnew; 
+  src: url('../fonts/SFNewRepublicSC.ttf');
+  font-family: Papyrus; 
+  src: url('../fonts/Papyrus-Regular.ttf');
+  
+  
+  font-family: Tamil; 
+  src: url('../fonts/TamilMN.ttf'); 
+   
+  font-family: DevanagariSangam; 
+  src: url('../fonts/Devanagari-Sangam.ttc');  
+ 
+  
+  font-family: sfnew; 
+  src: url('../fonts/sfnewrepublicsc-bold.ttf');
+   
+  font-family: Walkway; 
+  src: url('../fonts/Walkway-Black.ttf'); 
+ 
+   
+  font-family: BPreplay; 
+  src: url('../fonts/bpreplaybold.ttf'); 
+
+  
+  font-family: MyriadPro; 
+  src: url('../fonts/MyriadPro-Light.ttf'); 
+
+}
+
+/* 5. SLIDER */
+.slide-bg{
+	background:#f9f9f9;
+}
+
+.banner-letter {
+		left: 10%;
+		top: 32%;
+		width:450px;
+		margin: 0px; 
+}
+
+.carousel-caption {
+    font-size: 15px;
+    text-align: left;
+    color: #fff;
+    text-shadow: none;
+}
+.banner-anpro180 h3{
+	font-size:32px;
+	font-family: Flexo-light; 
+	margin-bottom:15px;
+}
+.banner-anpro180 h4{
+	font-size:19px;
+	font-family: Flexo-light; 
+	margin-bottom:15px;
+}
+.banner-anpro180 p{
+	font-size:9px;
+	font-family: MyriadPro; 
+	border-left: 1px solid #ffffff;
+	padding-left:10px;
+	line-height:20px;
+	width:300px;
+	margin-bottom:20px;
+}
+.banner-anpro180 a{
+	font-family: Flexo-light;
+	font-size:6px;
+	width: 90px;
+	height:28px;
+	background:#ffffff;
+	border-radius:12px;
+	color:#41643a;
+}
+.banner-anpro180 a span{
+
+	color:#d71518;
+}
+.banner-micro {
+	left: 20%;
+	top: 40%;
+}
+.banner-micro h3{
+	font-size:40px;
+	font-family: Krungthep; 
+	margin-bottom:15px;
+	color:#060202;
+	font-weight:bold;
+}
+.banner-micro h4 strong{
+	font-size:40px;
+	font-family: Tamil; 
+	color:#ba373a; 
+}
+.banner-micro h4 {
+	font-size:27px;
+	font-family: DevanagariSangam; 
+	color:#060202; 
+}
+.banner-micro  p{
+	font-size:11px;
+	color:#666767;
+	font-family: DevanagariSangam; 
+	margin-bottom:20px;
+}
+.banner-micro  div{
+	width:60px;
+	height:2px;
+	border-top:1px solid #060202;
+	margin-bottom:20px;
+}
+.banner-micro a{
+	font-family: Flexo-light;
+	font-size:6px;
+	width: 100px;
+	height:28px;
+	background:#9a1f24;
+	border-radius:0px;
+	color:#ffffff;
+	padding:5px;
+}
+.banner-micro a:hover{
+	font-family: Flexo-light;
+	font-size:6px;
+	width: 100px;
+	height:28px;
+	background:#9a1f24;
+	border-radius:0px;
+	color:#ffffff;
+	padding:5px;
+}
+.banner-wow {
+	left: 20%;
+	top: 30%;
+}
+.banner-wow h4{
+	font-family: MyriadPro;
+	font-size:15px;
+	color:#e5e3e2;
+}
+.banner-wow h3{
+	 font-family: sfnew; 
+	font-weight:bold;
+	font-size:31px;
+	color:#ffffff;
+}
+.banner-wow h5{
+	font-size:16px;
+	color:#ffffff;
+   font-family: sfnew;
+	text-transform:uppercase;
+}
+.banner-wow p{
+	
+	font-size:12px;
+	color:#ffffff;
+	font-family: Walkway;
+	font-weight:bold; 
+}
+.banner-wow p{
+	
+	font-size:11px;
+	color:#ffffff;
+	font-family: 'Walkway'; 
+}
+.banner-wow a{
+	font-family: Flexo-light;
+	font-size:6px;
+	width: 90px;
+	height:28px;
+	background:#ffffff;
+	border-radius:12px;
+	color:#3581b2;
+}
+.banner-wow a:hover{
+
+	color:#3581b2;
+}
+
+.banner-wow a span{
+
+	color:#d71518;
+}
+.banner-trico {
+	left: 10%;
+	top: 30%;
+	 text-align: center;
+}
+.banner-trico h4{
+	font-family: MyriadPro;
+	font-size:21px;
+	color:#ffffff;
+	
+}
+.banner-trico h3{
+	font-family: MyriadPro;
+	font-size:36px;
+	color:#ffffff;
+}
+.banner-trico p{
+	font-family: Papyrus; 
+	color:#ffffff;
+	font-size:10px;
+}
+.banner-trico a{
+	font-family: Flexo-light;
+	font-size:6px;
+	width: 90px;
+	height:28px;
+	background:#ffffff;
+	border-radius:12px;
+	color:#3581b2;
+}
+.banner-trico a:hover{
+
+	color:#3581b2;
+}
+
+.banner-trico a span{
+
+	color:#d71518;
+}
+.banner-talent {
+	left: 10%;
+	top: 30%;
+}
+.banner-talent h3{
+	 font-family: BPreplay; 
+	font-size:40px;
+	color:#395339;
+	font-weight:bold;
+	
+}
+.banner-talent h4{
+	 font-family: Leelaw; 
+	font-size:10px;
+	color:#050000;
+}
+.banner-talent p{
+	font-family: Champagne; 
+	color:#544f47;
+	font-size:8px;
+}
+
+.banner-talent a{
+	font-family: Flexo-light;
+	font-size:5px;
+	width: 90px;
+	height:28px;
+	background:#ffffff;
+	border-radius:12px;
+	color:#41643a;
+}
+.banner-talent a:hover{
+
+	color:#41643a;
+}
+
+.banner-talent a span{
+
+	color:#d71518;
+}
+.banner-flex {
+	left: 5%;
+	top: 35%;
+	text-align:right;
+}
+.banner-flex h3 {
+	font-family: Flexo-light; 
+	font-size:53px;
+	color:#ffffff;
+	
+}
+.banner-flex h3 span{
+	font-family: Flexo-light; 
+	font-size:27px;
+	color:#535454;
+	padding-right: 10px;
+	
+}
+.banner-flex h4{
+	font-size:10px;
+	color:#686d6d;
+}
+.banner-flex p{
+	color:#544f47;
+	font-size:8px;
+}
+.banner-flex a{
+	font-family: Flexo-light;
+	font-size:5px;
+	width: 90px;
+	height:28px;
+	background:#ffffff;
+	border-radius:12px;
+	color:#aeb39a;
+}
+.banner-flex a:hover{
+
+	color:#aeb39a;
+}
+
+.banner-flex a span{
+
+	color:#d71518;
+}
+/* 5. SLIDER结束 */
+/* 6. LED difference 开始 */
+.led-difference{
+	width:100%;
+	height:700px;
+	background:#f9f9f9;
+	padding: 80px 30px 0px 30px;
+}
+.wrap {
+	  margin-top:40px;
+	  padding:60px 0 60px 0;
+    width: 85%;
+    margin: 0 auto;
+    text-align:center;
+    background:#ffffff;
+    }
+    .wrap h3{
+	  font-size:20px;
+	  margin-bottom:20px;
+	  font-weight: bold;
+    }
+    .wrap p{
+	  font-size:10px;
+	  margin-bottom:20px;
+    }
+.btn-group span{
+	font-size:20px;
+	cursor:pointer;
+
+	
+}
+
+.dfactive {
+    background: #ffffff;
+    color: red;
+    }
+.dfcontent {
+	  position:relative;
+    width: 100%;
+    height: 350px;
+    line-height: 300px;
+    text-align: center;
+    background: #ffffff;
+    font-size: 36px;
+    color: #f1f1f1;
+    }
+ .dfcontent div{
+	  position:absolute;
+	  width: 100px;
+	  height:100px;
+    }
+    .dfcontent div img{
+	  margin-bottom:15px;
+	  
+    }
+    .dfcontent div h3{
+	     font-family: 15px;
+	     color:#505050;
+	     
+	     }
+    .dfcontent .dftech{
+	  left:20%;
+	  top:130px;
+    }
+    .dfcontent .tech-h3{
+	  position:absolute;
+	  left:18%;
+	  top:240px;
+	   font-family: 15px;
+	     color:#505050;
+    }
+    .dfcontent .dfvideo{
+	  left:45%;
+	  top:60px;
+    }
+    .dfcontent .dfwarranty{
+	  right:20%;
+	  top:130px;
+    }
+.dfcontent .btn-more{
+	    position:absolute;
+      left:44.5%;
+	    top:250px;
+	    color:#ffffff;
+	    font-size:18px;
+	    width:120px;
+	    height:40px;
+	    border-radius:8px;
+    }
+
+   
+
+
+/* 6. LED difference 结束 */
+/* 7. sign lighting 开始 */
+    .sign-part{
+    	  width:100%;
+				height:400px;
+				background:#f9f9f9;
+				padding: 30px 30px 0px 30px;
+				position:relative;
+			
+    }
+    .sign-part-contect{
+    	  width:900px;
+    	  height:400px;
+    	  margin:0 auto;
+    }
+    .sign-img{
+    	margin:0 20px 0 40px;
+    }
+    #sign-content{
+    	padding-left:50px;
+    }
+    #sign-content h4{
+    	font-size:12px;
+    	margin:0px 0 20px 0;
+    }
+   #sign-content h3{
+    	font-size:20px;
+    	margin:0px 0 20px 0;
+    	color:#130306;
+    	font-weight:bold;
+    }
+    .sign-app{
+    	margin: 30px 0 10px 0;
+    	font-size:12px;
+    }
+    .sign-row div{
+    	padding:0 20px 20px 0;
+    }
+    .btn-sign{
+    	display: block;
+	    height: 35px;
+	    width: 80px;
+	    background: #2e6bb8;
+	    border-radius: 15px;
+	    color: #ffffff;
+	    padding: 8px;
+	    text-align: center;
+    }
+    
+        
+    .zigzag-bottom{
+    	background:#f2f2f2;
+    	bottom: -130px;
+	    height: 170px;
+	    left: -5%;
+	    position: absolute;
+	    transform: rotate(3deg);
+	    width: 108%;
+	    z-index: 9;
+    }
+     .com{
+    	  width:100%;
+				height:430px;
+				background:#f2f2f2;
+				padding: 30px 30px 0px 30px;
+				position:relative;
+				z-index: 10;
+			
+    }
+    .outdoor{
+    	  width:100%;
+				height:350px;
+				background:#f9f9f9;
+				padding: 30px 30px 0px 30px;
+				position:relative;
+				z-index: 10;
+			
+    }
+    .zig-bottom{
+    	background:#f9f9f9;
+    	bottom: -130px;
+	    height: 170px;
+	    left: -5%;
+	    position: absolute;
+	    transform: rotate(3deg);
+	    width: 108%;
+	    z-index: 13;
+    }
+    
+/* 7. sign lighting 结束 */
+/* home support 开始 */
+  .home-support{
+  	width:100%;
+  	height:850px;
+  	background:#f9f9f9;
+  	padding: 30px 0px;
+  	text-align:center;
+  }
+  .home-support .support-title{
+  	width:40%;
+  	text-align:center;
+  	margin:0 auto;
+  }
+  .support-title h2{
+  	margin-bottom:20px;
+  }
+  
+  .support-content{
+  	width: 900px;
+  	height: 600px;
+  	margin:0 auto;
+  	padding:40px 0;
+  	position:relative;
+  }
+  .support-row{
+  	position:relative;
+  	margin-right:30px;
+  }
+  .support-btn{
+  	position:absolute;
+  	width:60px;
+  	height:60px;
+  	z-index:10;
+  	cursor:pointer;
+  }
+   .cata{
+  	background:url('../images/ca.png')  no-repeat ;
+  	right:45px;
+  	top: 160px;
+    background-size:100% 100%;
+  }
+     .cata:hover{
+  	background:url('../images/cac.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+   .cataactive{
+  	background:url('../images/cac.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+   .app{
+  	background:url('../images/app.png')  no-repeat ;
+  	right:160px;
+  	top: 40px;
+    background-size:100% 100%;
+  }
+     .app:hover{
+  	background:url('../images/appc.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+  .appactive{
+  	background:url('../images/appc.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+  .wa{
+  	background:url('../images/wa.png')  no-repeat ;
+  	left:45px;
+  	top: 160px;
+    background-size:100% 100%;
+  }
+     .wa:hover{
+  	background:url('../images/wac.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+  .waactive{
+  	background:url('../images/wac.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+  .in{
+  	background:url('../images/in.png')  no-repeat ;
+  	right:160px;
+  	bottom: 140px;
+    background-size:100% 100%;
+  }
+     .in:hover{
+  	background:url('../images/inc.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+  .inactive{
+  	background:url('../images/inc.png')  no-repeat ;
+    background-size:100% 100%;
+  }
+  .support-art{
+  	margin-top:80px;
+  	text-align:left;
+  	padding-left:20px;
+  }
+   .support-art h2{
+  	font-size:25px;
+  	margin-bottom:20px;
+  	font-weight:bold;
+  }
+  .support-art h4{
+  	font-size:14px;
+  	line-height:16px;
+  	text-indent:20px;
+  	background:url('../images/support-log.png')  no-repeat 0px 0px;
+  	height:16px;
+  }
+  .sup-btn{
+  	border-radius:14px;
+  	display:block;
+  	width:100px;
+  	height:35px;
+  	line-height:35px;
+  	position:absolute;
+  	left:40%;
+  	bottom:130px;
+  }
+  .sup-btn:hover,.btn-sign:hover{
+  	text-decoration: none;
+  }
+  
+  
+/* home support 结束 */
+/* Talent I 开始 */
+.detail-banner {
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.detail-banner img {
+    min-height: 386px;
+    width: 100%;
+}
+.aurora_sv_white div {
+    position: absolute;
+    width: 35%;
+    height: 20%;
+    top: 52%;
+    left: 7%;
+}
+/* Talent I  结束 */
+ /*footer 开始* */
+     .foot-bg{
+     	background:url('../images/foot-bg.jpg')  no-repeat;
+     	padding: 100px 20px 30px 20px;
+     	background-size:100%;
+     }
+     .signlogo{
+	float:left;
+	margin-left:10px;
+	margin-bottom:10px;
+	}
+	.sign1{
+		height:50px;
+		width:350px;
+	}
+	.sign2{
+		height:50px;
+		width:130px;
+	}
+	.sign3{
+		height:50px;
+		width:110px;
+	}
+	.sign4{
+		height:50px;
+		width:230px;
+	}
+	.sign5{
+		 height:50px;
+		 width:130px;
+	 }
+	.sign6{
+		height:50px;
+		width:100px;
+	}
+	.sign0{
+		height:40px;
+		width:220px;
+	}
+	.foot-bg h5{
+     	margin-top: 60px;
+     }	
+	
+/*footer 结束*/
+	.home-carousel-left, 
+	.home-carousel-right {	
+		background-color: #f0f0f0;
+		color:#000;
+		font-size: 32px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: -20px;
+		position: absolute;
+		text-align: center;
+		top: 65%;
+		width: 32px;
+		z-index: 999;
+		-webkit-transition: 300ms;
+		-moz-transition: 300ms;
+		-o-transition: 300ms;
+		-ms-transition: 300ms;
+		transition: 300ms;
+	}
+
+	.home-carousel-left {
+		left:-32px;
+	}
+
+	.home-carousel-right {
+		right:-32px;
+	}
+
+	#home-carousel:hover .home-carousel-left {
+		left:0;
+	}
+
+	#home-carousel:hover .home-carousel-right {
+		right:0;
+	}
+	/* Carousel animation */
+
+	#home-carousel .item h1, 
+	#home-carousel .item h2, 
+	#home-carousel .item h3,
+	#home-carousel .item p,
+	#home-carousel .item a{
+		opacity:0;
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+
+	#home-carousel .item h1 {
+		-webkit-transition: all 0.5s ease-in-out 0.15s;
+		-moz-transition: all 0.5s ease-in-out 0.15s;
+		-ms-transition: all 0.5s ease-in-out 0.15s;
+		-o-transition: all 0.5s ease-in-out 0.15s;
+		transition: all 0.5s ease-in-out 0.15s;
+	}
+
+	#home-carousel .item.active h1, 
+	#home-carousel .item.active h2, 
+	#home-carousel .item.active h3,
+	#home-carousel .item.active p,
+	#home-carousel .item.active a{
+		opacity:1;
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-o-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	#home-carousel .item h2 {
+		
+		-webkit-transition: all 0.5s ease-in-out 0.30s;
+		-moz-transition: all 0.5s ease-in-out 0.30s;
+		-ms-transition: all 0.5s ease-in-out 0.30s;
+		-o-transition: all 0.5s ease-in-out 0.30s;
+		transition: all 0.5s ease-in-out 0.30s;
+	}
+	#home-carousel .item h1 {
+		
+		-webkit-transition: all 0.5s ease-in-out 0.45s;
+		-moz-transition: all 0.5s ease-in-out 0.45s;
+		-ms-transition: all 0.5s ease-in-out 0.45s;
+		-o-transition: all 0.5s ease-in-out 0.45s;
+		transition: all 0.5s ease-in-out 0.45s;
+	}
+	#home-carousel .item h3 {
+		
+		-webkit-transition: all 0.5s ease-in-out 0.5s;
+		-moz-transition: all 0.5s ease-in-out 0.5s;
+		-ms-transition: all 0.5s ease-in-out 0.5s;
+		-o-transition: all 0.5s ease-in-out 0.5s;
+		transition: all 0.5s ease-in-out 0.5s;
+	}
+
+	#home-carousel .item p {
+		-webkit-transition: all 0.5s ease-in-out 0.60s;
+		-moz-transition: all 0.5s ease-in-out 0.60s;
+		-ms-transition: all 0.5s ease-in-out 0.60s;
+		-o-transition: all 0.5s ease-in-out 0.60s;
+		transition: all 0.5s ease-in-out 0.60s;
+	}
+	#home-carousel .item a {
+		-webkit-transition: all 0.5s ease-in-out 0.75s;
+		-moz-transition: all 0.5s ease-in-out 0.75s;
+		-ms-transition: all 0.5s ease-in-out 0.75s;
+		-o-transition: all 0.5s ease-in-out 0.75s;
+		transition: all 0.5s ease-in-out 0.75s;
+	}
+
+
+
 .product-features p{
 
 	margin: 0 0 0px;

@@ -45,6 +45,8 @@ $(function(){
 		$('#cbp-spmenu-s2').removeClass("cbp-spmenu-open");
 	})
 	
+
+	
 });
 
 
