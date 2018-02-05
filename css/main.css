@@ -1,44 +1,44 @@
 @font-face { 
   font-family: Krungthep; 
-  src: url('../fonts/Krungthep.ttf');
+  src: url('../fonts/Krungthep.ttf') format('truetype');
   
     font-family: Leelaw; 
-  src: url('../fonts/LeelawUI.ttf');
+  src: url('../fonts/LeelawUI.ttf') format('truetype');
   
   font-family: Champagne; 
-  src: url('../fonts/Champagne.ttf');
+  src: url('../fonts/Champagne.ttf') format('truetype');
   
    font-family: Shree; 
-  src: url('../fonts/Shree714.ttc');
+  src: url('../fonts/Shree714.ttc') ;
   
   
   
   font-family: sfnew; 
-  src: url('../fonts/SFNewRepublicSC.ttf');
+  src: url('../fonts/SFNewRepublicSC.ttf') format('truetype');
   font-family: Papyrus; 
-  src: url('../fonts/Papyrus-Regular.ttf');
+  src: url('../fonts/Papyrus-Regular.ttf') format('truetype');
   
   
   font-family: Tamil; 
-  src: url('../fonts/TamilMN.ttf'); 
+  src: url('../fonts/TamilMN.ttf') format('truetype'); 
    
   font-family: DevanagariSangam; 
-  src: url('../fonts/Devanagari-Sangam.ttc');  
+  src: url('../fonts/Devanagari-Sangam.ttc') format('truetype');  
  
   
   font-family: sfnew; 
-  src: url('../fonts/sfnewrepublicsc-bold.ttf');
+  src: url('../fonts/sfnewrepublicsc-bold.ttf') format('truetype');
    
   font-family: Walkway; 
-  src: url('../fonts/Walkway-Black.ttf'); 
+  src: url('../fonts/Walkway-Black.ttf') format('truetype'); 
  
    
   font-family: BPreplay; 
-  src: url('../fonts/bpreplaybold.ttf'); 
+  src: url('../fonts/bpreplaybold.ttf') format('truetype'); 
 
   
   font-family: MyriadPro; 
-  src: url('../fonts/MyriadPro-Light.ttf'); 
+  src: url('../fonts/MyriadPro-Light.ttf') format('truetype'); 
 
 }
 
