@@ -383,21 +383,24 @@
     .dfcontent .dftech{
 	  left:20%;
 	  top:130px;
+	  width:80px;
     }
     .dfcontent .tech-h3{
 	  position:absolute;
 	  left:18%;
-	  top:240px;
+	  top:220px;
 	   font-family: 15px;
 	     color:#505050;
     }
     .dfcontent .dfvideo{
 	  left:45%;
 	  top:60px;
+	  width:80px;
     }
     .dfcontent .dfwarranty{
 	  right:20%;
 	  top:130px;
+	  width:80px;
     }
 .dfcontent .btn-more{
 	    position:absolute;
