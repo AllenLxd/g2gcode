@@ -138,13 +138,13 @@
 
 			{pid:'signlighting', cid:'trico', img: 'channel_letter/trico.jpg', href: 'TriCo-Series.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_i_gen_iv.jpg', href: 'Aurora-I-GenIV.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_mini_red.jpg', href: 'Aurora-mini-red.html'},
+			
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_mini_white.jpg', href: 'Aurora-mini-white.html'},
 			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_iii_gen_i.jpg', href: 'Aurora-III-GenI.html'},
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_white.jpg', href: 'Aurora-sv-white.html'},
+			{pid:'signlighting', cid:'yo', img: 'channel_letter/yo.jpg', href: 'yo.html'},
 			/*{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},*/
-			{pid:'signlighting', cid:'aurora', img: 'channel_letter/aurora_red.jpg', href: 'Aurora-red.html'},
-			/*{pid:'signlighting', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
+			{pid:'signlighting', cid:'giant', img: 'channel_letter/little_giant.jpg', href: 'little_giant.html'},
+			{pid:'signlighting', cid:'d50', img: 'channel_letter/d50_rgb.jpg', href: 'd50_rgb.html'},
 			{pid:'signlighting', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro_160.html'},
 			{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
 			/*{pid:'signlighting', cid:'wow', img: 'channel_letter/wow_red.jpg', href: 'WOW-Red.html'},*/
@@ -215,13 +215,13 @@
             /*calss2*/
 			{pid:'letter', cid:'trico', img: 'channel_letter/trico.jpg', href: 'TriCo-Series.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_i_gen_iv.jpg', href: 'Aurora-I-GenIV.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_mini_red.jpg', href: 'Aurora-mini-red.html'},
+			
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_mini_white.jpg', href: 'Aurora-mini-white.html'},
 			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_iii_gen_i.jpg', href: 'Aurora-III-GenI.html'},
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_white.jpg', href: 'Aurora-sv-white.html'},
-			/*{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},*/
-			{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_red.jpg', href: 'Aurora-red.html'},
-			/*{pid:'letter', cid:'nox', img: 'channel_letter/nox.jpg', href: 'NOX-Series.html'},*/
+			{pid:'letter', cid:'yo', img: 'channel_letter/yo.jpg', href: 'yo.html'},
+			/*{pid:'letter', cid:'aurora', img: 'channel_letter/aurora_sv_red.jpg', href: 'Aurora-sv-red.html'},*/		
+			{pid:'letter', cid:'giant', img: 'channel_letter/little_giant.jpg', href: 'little_giant.html'},
+			{pid:'letter', cid:'d50', img: 'channel_letter/d50_rgb.jpg', href: 'd50_rgb.html'},
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro.jpg', href: 'AnPro_160.html'},
 			{pid:'letter', cid:'anpro', img: 'channel_letter/anpro_180.jpg', href: 'anpro_180.html'},
 			{pid:'letter', cid:'wow', img: 'channel_letter/wow_white.jpg', href: 'WOW-Series.html'},
